@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/advanced_scripts/zz_poemgame.rpy", line 300, in prepare_screen
+Exception: Properties are not allowed here.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "C:\renpy-8.2.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\renpy-8.2.3-sdk\renpy\main.py", line 637, in main
+    run(restart)
+  File "C:\renpy-8.2.3-sdk\renpy\main.py", line 94, in run
+    renpy.display.screen.prepare_screens()
+  File "C:\renpy-8.2.3-sdk\renpy\display\screen.py", line 1026, in prepare_screens
+    s.ast.prepare_screen()
+  File "game/advanced_scripts/zz_poemgame.rpy", line 300, in prepare_screen
+  File "C:\renpy-8.2.3-sdk\renpy\sl2\slast.py", line 481, in prepare
+    raise Exception("Properties are not allowed here.")
+Exception: Properties are not allowed here.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.3.24061702
+DDLC Mod Template 1.1.2
+Sun Jul 14 17:10:28 2024
