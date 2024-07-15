@@ -7,9 +7,10 @@ init python:
     splash_message_default = "This game is an unofficial fan work, unaffiliated with Team Salvato."
 
     splash_messages = [
+        "This game is an unofficial fan work, unaffiliated with Team Salvato.",
         "Please support Doki Doki Literature Club.",
-        "Just Kotonoha"
-        "Zayo is super epic. -Natz"
+        "Just Kotonoha",
+        "Zayo is super epic. -Natz",
         "Doki Doki Lesbian Club shall come."
     ]
 
@@ -292,7 +293,7 @@ label splashscreen:
 
     show white
     $ persistent.ghost_menu = False
-    $ splash_message = splash_message_default
+    $ splash_message = renpy.random.choice(splash_messages)
     $ config.main_menu_music = audio.t1
     $ renpy.music.play(config.main_menu_music)
     show intro with Dissolve(0.5, alpha=True)
