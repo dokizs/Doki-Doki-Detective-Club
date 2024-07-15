@@ -9,8 +9,6 @@ define switch = True
 label story:  
     $ renpy.movie_cutscene ("FAKE CHAPTER OPENER.ogv")
     play music t3 fadein 1.0
-    scene bg club_day
-    pause (1.0) 
     scene bg field with wipeleft_scene
     s "Oh, heyyyy!"
     "Oh, there she is!"
