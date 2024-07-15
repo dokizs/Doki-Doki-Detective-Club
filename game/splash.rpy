@@ -8,7 +8,9 @@ init python:
 
     splash_messages = [
         "Please support Doki Doki Literature Club.",
-        "Monika is watching you code."
+        "Just Kotonoha"
+        "Zayo is super epic. -Natz"
+        "Doki Doki Lesbian Club shall come."
     ]
 
 
@@ -16,7 +18,7 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 
 
 image menu_logo:
-    "/mod_assets/DDLCModTemplateLogo.png"
+    "/mod_assets/dddclogo.png"
     subpixel True
     xcenter 240
     ycenter 120
@@ -177,7 +179,7 @@ image intro:
     truecenter
     "white"
     0.5
-    "bg/splash.png" with Dissolve(0.5, alpha=True)
+    "bg/natzzayochibi.png" with Dissolve(0.5, alpha=True)
     2.5
     "white" with Dissolve(0.5, alpha=True)
     0.5
