@@ -1,4 +1,6 @@
 # Entry point
+define config.developer = True
+
 label start:
 
     # ID of this playtrhoguh
