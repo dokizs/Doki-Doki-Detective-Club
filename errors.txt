@@ -2,8 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 45: end of line expected.
-    show aoki at 1a
-                  ^
+File "game/advanced_scripts/script-poemgame.rpy", line 212: unqualified exec is not allowed in function 'poem_game_finish' because it contains a nested function with free variables
 
-Ren'Py Version: Ren'Py 6.99.12.4.2187
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun Jul 14 20:18:57 2024
