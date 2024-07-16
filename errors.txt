@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/advanced_scripts/script-poemgame.rpy", line 212: unqualified exec is not allowed in function 'poem_game_finish' because it contains a nested function with free variables
+File "game/story.rpy", line 50: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ` at the end of the first line.)
+        return```
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jul 14 20:18:57 2024
+Mon Jul 15 23:34:49 2024

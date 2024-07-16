@@ -580,7 +580,7 @@ image kiyomi 5bz = im.Composite((960, 960), (0, 0), "kiyomi/kiyomi 3bl.png", (0,
 image kiyomi 5bz1 = im.Composite((960, 960), (0, 0), "kiyomi/kiyomi 3bl.png", (0, 0), "kiyomi/kiyomi 2br.png", (0, 0), "kiyomi/kiyomi z1.png")
 
 # CHARACTER VARIABLE
-define k = DynamicCharacter('k_name', image='kiyomi', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define ki = DynamicCharacter('k_name', image='kiyomi', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
 # NAME VARIABLE
-default k_name = "Kiyomi"
+default ki_name = "Kiyomi"

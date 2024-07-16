@@ -1,14 +1,10 @@
 
-#In Python because of the dollar sign
-$ switch = True
-
-#Ren'py
-define switch = True
-
 
 label story:  
     $ renpy.movie_cutscene ("FAKE CHAPTER OPENER.ogv")
     play music t3 fadein 1.0
+    scene bg club_day
+    pause (1.0) 
     scene bg field with wipeleft_scene
     s "Oh, heyyyy!"
     "Oh, there she is!"
@@ -28,10 +24,11 @@ label story:
     stop music fadeout 1.0 
     menu: 
         "Sure!":
-            $ switch = True
+            jump choice_sure
         "How about no.":
-            $ switch = False
-if switch:
+            jump choice_no
+
+label choice_sure:
     mc "Give it to meh!"
     show sayori at h11
     show sayori 4s at t11
@@ -40,11 +37,10 @@ if switch:
     play sound("warfare_gunshot_exterior_002.mp3")
     scene black
     s "It's kidnapping time!!"
-    show kiyomi 1a at t11
-    cd "yolo???"
-    
-    
-else:
+    cd "Whar the hell???"
+    return
+
+label choice_no:
     mc "Nah, keep your cookie, Sayo."
     play music ("A Faded Memory.mp3")
     show sayori 1e
