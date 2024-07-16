@@ -5,10 +5,10 @@ define config.autoreload=False
 
 # human readable name of this game
 # _() marks strings eligable for translation
-define config.name = "DDLC Mod Template"
+define config.name = "Doki Doki Detective Club"
 
 # True shows the name on main menu, False hides it
-define gui.show_name = True
+define gui.show_name = False
 
 # Version of the game
 define config.version = "1.1.2"
@@ -72,7 +72,7 @@ default preferences.sfx_volume = 0.75
 define config.save_directory = "DDLC_Mod_Template"
 
 # icon displayed on taskbar / dock
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "new shizzle/windowicon.png"
 
 # True means we allow skipping, False means not
 define config.allow_skipping = True

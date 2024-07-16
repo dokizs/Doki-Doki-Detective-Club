@@ -19,11 +19,11 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 
 
 image menu_logo:
-    "/mod_assets/dddclogo.png"
+    "/new shizzle/menuicon.png"
     subpixel True
     xcenter 240
     ycenter 120
-    zoom 0.60
+    zoom 0.41
     menu_logo_move
 
 image menu_bg:
