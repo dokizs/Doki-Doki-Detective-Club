@@ -40,8 +40,8 @@ if switch:
     play sound("warfare_gunshot_exterior_002.mp3")
     scene black
     s "It's kidnapping time!!"
-    show aoki 1a at t11
-    cd "Whar the hell???"
+    show kiyomi 1a at t11
+    cd "yolo???"
     
     
 else:
