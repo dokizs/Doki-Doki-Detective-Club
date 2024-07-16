@@ -42,7 +42,7 @@ image menu_fade:
 
 image menu_art_y:
     subpixel True
-    "gui/menu_art_y.png"
+    "gui/mcmenu.png"
     xcenter 600
     ycenter 335
     zoom 0.60
@@ -50,7 +50,7 @@ image menu_art_y:
 
 image menu_art_n:
     subpixel True
-    "gui/menu_art_n.png"
+    "gui/kiyomimenu.png"
     xcenter 750
     ycenter 385
     zoom 0.58
@@ -58,7 +58,7 @@ image menu_art_n:
 
 image menu_art_s:
     subpixel True
-    "gui/menu_art_s.png"
+    "gui/miomenu.png"
     xcenter 510
     ycenter 500
     zoom 0.68
@@ -66,7 +66,7 @@ image menu_art_s:
 
 image menu_art_m:
     subpixel True
-    "gui/menu_art_m.png"
+    "gui/kotomenu.png"
     xcenter 1000
     ycenter 640
     zoom 1.00
