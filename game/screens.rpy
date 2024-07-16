@@ -461,6 +461,8 @@ screen navigation():
                 textbutton _("Save Game") action [ShowMenu("save"), SensitiveIf(renpy.get_screen("save") == None)]
 
             textbutton _("Load Game") action [ShowMenu("load"), SensitiveIf(renpy.get_screen("load") == None)]
+            
+            textbutton _("Persistent Reset") action destroy_persistent
 
             if _in_replay:
 
