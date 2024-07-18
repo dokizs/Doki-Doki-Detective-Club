@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 50: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ` at the end of the first line.)
-        return```
+File "game/story.rpy", line 75: end of line expected.
+    show kotonoha dont worry natz, just a placeholder cuz no cheat sheet
+                                 ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Jul 15 23:34:49 2024
+Thu Jul 18 00:55:35 2024

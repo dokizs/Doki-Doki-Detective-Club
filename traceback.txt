@@ -1,26 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/advanced_scripts/zz_poemgame.rpy", line 300, in prepare_screen
-Exception: Properties are not allowed here.
+While running game code:
+  File "game/script.rpy", line 28, in script call
+    call story #story is the label.
+  File "game/story.rpy", line 72, in script
+    play sound smack
+  File "renpy/common/000statements.rpy", line 300, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 32, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/story.rpy", line 72, in <module>
+    play sound smack
+NameError: name 'smack' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\renpy-8.2.3-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\renpy-8.2.3-sdk\renpy\main.py", line 637, in main
-    run(restart)
-  File "C:\renpy-8.2.3-sdk\renpy\main.py", line 94, in run
-    renpy.display.screen.prepare_screens()
-  File "C:\renpy-8.2.3-sdk\renpy\display\screen.py", line 1026, in prepare_screens
-    s.ast.prepare_screen()
-  File "game/advanced_scripts/zz_poemgame.rpy", line 300, in prepare_screen
-  File "C:\renpy-8.2.3-sdk\renpy\sl2\slast.py", line 481, in prepare
-    raise Exception("Properties are not allowed here.")
-Exception: Properties are not allowed here.
+  File "game/script.rpy", line 28, in script call
+    call story #story is the label.
+  File "game/story.rpy", line 72, in script
+    play sound smack
+  File "renpy/ast.py", line 2015, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2003, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 300, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 32, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/story.rpy", line 72, in <module>
+    play sound smack
+NameError: name 'smack' is not defined
 
-Windows-10-10.0.22631 AMD64
-Ren'Py 8.2.3.24061702
-DDLC Mod Template 1.1.2
-Sun Jul 14 17:10:28 2024
+Windows-10-10.0.19041
+Ren'Py 7.4.11.2266
+Doki Doki Detective Club 1.1.2
+Thu Jul 18 00:49:42 2024

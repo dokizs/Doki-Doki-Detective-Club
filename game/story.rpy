@@ -27,6 +27,8 @@ label story:
             jump choice_sure
         "How about no.":
             jump choice_no
+        "???":
+            jump choice_script
 
 label choice_sure:
     mc "Give it to meh!"
@@ -37,11 +39,9 @@ label choice_sure:
     play sound("warfare_gunshot_exterior_002.mp3")
     scene black
     s "It's kidnapping time!!"
-    show kiyomi 1a at t11
-    show aoki 1a at t33
-    show yyuri 1a at t22
+    show koto 1a at t11
     cd "Whar the hell???"
-    return
+    
 
 label choice_no:
     mc "Nah, keep your cookie, Sayo."
@@ -51,4 +51,30 @@ label choice_no:
     play music t3 
     show sayori 4s
     s "T-That just means more cookies for me!!"
-    return
+    
+
+label choice_script:
+    scene black
+    km "Look at her. Fast asleep."
+    kd "She's grown up so fast."
+    km "Oh, I don't think I could tell her..."
+    kd "We can't just tell her at the last minute."
+    km "It damnear is the last minute!!{w=2} She leaves tonight!"
+    kd "Well, then we have to tell her now, today. {w=2} She needs time to say goodbye to her friends."
+    km "... {w=1}Very well then."
+    pause (1.0)
+    scene bg MCR with wipeleft_scene
+    show koto 1bi at t11
+    pause (3.0)
+    km "{w=1}Oh, I can't!"
+    km "I will speak with her when she gets home!!{w=2} Dear, could you please tell her for the both of us?"
+    kd "...{w=2}Only for you, dearest."
+    "Kotonoha's mother exits the room, {w=1}leaving her father to break the news."
+    "He'd shake her slightly."
+    kd "Koto, dear. Wake up..."
+    show kotonoha dont worry natz just a placeholder cuz no cheat sheet
+    kmc "Five more minutes..."
+    kd "Don't do this to me, Koto.{w=1} Come, please. There's something we must discuss."
+
+
+
