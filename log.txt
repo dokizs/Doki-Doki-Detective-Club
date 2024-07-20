@@ -1,13 +1,13 @@
-Thu Jul 18 00:57:37 2024
+Fri Jul 19 21:30:49 2024
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.18s
+Bootstrap to the start of init.init took 0.35s
 Early init took 0.01s
-Loader init took 0.12s
-Loading error handling took 0.06s
-Loading script took 0.77s
+Loader init took 0.23s
+Loading error handling took 0.14s
+Loading script took 4.38s
 Loading persistent.
 Traceback (most recent call last):
   File "renpy/persistent.py", line 201, in load
@@ -22,34 +22,33 @@ Traceback (most recent call last):
   File "renpy/loadsave.py", line 63, in loads
     return cPickle.loads(s)
 ImportError: No module named revertable
-Loading save slot metadata. took 0.05s
+Loading save slot metadata. took 0.12s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.38s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.06s
+Running init code took 0.71s
+Loading analysis data took 0.12s
+Analyze and compile ATL took 0.23s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
-Dump and make backups. took 0.21s
+Dump and make backups. took 0.30s
 Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.10s
+Making clean stores took 0.01s
+Initial gc. took 0.26s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.10s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.06s
-Prepare screens took 0.12s
+Init translation took 0.20s
+Build styles took 0.02s
+Load screen analysis took 0.10s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.42s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.12s
-Running _start took 0.00s
+Save bytecode. took 0.31s
+Running _start took 0.01s
 Performance test:
-Interface start took 0.27s
+Interface start took 0.72s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -62,9 +61,16 @@ Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.02s
-Load screen analysis took 0.05s
+Init translation took 0.01s
+Build styles took 0.03s
+Load screen analysis took 0.10s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.06s
+Load screen analysis took 0.08s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s

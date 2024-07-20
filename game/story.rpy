@@ -72,9 +72,34 @@ label choice_script:
     "Kotonoha's mother exits the room, {w=1}leaving her father to break the news."
     "He'd shake her slightly."
     kd "Koto, dear. Wake up..."
-    show kotonoha dont worry natz just a placeholder cuz no cheat sheet
+    show koto 1bp at t11
     kmc "Five more minutes..."
+    show koto 1bi at t11
     kd "Don't do this to me, Koto.{w=1} Come, please. There's something we must discuss."
+    kmc "Huh..."
+    show koto 1bp at t11
+    pause (.1)
+    show koto 1bw at t11
+    pause (.1)
+    show koto 1bp at t11
+    pause (.1)
+    show koto 1bw at t11
+    pause (1.0)
+    kd "finally."
+    show koto 1bp2 at t11
+    kmc "Dad...? It's not even 7 yet, why-"
+    kd "Listen Kotonoha. You're..."
+    show koto 1bu at t11
+    "Kotonoha's eyes would narrow."
+    show koto 1bu3 at t11
+    kmc "You wake me up earlier than I need to..and for what? Is it bad?"
+    show koto 1bw2 at t11
+    kd "Well...it's something a bit...serious."
+    show koto 1bv1 at t11
+    kmc "L-Like what, Dad?"
+    "Kotonoha felt a shiver run down her spine as she waited for an answer."
+    "Her parents never usually confronted her on anything, and if she was reading her father's face right, this wasn't a joke or something minor."
+
 
 
 
