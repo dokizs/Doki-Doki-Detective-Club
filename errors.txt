@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 75: end of line expected.
-    show kotonoha dont worry natz, just a placeholder cuz no cheat sheet
-                                 ^
+File "game/story.rpy", line 146: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "And an extra 2 to announce it to the club. What would they even say to her...?...It doesn't matter, at least not yet.. That's later in the afternoon. She hasn't even left the house, let alone gotten ready yet.
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Jul 18 00:55:35 2024
+Sun Jul 21 18:04:34 2024
