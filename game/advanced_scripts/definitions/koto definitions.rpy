@@ -462,7 +462,7 @@ image koto 7bw = im.Composite((960, 960), (0, 0), "kotonoha/7b.png", (0, 0), "ko
 image koto 7bw2 = im.Composite((960, 960), (0, 0), "kotonoha/7b.png", (0, 0), "kotonoha/w2.png")
 
 # CHARACTER VARIABLE
-define kmc = DynamicCharacter('koto_name', image='koto', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define kmc = DynamicCharacter('koto_name', image='koto', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("mod_assets/textbox_kotonoha.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#686362") ])
 
 # NAME VARIABLE
 default koto_name = "Kotonoha"
