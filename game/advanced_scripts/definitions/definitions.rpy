@@ -142,6 +142,7 @@ image bg HEC = "Home EC.png"
 image bg Interrogate = "Interogate.png"
 image bg LCH = "Lower Class Home.png"
 image bg MCR = "Middle Class Room.png"
+image bg MCB = "Middle Class Bath.png"
 
 
 image bg notebook = "bg/notebook.png"
