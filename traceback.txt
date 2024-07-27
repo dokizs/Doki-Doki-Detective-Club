@@ -1,33 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/advanced_scripts/definitions/definitions.rpy", line 13, in <module>
-    me = singleton.SingleInstance()
-OSError: [Errno 17] File exists: 'c:\\users\\aj\\appdata\\local\\temp\\C-Users-AJ-Desktop-Renpy-renpy-6.99.12.4-sdk-renpy-.lock'
+  File "game/script.rpy", line 28, in script call
+    call story #story is the label.
+  File "game/story.rpy", line 191, in script
+    {nw}"She took a few breathes before sliding open the classroom door."
+Exception: Sayer '{nw}' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 492, in main
-    renpy.game.script.load_script() # sets renpy.game.script.
-  File "renpy/script.py", line 283, in load_script
-    self.load_appropriate_file(".rpyc", ".rpy", dir, fn, initcode)
-  File "renpy/script.py", line 797, in load_appropriate_file
-    self.finish_load(stmts, initcode, filename=lastfn)
-  File "renpy/script.py", line 485, in finish_load
-    node.early_execute()
-  File "renpy/ast.py", line 985, in early_execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/advanced_scripts/definitions/definitions.rpy", line 13, in <module>
-    me = singleton.SingleInstance()
-  File "python-packages/singleton.py", line 45, in __init__
-OSError: [Errno 17] File exists: 'c:\\users\\aj\\appdata\\local\\temp\\C-Users-AJ-Desktop-Renpy-renpy-6.99.12.4-sdk-renpy-.lock'
+  File "game/script.rpy", line 28, in script call
+    call story #story is the label.
+  File "game/story.rpy", line 191, in script
+    {nw}"She took a few breathes before sliding open the classroom door."
+  File "renpy/ast.py", line 681, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer '{nw}' is not defined.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
- 
-Sun Jul 21 16:10:40 2024
+Doki Doki Detective Club 1.1.2
+Sat Jul 27 00:30:28 2024

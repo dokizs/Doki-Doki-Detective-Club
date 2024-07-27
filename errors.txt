@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 146: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        "And an extra 2 to announce it to the club. What would they even say to her...?...It doesn't matter, at least not yet.. That's later in the afternoon. She hasn't even left the house, let alone gotten ready yet.
+File "game/story.rpy", line 226: expected statement.
+    kmc
+       ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jul 21 18:04:34 2024
+Sat Jul 27 01:10:12 2024
