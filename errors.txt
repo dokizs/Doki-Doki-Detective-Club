@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 226: expected statement.
-    kmc
-       ^
+File "game/story.rpy", line 370: indentation mismatch.
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Jul 27 01:10:12 2024
+Sat Jul 27 16:48:54 2024

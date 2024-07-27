@@ -229,18 +229,170 @@ label choice_script:
     m "Oh! Uh..well...I suppose so."
     m "You're usually never one to joke so if you say it's something important, I trust you."
     stop music fadeout 1.0 
-    "Monika calls out to the rest of the club members and they all reluctantly stop their conversations and walk towards Monika, all sitting down in the front five desks as they tend to do."
-    show sayori 1a at t51
+    "Monika calls out to the rest of the club members and they all reluctantly stop their conversations and walk towards Monika, all congregated in the front as they tend to do."
+    show monika 1a at t51
+    show sayori 1a at t52
+    show natsuki 1a at t53
+    show yuri 1a at t54
+    show koto 1a at t55
+    m "So...your news...?"
+    kmc "Right..."
+    n "Oh, come on! You have Monika round us all up and then you forget your damn question?? This is a waste of time!!"
+    kmc "Natsuki, this is ser {nw}"
+    m "NATSUKI! Kotonoha doesn't like to slack off unlike the rest of you. It's something important, at least to her, as far as you know."
+    m "Her and Yuri actually. The family ties are the most obvious in that aspect."
+    "Koto and Yuri would share a smile at Monika, appreciating the compliement."
+    m "So if you would kindly be quiet and let our fellow club member speak, it'd be gladly appreciated."
+    "Natsuki piped down after getting softly scolded by Monika."
+    kmc "Thank you, Moni."
+    kmc "So...my announcement. I...I..."
+    "Yuri puts her hand on her cousins shoulder."
+    y "Take your time."
+    "Kotonoha would look at the clock. It was already 4:45. Enough time had passed. She only had until 6 to say goodbye. She had no time at all."
+    "She'd finally break her tough girl facade."
+    kmc "I-I DON'T HAVE TIME TO TAKE!!"
+    "Yuri flinches, her hand coming off Kotonoha's shoulder."
+    m "Kotonoha...what are you trying to say?"
+    play music ("A Faded Memory.mp3")
+    kmc "I-I'm...I'M MOVING, ALRIGHT??"
+    "She felt as if she was on the verge of tears and as she looked around, she saw the mood had immiedently dampened signifigantly."
+    s "W-What...?"
+    kmc "I-I'm moving, alright?"
+    y "W-Why didn't you tell us sooner?"
+    kmc "Don't you think I would've if I knew??"
+    kmc "My asswipes that I used to call parents only just told me this morning..."
+    n "I-It must be some sort of April Fools joke or something?!"
+    m "It's September {nw}"
+    "A silent head shake from Koto told her everything she needed to."
+    n "No...It can't be true..It can't!!"
+    "Now Natsuki looked to be on Koto's level of emotion, looking like she was almost drawn to tears."
+    s "You can't leave!! I WON'T LET YOU!!"
+    show monika 1a at t51
     show natsuki 1a at t52
     show yuri 1a at t53
-    show monika 1a at t54
+    show sayori 1a at t54
     show koto 1a at t55
+    "Sayori runs up to Kotonoha, hugging her tightly." #sayori crying
+    kmc "S-Sayori...plea{nw}"
+    s "NO! I'M NOT LETTING GO!!!"
+    m "Sayori, please let go of Kotonoha...she..."
+    "Monika takes a deep and sharp inhale."
+    m "She needs a bit of time to breathe."
+    s "S-She's gonna leave us, I-I won't let her leave!!"
+    kmc "Sayori...please let me go. You're constricting my lungs..."
+    "Sayori looks up at Koto with hurt, sadness and tears threatening to fall."
+    kmc "Please..."
+    "Sayori nods and finally lets go."
+    #sayori goes back to normal but stays where she is, moves back to og position later
+    kmc "Thank you...I'm really sorry to all of you that it's on such short notice. Especially you, Monika."
+    m "It's ok. I believe you when you say that your parents only told you this morning."
+    m "While it is unconventional to let your child know that they are leaving you and their home they've known since as long as they've been alive, it's not anything to be worried about."
+    "Monika smiles."
+    "...That's strange."
+    "She kind of hit it directly on the head, almost like she had a glimpse inside her head. It was eerie but it struck with more of a sympathetic tone than anything."
+    y "Actually...it might be."
+    "Everyone looks at Yuri." #when everyone's focused on yuri she switches positons
+    m "Hm? What do you mean?"
+    show monika 1a at t51
+    show sayori 1a at t52
+    show natsuki 1a at t53
+    show yuri 1a at t54
+    show koto 1a at t55
+    y "The new policy of '5 members per club'. Remember?"
+    m "Oh, you're right, Yuri. It slipped my mind."
+    "Monika would facepalm softly."
+    m "Well, if any of you forgot like I foolishly did, last week, we had school wide meeting. All clubs were there and a new rule was established, we have to have over 5 members."
+    m "Which means that along with the sad news of Kotonoha's departure, it means we're going to have to find another member to stay together, or we may get disbanded..."
+    "Everyone looks much worse now. Not only was it sad that Kotonoha was leaving but it's so detrimental that they might not even have a club anymore!!"
+    s "Well...I wouldn't say that..."
+    "Everyone would now look at Sayori."
+    s "I was kind of planning to invite someone! Before Koto said she was leaving, of course, so we could have 6 members!!"
+    s "But now that Kotonoha's leaving, they could be our 5th!!"
+    "Monika looks deep in thought."
+    m "Would they be willing to join?"
+    s "Pfft, yeah, they would!!"
+    m "Hm, well then I suppose that's a problem solved!!"
+    "Sayori was scared out of her mind. She knew he had been struggling to even look at clubs, let alone join one..."
+    "Announcing him as 'The Fifth Member' didn't help much either. Now the girls were counting on Sayori to make good on her promise."
+    "Looks like she had some seeds to plant and some cute faces to make."
+    "Monika clears her throat interuptting Sayori's train of thought."
+    m "Let's not let that overtake our sadness over the loss of one of our original members however."
+    y "Kotonoha is still leaving and we must keep the mood right."
+    m "Thank you, Yuri. Kotonoha, we're sorry for your unfortunate situation."
+    m "I wish we could've done more..."
+    pause (5.0)
+    #natsuki changes expressions (intervals)
+    n "...Wait! I got it!"
+    n "I have some cupcakes in my home economics room!!"
+    m "But Natsuki, aren't those for a project?"
+    n "Who cares?! I can make more, they don't take awfully long to make!"
+    n "I'm not just gonna sit here and let us sulk in silence for the next hour."
+    m "Bu{nw}"
+    n "Don't question me! It'll just be a quick snatch and grab!"
+    "And without letting anyone protest, she left the room."
+    hide natsuki
+    show monika 1a at t41
+    show sayori 1a at t42
+    show yuri 1a at t43
+    show koto 1a at t44
+    "Monika sighs tiredly."
+    m "Well, I guess we're having cupcakes this afternoon!"
+    y "Only cupcakes?"
+    "Monika looked at Yuri, understanding what she was implying."
+    "She sighs again."
+    m "You want to make tea, don't y{nw}"
+    y "I want to make tea, yes."
+    pause (2.0)
+    #have monika emote
+    m "You know what? Why not!"
+    y "Thank you, Monika!"
+    "Yuri would hurridly sprint over to the closet to retreive her tea set."
+    hide yuri
+    show monika 1a at t31
+    show sayori 1a at t32
+    show koto 1a at t33
+    "Monika turns to Kotonoha."
+    m "I guess we're having a celebration for your departure, Koto."
+    "Monika smiles awkwardly. This wasn't on her itinerary at all. And while she didn't just want to sulk around for the next hour, she wanted to continue club activities."
+    kmc "I mean, it doesn't look like they're giving us much of a choice, are they?"
+    m "It appears not...well, I guess me and Sayori are going to pitch in as well.."
+    s "Ooo, ooo! I can find some decorations in the art classroom! They're holding a meeting right now too, and they'll have a ton of supplies that can help!"
+    "Sayori doesn't even let her idea process in anyone elses head and she leaves without a second thought."
+    hide sayori
+    show monika 1a at t21
+    show koto 1a at t22
+    "Monika just can't catch a break today."
+    m "Well! I suppose I'll go help her!"
+    kmc "Maybe I could come with!"
+    m "Come with? It's your party, Koto! Just sit back and watch!"
+    "Kotonoha looks a bit sad but it's quickly replaced with happiness. She had been thinking about something like this all day, but she never thought she would actually get it!"
+    kmc "Thank you, Moni. I appreciate it."
+    m "Of course!"
+    "Monika walks to the door."
+    m "{size=10}This is the last time I let things out of my control.{/size}"
+    scene black with wipeleft_scene
+    stop music fadeout 3.0 
+    pause (3.0)
+    "chapter 3"
+    pause (3.0)
+    scene bg corridor with wipeleft_scene
+    show sayori 1a at t11
+    s "Ok, art room isssssssssss {w=3}here!"
+    "Sayori would step into the art room."
+    scene bg AR with wipeleft_scene
+    "Some of the kids in the classroom looked at Sayori as she entered. She recognized some of them. But she wasn't here to goof around." 
+    "She needed to see if there was something she could use for Koto's party!!"
+    show sayori 1a at t11
+    s "Hey guys! Happen to know if there's any art supplies I can borrow for a bit?" 
+    s "I need to make a little something on short notice, eheh..."
+    
+    
 
-    m "So...your news...?"
 
 
 
 
+    
 
 
 
