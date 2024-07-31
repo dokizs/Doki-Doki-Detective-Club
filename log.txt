@@ -1,134 +1,13 @@
-Tue Jul 30 22:34:22 2024
+Tue Jul 30 23:47:46 2024
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.67s
+Bootstrap to the start of init.init took 0.18s
 Early init took 0.01s
-Loader init took 0.47s
-Loading error handling took 0.15s
-Loading script took 20.18s
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading save slot metadata. took 1.83s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
- - Init at renpy/common/00updater.rpy:23 took 1.26650 s.
- - Init at game/advanced_scripts/gui.rpy:11 took 0.73407 s.
- - Init at renpy/common/00library.rpy:387 took 0.77977 s.
-Running init code took 3.77s
-Loading analysis data took 0.29s
-Analyze and compile ATL took 0.18s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
-Dump and make backups. took 0.90s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.49s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.43s
-Cleaning stores took 0.00s
-Init translation took 0.30s
-Build styles took 0.01s
-Load screen analysis took 0.09s
-Analyze screens took 0.03s
-Save screen analysis took 0.15s
-Prepare screens took 0.28s
-Save pyanalysis. took 0.38s
-Save bytecode. took 0.41s
-Running _start took 0.01s
-Performance test:
-Interface start took 3.46s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) UHD Graphics 600'
-Version: '4.5.0 - Build 25.20.100.6617'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 339.46s
-Early init took 0.00s
-Loader init took 0.29s
-Loading error handling took 0.65s
-Loading script took 1.30s
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading save slot metadata. took 0.09s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.41s
-Loading analysis data took 0.06s
-Analyze and compile ATL took 0.09s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
-Dump and make backups. took 0.22s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.15s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.18s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.07s
-Prepare screens took 0.18s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
-Running _start took 0.00s
-Performance test:
-Interface start took 2.14s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) UHD Graphics 600'
-Version: '4.5.0 - Build 25.20.100.6617'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 372.34s
-Early init took 0.00s
-Loader init took 0.27s
+Loader init took 0.13s
 Loading error handling took 0.06s
-Loading script took 1.26s
+Loading script took 2.47s
 Loading persistent.
 Traceback (most recent call last):
   File "renpy/persistent.py", line 201, in load
@@ -143,31 +22,30 @@ Traceback (most recent call last):
   File "renpy/loadsave.py", line 63, in loads
     return cPickle.loads(s)
 ImportError: No module named revertable
-Loading save slot metadata. took 0.09s
+Loading save slot metadata. took 0.07s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.39s
-Loading analysis data took 0.05s
+Running init code took 0.47s
+Loading analysis data took 0.08s
 Analyze and compile ATL took 0.08s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
-Dump and make backups. took 0.23s
+Dump and make backups. took 0.20s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.15s
+Initial gc. took 0.09s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.15s
+Init translation took 0.14s
 Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.06s
-Save screen analysis took 0.06s
-Prepare screens took 0.17s
+Load screen analysis took 0.06s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.16s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
+Save bytecode. took 0.13s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.71s

@@ -11,7 +11,11 @@ init python:
         "Please support Doki Doki Literature Club.",
         "Just Kotonoha",
         "Zayo is super epic. -Natz",
-        "Doki Doki Lesbian Club shall come."
+        "Doki Doki Lesbian Club shall come.",
+        "Who do you think they are?",
+        "Who is your dialect coach, the Minions?",
+        "You don't know who you're trying to fight.",
+        "I am the danger."
     ]
 
 
@@ -19,7 +23,7 @@ image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign
 
 
 image menu_logo:
-    "/new shizzle/menuicon.png"
+    "menuicon.png"
     subpixel True
     xcenter 240
     ycenter 120
