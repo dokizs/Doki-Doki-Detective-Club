@@ -411,7 +411,7 @@ define dissolve_scene = Dissolve(1.0)
 define dissolve_scene_full = MultipleTransition([
     False, Dissolve(1.0), #Fade to black for 1 second
     Solid("#000"), Pause(1.0), #Wait 1 second
-    Solid("#000"), Dissolve(1.0), #Fade out of black for 1 second
+    Solid("#000"), Dissolve(2.0), #Fade out of black for 1 second
     True])
 
 #Fade out from black for start of a new scene

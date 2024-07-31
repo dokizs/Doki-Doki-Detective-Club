@@ -145,6 +145,12 @@ image bg MCR = "Middle Class Room.png"
 image bg MCB = "Middle Class Bath.png"
 image bg MCH = "middle class hall.png"
 image bg AR = "artroom.png"
+image bg SSClass = "sunsetclass.png"
+image bg MR = "moniroom.png"
+image bg DC = "detectiveclub.png"
+image bg SC = "sunsetcorridor.png"
+image bg AIR = "aokiinterrigationroom.png"
+
 
 
 
@@ -1072,6 +1078,68 @@ image yuri 4bc = im.Composite((960, 960), (0, 0), "yuri/c2.png", (0, 0), "yuri/3
 image yuri 4bd = im.Composite((960, 960), (0, 0), "yuri/d2.png", (0, 0), "yuri/3b.png")
 image yuri 4be = im.Composite((960, 960), (0, 0), "yuri/e2.png", (0, 0), "yuri/3b.png")
 
+#NEW 
+image yuri 5ca = im.Composite((960, 960), (0, 0), "custom yuri/fa.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cb = im.Composite((960, 960), (0, 0), "custom yuri/fb.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cc = im.Composite((960, 960), (0, 0), "custom yuri/fc.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cd = im.Composite((960, 960), (0, 0), "custom yuri/fd.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5ce = im.Composite((960, 960), (0, 0), "custom yuri/fe.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cf = im.Composite((960, 960), (0, 0), "custom yuri/ff.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cg = im.Composite((960, 960), (0, 0), "custom yuri/fg.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5ch = im.Composite((960, 960), (0, 0), "custom yuri/fh.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5ci = im.Composite((960, 960), (0, 0), "custom yuri/fi.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cj = im.Composite((960, 960), (0, 0), "custom yuri/fj.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5ck = im.Composite((960, 960), (0, 0), "custom yuri/fk.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cl = im.Composite((960, 960), (0, 0), "custom yuri/fl.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cm = im.Composite((960, 960), (0, 0), "custom yuri/fm.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cn = im.Composite((960, 960), (0, 0), "custom yuri/fn.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5co = im.Composite((960, 960), (0, 0), "custom yuri/fo.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cp = im.Composite((960, 960), (0, 0), "custom yuri/fp.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cq = im.Composite((960, 960), (0, 0), "custom yuri/fq.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cr = im.Composite((960, 960), (0, 0), "custom yuri/fr.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cs = im.Composite((960, 960), (0, 0), "custom yuri/fs.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5ct = im.Composite((960, 960), (0, 0), "custom yuri/ft.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cu = im.Composite((960, 960), (0, 0), "custom yuri/fu.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cv = im.Composite((960, 960), (0, 0), "custom yuri/fv.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cw = im.Composite((960, 960), (0, 0), "custom yuri/fw.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cx = im.Composite((960, 960), (0, 0), "custom yuri/fx.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cy = im.Composite((960, 960), (0, 0), "custom yuri/fy.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+image yuri 5cz = im.Composite((960, 960), (0, 0), "custom yuri/fz.png", (0, 0), "custom yuri/1l.png", (0, 0), "custom yuri/1r.png")
+
+image yuri 6ca = im.Composite((960, 960), (0, 0), "custom yuri/fa.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cb = im.Composite((960, 960), (0, 0), "custom yuri/fb.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cc = im.Composite((960, 960), (0, 0), "custom yuri/fc.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cd = im.Composite((960, 960), (0, 0), "custom yuri/fd.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6ce = im.Composite((960, 960), (0, 0), "custom yuri/fe.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cf = im.Composite((960, 960), (0, 0), "custom yuri/ff.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cg = im.Composite((960, 960), (0, 0), "custom yuri/fg.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6ch = im.Composite((960, 960), (0, 0), "custom yuri/fh.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6ci = im.Composite((960, 960), (0, 0), "custom yuri/fi.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cj = im.Composite((960, 960), (0, 0), "custom yuri/fj.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6ck = im.Composite((960, 960), (0, 0), "custom yuri/fk.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cl = im.Composite((960, 960), (0, 0), "custom yuri/fl.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cm = im.Composite((960, 960), (0, 0), "custom yuri/fm.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cn = im.Composite((960, 960), (0, 0), "custom yuri/fn.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6co = im.Composite((960, 960), (0, 0), "custom yuri/fo.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cp = im.Composite((960, 960), (0, 0), "custom yuri/fp.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cq = im.Composite((960, 960), (0, 0), "custom yuri/fq.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cr = im.Composite((960, 960), (0, 0), "custom yuri/fr.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cs = im.Composite((960, 960), (0, 0), "custom yuri/fs.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6ct = im.Composite((960, 960), (0, 0), "custom yuri/ft.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cu = im.Composite((960, 960), (0, 0), "custom yuri/fu.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cv = im.Composite((960, 960), (0, 0), "custom yuri/fv.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cw = im.Composite((960, 960), (0, 0), "custom yuri/fw.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cx = im.Composite((960, 960), (0, 0), "custom yuri/fx.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cy = im.Composite((960, 960), (0, 0), "custom yuri/fy.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+image yuri 6cz = im.Composite((960, 960), (0, 0), "custom yuri/fz.png", (0, 0), "custom yuri/2l.png", (0, 0), "custom yuri/2r.png")
+ 
+image yuri 7ca = im.Composite((960, 960), (0, 0), "custom yuri/f2a.png", (0, 0), "custom yuri/3.png")
+image yuri 7cb = im.Composite((960, 960), (0, 0), "custom yuri/f2b.png", (0, 0), "custom yuri/3.png")
+image yuri 7cc = im.Composite((960, 960), (0, 0), "custom yuri/f2c.png", (0, 0), "custom yuri/3.png")
+image yuri 7cd = im.Composite((960, 960), (0, 0), "custom yuri/f2d.png", (0, 0), "custom yuri/3.png")
+image yuri 7ce = im.Composite((960, 960), (0, 0), "custom yuri/f2e.png", (0, 0), "custom yuri/3.png")
+
+
 image y_glitch_head:
     "images/yuri/za.png"
     0.15
@@ -1270,6 +1338,9 @@ image monika 4r = im.Composite((960, 960), (0, 0), "monika/2l.png", (0, 0), "mon
 image monika 5a = im.Composite((960, 960), (0, 0), "monika/3a.png")
 image monika 5b = im.Composite((960, 960), (0, 0), "monika/3b.png")
 
+image monika 6a = "images/monika/monicrazed.png"
+
+
 image monika g1:
     "monika/g1.png"
     xoffset 35 yoffset 55
@@ -1411,6 +1482,8 @@ image aoki 4t = im.Composite((960, 960), (0, 0), "aoki/1l.png", (0, 0), "aoki/2r
 image aoki 4u = im.Composite((960, 960), (0, 0), "aoki/1l.png", (0, 0), "aoki/2r.png", (0, 0), "aoki/u.png")
 image aoki 4v = im.Composite((960, 960), (0, 0), "aoki/1l.png", (0, 0), "aoki/2r.png", (0, 0), "aoki/v.png")
 image aoki 4w = im.Composite((960, 960), (0, 0), "aoki/1l.png", (0, 0), "aoki/2r.png", (0, 0), "aoki/w.png")
+
+image aoki 5a = "aokiblackout.png"
 
 image ka 1a = im.Composite((960, 960), (0, 0), "mc/1.png", (0, 0), "mc/a.png")
 image ka 1a1 = im.Composite((960, 960), (0, 0), "mc/1.png", (0, 0), "mc/a1.png")
@@ -1578,7 +1651,7 @@ define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suf
 define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_yuri.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b34bce") ])
 define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 
-define a = DynamicCharacter('a_name', image='aoki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[ (3, "#791c74") ])
+define a = DynamicCharacter('a_name', image='aoki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_aoki.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#791c74") ])
 define ka = DynamicCharacter('ka_name', image='mc', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
 
 
@@ -1592,10 +1665,14 @@ define p = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_pos
 define k1 = Character('Kid 1', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define k2 = Character('Kid 2', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define k3 = Character('Kid 3', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define k3 = Character('Kid 4', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define k4 = Character('Kid 4', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define t = Character('Teacher', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define qmc = Character('MC???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_realmc.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#fdd106") ])
 define qmc2 = Character('MC???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
+define pa = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_aoki.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#791c74") ])
+define pl = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b79b82") ])
+define kiyomi = Character('Kiyomi',what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ffe898") ])
+
 
 
 
@@ -1654,7 +1731,6 @@ default p_name = "???"
 
 default a_name = "Aoki"
 default ka_name = "Kane"
-
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like

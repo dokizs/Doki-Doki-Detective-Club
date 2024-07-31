@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 370: indentation mismatch.
+File "game/advanced_scripts/definitions/definitions.rpy", line 1108: Line is indented, but the preceding image statement statement does not expect a block. Please check this line's indentation.
+    custom custom 
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Jul 27 16:48:54 2024
+Mon Jul 29 05:25:36 2024

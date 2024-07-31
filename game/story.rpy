@@ -29,6 +29,8 @@ label story:
             jump choice_no
         "???":
             jump choice_script
+        "Teaser!!":
+            jump choice_teaser
 
 label choice_sure:
     mc "Give it to meh!"
@@ -382,9 +384,132 @@ label choice_script:
     scene bg AR with wipeleft_scene
     "Some of the kids in the classroom looked at Sayori as she entered. She recognized some of them. But she wasn't here to goof around." 
     "She needed to see if there was something she could use for Koto's party!!"
-    show sayori 1a at t11
+    show sayori 1l at t11
     s "Hey guys! Happen to know if there's any art supplies I can borrow for a bit?" 
+    show sayori 5b at t11
     s "I need to make a little something on short notice, eheh..."
+    k1 "Oh, hey Sayori! Maybe you should ask the teacher! She'd probably be happy to help!"
+    show sayori 1m at t11
+    s "Really?!"
+    show sayori 4r at t11
+    s "Thank you so much!!"
+    "Sayori happily skips over to the teachers desk."
+    s "Hi, Missus!"
+    t "Sayori! How are you still at school?"
+    s "Oh, I'm in the literature club on the 3rd floor!!"
+    t "How...interesting. I may need to stop by at some point."
+    s "Uhhh, yeah!! Say...do you have any spare art supplies I can borrow? I need it for something. Any streamers or confetti, or glitter..."
+    t "Sayori, that's not really traditional art supplies..."
+    s "O-Oh..."
+    "The teacher sighs but then smiles at Sayori."
+    t "In the cubicles."
+    "Sayori perks up."
+    s "Thank you Missus!"
+    t "Of course, Sayori."
+    "Sayori skips over to the 3x3 cubicle and gets on her knees, peeking inside of them."
+    "She found mostly everything she thought they needed and she started to ravage the cubicle."
+    scene bg corridor with wipeleft_scene
+    show monika 1a at t11
+    "Monika would look inside the classroom, seeing Sayori and the teacher having a conversation."
+    "She sees the Sayori skip away from the teacher, and the teacher glances out of her classroom door's window."
+    "Monika stares back at her and something about her looks...off."
+    "She gets a bit nervous and decides to avert her gaze, stepping out of sight of the door window."
+    "She just leans up against the wall beside the door, and waits."
+    "She starts hyperventilating. Who was that teacher? She had never seen her before..."
+    scene bg AR with wipeleft_scene
+    "The teacher would stare at Monika through the glass. She knew {i}exactly{/i} who she was."
+    show sayori 1a at t11
+    s "I got what I needed! Thank you, missus!!!"
+    t "You're welcome, Sayori! Now run along! I think someone is waiting for you."
+    s "Huh? Oh right, Moni!! Thank you! I'm sure she's on her way!!"
+    "The teacher would nod her away."
+    "Sayori flashes another smile as she walks out of the classroom."
+    scene bg corridor with wipeleft_scene
+    show sayori 1a at t11
+    "She turns the corner, ready to walk back upstairs when she sees Monika, and it spooks her a bit."
+    s "Ah! Oh, heyyy, Monika! Why didn't you come in?"
+    "Monika was still leaning against the wall, hyperventilating."
+    s "...Moni?"
+    "Sayori sets the supplies down and tries to approach Monika."
+    "Monika snaps out of her little attack."
+    show sayori 1a at t21
+    show monika 1a at t22
+    m "H-Huh?"
+    s "I asked why you didn't come in? Are you feeling ok?"
+    m "I-I'm alright, Sayori...I see you got the materials..."
+    s "Oh, yeah, I did!"
+    "She'd pick the stuff back up."
+    s "Could you help carry some of it back upstairs?"
+    m "O-Of course..."
+    "Monika grabs some things from Sayori and they both walk back upstairs."
+    scene bg MR
+    show monika 1a at t11
+    m "W-What the hell?"
+    m "No, No, No. This isn't right..."
+    scene bg corridor
+    show sayori 1a at t21
+    show monika 6a at t22
+    s "Uh...Moni?"
+    show monika 1q at t22
+    pause (.1)
+    show monika 6a at t22
+    pause (.1)
+    show monika 1q at t22
+    pause (.1)
+    show monika 1f at t22
+    pause (2.0)
+    show monika 1g at t22
+    m "H-Huh?"
+
+
+    
+label choice_teaser:
+    scene black
+    scene bg DC with dissolve_scene_full
+    show koto 4p at t11 
+    kmc "I failed them all..."
+    scene bg SC with dissolve_scene_full
+    show natsuki 2e at t11 
+    n "Can't be hard to break in here...right?"
+    scene bg AIR with dissolve_scene_full
+    show aoki 5a at t11
+    pa "Well, well, well...look at you..."
+    scene bg confrence with dissolve_scene_full
+    cd "I told you, no more of this nonsense about this case. You went out and did something stupid. You understood the risk loud and clear. Gun and badge. Now."
+    scene bg corridor with dissolve_scene_full
+    show monika 2p at t11
+    "She starts hyperventilating. Who was that teacher? She had never seen her before..."
+    scene bg MCR with dissolve_scene_full
+    show koto 1bp2 at t21
+    show yuri 5ct at t22
+    y "Are you ok?"
+    scene bg field with dissolve_scene_full
+    show yyuri 1be at t11
+    pl "You are more important than you realize, children."
+    scene bg LCH with dissolve_scene_full
+    show kiyomi 1bz1 at t11
+    kiyomi "Goddamnit, Mom, SHUT UP!! Stop embarrassing me! I did what you asked, ok? I went to the stupid club and I hated it! It sucked!! Now, leave me alone! I just want to be left alone! GOD!"
+    scene black with dissolve_scene_full
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
     
     
 
