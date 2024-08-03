@@ -31,6 +31,9 @@ label story:
             jump choice_script
         "Teaser!!":
             jump choice_teaser
+        "Memes":
+            jump choice_memevid
+
 
 label choice_sure:
     mc "Give it to meh!"
@@ -445,7 +448,9 @@ label choice_script:
     scene bg MR
     show monika 1a at t11
     m "W-What the hell?"
+    m "This isn't the right background..."
     m "No, No, No. This isn't right..."
+    m "Why am I here??"
     scene bg corridor
     show sayori 1a at t21
     show monika 6a at t22
@@ -460,6 +465,8 @@ label choice_script:
     pause (2.0)
     show monika 1g at t22
     m "H-Huh?"
+    s "Monika, we can go get you something to drink, or I could take you to the bathroom and we could splash some water on your face..."
+
 
 
     
@@ -490,6 +497,57 @@ label choice_teaser:
     show kiyomi 1bz1 at t11
     kiyomi "Goddamnit, Mom, SHUT UP!! Stop embarrassing me! I did what you asked, ok? I went to the stupid club and I hated it! It sucked!! Now, leave me alone! I just want to be left alone! GOD!"
     scene black with dissolve_scene_full
+
+label choice_memevid:
+    scene black
+    n "Wanna practice with me?"
+    pause (1.0)
+    qmc2r "Ngh{w=1}...I'm having a hard time getting it in.."
+    n "It's fine..I mean, {w=0.3}this is your first time,{w=0.3} isn't it?"
+    qmc2r "Uhh..{w=0.3}yeah."
+    n "It'll be great.{w=0.3} Just try to take it slow and gentle."
+    qmc2r "Hmmm..."
+    n "That's it..."
+    n "Trace around the edge super softly..."
+    n "And when your ready, {w=0.3}put it in!"
+    pause (0.5)
+    n "In my opinion, there's no need to rush anything."
+    n "It's best if you go nice and slow..."
+    qmc2r "I think I get it,{w=0.3} like this?"
+    n "Yep, it's in there now...{w=0.7}{size=15}good...{/size}"
+    n "Now, keep it there and slowly press..."
+    "Natsuki gasps."
+    n "Don't rush, silly!"
+    pause (0.5)
+    n "That's perfect..."
+    pause (2.0)
+    n "It might be even better if you went in a teensy bit deeper{w=0.5}, like this..."
+    qmc2r "NGUGHH!"
+    pause (2.5)
+    n "Ahah!!!"
+    play music t7 fadein 1.0
+    scene bg SKD with wipeleft_scene
+    show natsuki 1bp at t21
+    show cm 1a at t21
+    show ka 1bx at t22
+    n "You fucking moron! You got frosting all over my face!!!"
+    show ka 1bw at t22
+    qmc2r "Don't blame me! You were all up in my grill and you made me mess up!!"
+    show natsuki 5bh at t21
+    show ka 1bx at t22
+    show cm 1a at t21
+    n "Whatever, I was not!!"
+    show natsuki 1bv at t21
+    show cm 1a at t21
+    n "I was just showing you the proper way to frost them, and then you got as stiff as a plank and got it everywhere!"
+    show natsuki 1bx at t21
+    show cm 1a at t21
+    n "Great going, dumbass!!"
+    show ka 2ba1 at t22
+    qmc2r "Said I was sorry..."
+    stop music fadeout 3.0
+    scene black with dissolve_scene_full
+    
 
 
 

@@ -15,7 +15,9 @@ init python:
         "Who do you think they are?",
         "Who is your dialect coach, the Minions?",
         "You don't know who you're trying to fight.",
-        "I am the danger."
+        "I am the danger.",
+        "Ufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufu",
+        "GO AWAY DRAKE -Nats"
     ]
 
 

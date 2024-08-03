@@ -150,6 +150,11 @@ image bg MR = "moniroom.png"
 image bg DC = "detectiveclub.png"
 image bg SC = "sunsetcorridor.png"
 image bg AIR = "aokiinterrigationroom.png"
+image bg MCL = "Middle Class Loft.png"
+image bg SKD = "sayokitchendecoy.png"
+
+
+
 
 
 
@@ -1338,7 +1343,7 @@ image monika 4r = im.Composite((960, 960), (0, 0), "monika/2l.png", (0, 0), "mon
 image monika 5a = im.Composite((960, 960), (0, 0), "monika/3a.png")
 image monika 5b = im.Composite((960, 960), (0, 0), "monika/3b.png")
 
-image monika 6a = "images/monika/monicrazed.png"
+image monika 6a = "monicrazed.png"
 
 
 image monika g1:
@@ -1641,6 +1646,8 @@ image ka 2bx = im.Composite((960, 960), (0, 0), "mc/2b.png", (0, 0), "mc/x.png")
 image ka 2by = im.Composite((960, 960), (0, 0), "mc/2b.png", (0, 0), "mc/y.png")
 image ka 2bz = im.Composite((960, 960), (0, 0), "mc/2b.png", (0, 0), "mc/z.png")
 
+image cm 1a = "cupcakemess.png"
+
 ###### Character Variables ######
 # These configure the shortcuts for writing dialog for each character.
 define narrator = Character(ctc="ctc", ctc_position="fixed", window_background=Image ("textbox.png", xalign=0.5, yalign=1.0))
@@ -1672,6 +1679,7 @@ define qmc2 = Character('MC???', what_prefix='"', what_suffix='"', ctc="ctc", ct
 define pa = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_aoki.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#791c74") ])
 define pl = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b79b82") ])
 define kiyomi = Character('Kiyomi',what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ffe898") ])
+define qmc2r = Character('MC', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
 
 
 

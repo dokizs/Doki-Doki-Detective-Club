@@ -1,13 +1,13 @@
-Tue Jul 30 23:47:46 2024
+Sat Aug  3 15:33:14 2024
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.18s
+Bootstrap to the start of init.init took 0.63s
 Early init took 0.01s
-Loader init took 0.13s
-Loading error handling took 0.06s
-Loading script took 2.47s
+Loader init took 2.25s
+Loading error handling took 0.56s
+Loading script took 41.28s
 Loading persistent.
 Traceback (most recent call last):
   File "renpy/persistent.py", line 201, in load
@@ -22,33 +22,36 @@ Traceback (most recent call last):
   File "renpy/loadsave.py", line 63, in loads
     return cPickle.loads(s)
 ImportError: No module named revertable
-Loading save slot metadata. took 0.07s
+Loading save slot metadata. took 2.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.47s
-Loading analysis data took 0.08s
-Analyze and compile ATL took 0.08s
+ - Init at renpy/common/00updater.rpy:23 took 1.05237 s.
+ - Init at game/advanced_scripts/gui.rpy:11 took 0.96778 s.
+ - Init at renpy/common/00library.rpy:387 took 0.40182 s.
+Running init code took 3.55s
+Loading analysis data took 0.43s
+Analyze and compile ATL took 0.16s
 Index archives took 0.00s
-Dump and make backups. took 0.20s
+Dump and make backups. took 0.48s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.09s
+Initial gc. took 0.27s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
+Creating interface object took 0.16s
 Cleaning stores took 0.00s
-Init translation took 0.14s
-Build styles took 0.01s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
+Init translation took 0.22s
+Build styles took 0.02s
+Load screen analysis took 0.53s
+Analyze screens took 0.01s
 Save screen analysis took 0.00s
-Prepare screens took 0.16s
+Prepare screens took 0.41s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.13s
+Save bytecode. took 0.54s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.71s
+Interface start took 3.30s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
