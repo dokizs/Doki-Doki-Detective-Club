@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/advanced_scripts/definitions/definitions.rpy", line 1108: Line is indented, but the preceding image statement statement does not expect a block. Please check this line's indentation.
-    custom custom 
-    ^
+File "game/screens.rpy", line 1134: invalid syntax
+    def update_character =(new_index):
+                          ^
+    
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Mon Jul 29 05:25:36 2024
+Sun Aug  4 02:20:26 2024

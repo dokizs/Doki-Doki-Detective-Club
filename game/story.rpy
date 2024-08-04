@@ -1,4 +1,4 @@
-
+$ gtext = glitchtext (6)
 
 label story:  
     $ renpy.movie_cutscene ("FAKE CHAPTER OPENER.ogv")
@@ -449,8 +449,16 @@ label choice_script:
     show monika 1a at t11
     m "W-What the hell?"
     m "This isn't the right background..."
+    m "Where's Sayori?"
     m "No, No, No. This isn't right..."
     m "Why am I here??"
+    m "I-I want to get out..."
+    #have monika emote
+    m "LET ME OUT!"
+    show monika g1
+    m "{glitch}{glitch}{glitch}"
+    show monika g2
+    m "MY NAME IS {nw}"
     scene bg corridor
     show sayori 1a at t21
     show monika 6a at t22
@@ -465,11 +473,133 @@ label choice_script:
     pause (2.0)
     show monika 1g at t22
     m "H-Huh?"
-    s "Monika, we can go get you something to drink, or I could take you to the bathroom and we could splash some water on your face..."
+    s "Monika, we can go get you something to drink, or I could take you to the bathroom {nw}"
+    m "N-No!! I'm alright, please, Sayori."
+    m "Let's just get this stuff back to the club."
+    s "...{w=1}alright Moni, let's just go."
+    "They both pick up their boxes and head back upstairs."
+    hide monika
+    hide sayori
+    tl "..."
+    scene bg SC with wipeleft_scene
+    "After a hefty walk to the other side of the building, Natsuki gets to her Home Economics class."
+    show natsuki 1a at t11
+    n "Jesus, that was a long ass walk..."
+    "Natsuki peers inside the class to see that the lights are off."
+    #face change
+    n "Damnit!! Out of all the days she decides to stay after, today isn't one of them?"
+    "She jiggles the handle, trying to see if it was locked. It, in fact, was locked."
+    n "Ugh, great! Just my luck!!"
+    "She looks around."
+    show natsuki 2e at t11 
+    n "Alright...well, it can't be hard to break in here...right?"    
+    n "People in movies do it all the time!"
+    "She looks around trying to find anything she could use."
+    "She then gets an idea."
+    n "Oh! Duh..."
+    "She takes out her hairpins."
+    n "I don't know how I always forget to take these out when I'm doing my pigtails."
+    n "But hey, at least today they're being useful{nw}"
+    #Natsuki's hair falls over her face, add sprites and sfx
+    pause (3.0)
+    n "Hmph, should've expected that."
+    "She tucks the extra hair behind her ear, a look of annoyance on her face as she gets on her knees to pick this lock."
+    n "Alright, Daddy, time to use those skills you taught me..."
+    "She starts to use the rythmic method her father taught her."
+    n "{size=10}One click that way...{w=2}and another this way...{w=2}listen for the winding spring...{w=2}and...{/size}"
+    "{i}*Click!*{/i}"
+    n "Yes!!"
+    "She slides open the door happily."
+    n "Thanks, Dad."
+    "She says before she steps inside."
+    scene bg SC2 with wipeleft_scene
+    show natsuki 2e at t11 
+    n "Alright, this is where we usually put our stuff when we finish."
+    "She's about to walk over to the closet but she stops."
+    "She looks around her and unconciously takes a deep breath."
+    "The windows were slightly open and the sun was setting."
+    n "Wow...our side never looks this pretty..."
+    n "Or sounds this nice..."
+    "She walks over to the teachers desk and sits down on it."
+    "She imagines a summer class being taught in here."
+    "She feels the soft sunlight hit her face, and in this moment, she feels completely tranquil."
+    "Like she's at piece with her demons in this moment."
+    "However, her thoughts also betray her in this moment."
+    n "If only I had someone to share it with..."
+    #she's supposed to shake her head, if i can't do it in spirtes, I'll write it out
+    n "Ugh...I hate getting sappy."
+    "Time to do what she broke in here to do."
+    "She holds the bulky tray of cupcakes."
+    n "Gonna need all these for Sayori, heh."
+    "She looks around, still a bit suspicious."
+    n "Alright, I'm getting out of here before I get caught."
+    "She quickly locks the door behind her and slides it closed."
+    scene bg SC with wipeleft_scene
+    show natsuki 1a at t11
+    "She walks back to the other side of the building feeling accomplished, even though what she just did was wrong."
+    "She looks at her surroundings as she walks back. She wasn't gonna lie about that part, it was pretty."
+    "She thinks about the other part of what she said though."
+    n "No...that's stupid. I don't need anyone."
+    scene bg corridor with wipeleft_scene
+    "Natsuki finally makes her way back over to the part of school she recognized."
+    show natsuki 5d at t11
+    n "Finally, I made it back!"
+    show natsuki 5y at t11
+    n "And before everyone else too!"
+    s "Not everything is a competition, Natsuki."
+    show natsuki 1v at t11
+    n "Goddamnit!"
+    "Natsuki looks behind her and sees Monika and Sayori coming up the stairs."
+    show sayori 1a at t32
+    show monika 1o at t33
+    show natsuki 5s at t31
+    n "So much for me being first."
+    show sayori 1a at t32
+    s "You were first! We were just...coming up at the same time!"
+    n "Whatever."
+    "Natsuki catches a glimpse of Monika."
+    n "Monika, you alright?"
+    m "Hm? Oh yes, I'm ok!!"
+    "Natsuki shrugs."
+    n "If you say so..."
+    s "Can we, uh,, head inside now? My arms are starting to hurt..."
+    n "Oh yeah, here."
+    "Natsuki opens the door and the three of them flood inside."
+    scene bg closet with wipeleft_scene
+    "Yuri puts on the last of tea."
+    "She walks over to where Koto is sitting."
+    scene bg club_day with dissolve_scene 
+    show yuri 1g at t22
+    show koto 1t at t21
+    pause (3.0)
+    show yuri 1h at t22
+    y "So. When were you going to tell me?"
+    show koto 2t1 at t21
+    kmc "I told you, I didn't know until this morning."
+    y "And what's that mean? You didn't think to text me or call me before you got to school?"
+    kmc "I was in a rush, ok?? I didn't have time to do anything."
+    y "Likely story."
+    kmc "You don't think I'm telling the truth?"
+    y "Your story seems highly unlikely is all I'm saying."
+    kmc "Yuri...I'm your big cousin. Why would I have any reason to lie to you?"
+    "Yuri paused."
+    y "I-I'm sorry..."
+    "She starts to tear up."    
+    y "I-I just don't want to see you go..."
+    return
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
 label choice_teaser:
     scene black
     scene bg DC with dissolve_scene_full
@@ -497,6 +627,7 @@ label choice_teaser:
     show kiyomi 1bz1 at t11
     kiyomi "Goddamnit, Mom, SHUT UP!! Stop embarrassing me! I did what you asked, ok? I went to the stupid club and I hated it! It sucked!! Now, leave me alone! I just want to be left alone! GOD!"
     scene black with dissolve_scene_full
+    return
 
 label choice_memevid:
     scene black
@@ -547,6 +678,7 @@ label choice_memevid:
     qmc2r "Said I was sorry..."
     stop music fadeout 3.0
     scene black with dissolve_scene_full
+    return
     
 
 

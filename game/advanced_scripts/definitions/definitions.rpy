@@ -38,6 +38,48 @@ init python:
             return
         if time <= 0: return
         renpy.pause(time)
+init python:
+
+    import random
+    import string
+
+    def random_string_generator(str_size, allowed_chars):
+        return ''.join(random.choice(allowed_chars) for x in range(str_size))
+
+    class GlitchText(renpy.Displayable):
+
+        def __init__(self, length, delay, **kwargs):
+            super(GlitchText, self).__init__(**kwargs)
+
+            self.length = length
+            self.delay = delay
+            self.count = 0
+            self.currentText = renpy.text.text.Text(random_string_generator(self.length, string.ascii_letters))
+
+        def render(self, width, height, st, at):
+
+            if self.count == 0:
+                self.currentText = renpy.text.text.Text(random_string_generator(self.length, string.ascii_letters)) 
+
+
+            self.count = (self.count + 1) % self.delay
+
+            width, height = self.currentText.size()
+
+            render = renpy.Render(width, height)
+            
+            render.blit(renpy.render(self.currentText, width, height, st ,at),(0,-3),False)
+        
+            renpy.redraw(self, 0)
+
+            return render
+
+
+    def glitch_tag(tag, argument):
+        return [ ( renpy.TEXT_DISPLAYABLE, GlitchText(12,5)) ]
+
+    config.self_closing_custom_text_tags["glitch"] = glitch_tag
+
 
 #Music
 #The Music section is where you can reference existing DDLC audio
@@ -145,14 +187,14 @@ image bg MCR = "Middle Class Room.png"
 image bg MCB = "Middle Class Bath.png"
 image bg MCH = "middle class hall.png"
 image bg AR = "artroom.png"
-image bg SSClass = "sunsetclass.png"
+image bg SC2 = "sunsetclass.png"
 image bg MR = "moniroom.png"
 image bg DC = "detectiveclub.png"
 image bg SC = "sunsetcorridor.png"
 image bg AIR = "aokiinterrigationroom.png"
 image bg MCL = "Middle Class Loft.png"
 image bg SKD = "sayokitchendecoy.png"
-
+image bg MCL = "Middle Class Loft.png"
 
 
 
@@ -1648,10 +1690,325 @@ image ka 2bz = im.Composite((960, 960), (0, 0), "mc/2b.png", (0, 0), "mc/z.png")
 
 image cm 1a = "cupcakemess.png"
 
+image mio 1a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/1.png")
+image mio 1ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/1.png")
+image mio 1b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/1.png")
+image mio 1c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/1.png")
+image mio 1d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/1.png")
+image mio 1e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/1.png")
+image mio 1f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/1.png")
+image mio 1g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/1.png")
+image mio 1h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/1.png")
+image mio 1i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/1.png")
+image mio 1j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/1.png")
+image mio 1k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/1.png")
+image mio 1l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/1.png")
+image mio 1m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/1.png")
+image mio 1n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/1.png")
+image mio 1o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/1.png")
+image mio 1p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/1.png")
+image mio 1q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/1.png")
+image mio 1r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/1.png")
+image mio 1s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/1.png")
+image mio 1t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/1.png")
+image mio 1u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/1.png")
+image mio 1v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/1.png")
+image mio 1w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/1.png")
+image mio 1x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/1.png")
+image mio 1y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/1.png")
+image mio 1z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/1.png")
+
+image mio 2a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/2.png")
+image mio 2ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/2.png")
+image mio 2b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/2.png")
+image mio 2c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/2.png")
+image mio 2d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/2.png")
+image mio 2e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/2.png")
+image mio 2f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/2.png")
+image mio 2g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/2.png")
+image mio 2h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/2.png")
+image mio 2i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/2.png")
+image mio 2j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/2.png")
+image mio 2k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/2.png")
+image mio 2l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/2.png")
+image mio 2m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/2.png")
+image mio 2n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/2.png")
+image mio 2o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/2.png")
+image mio 2p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/2.png")
+image mio 2q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/2.png")
+image mio 2r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/2.png")
+image mio 2s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/2.png")
+image mio 2t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/2.png")
+image mio 2u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/2.png")
+image mio 2v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/2.png")
+image mio 2w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/2.png")
+image mio 2x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/2.png")
+image mio 2y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/2.png")
+image mio 2z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/2.png")
+
+image mio 3a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/3.png")
+image mio 3ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/3.png")
+image mio 3b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/3.png")
+image mio 3c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/3.png")
+image mio 3d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/3.png")
+image mio 3e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/3.png")
+image mio 3f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/3.png")
+image mio 3g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/3.png")
+image mio 3h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/3.png")
+image mio 3i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/3.png")
+image mio 3j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/3.png")
+image mio 3k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/3.png")
+image mio 3l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/3.png")
+image mio 3m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/3.png")
+image mio 3n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/3.png")
+image mio 3o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/3.png")
+image mio 3p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/3.png")
+image mio 3q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/3.png")
+image mio 3r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/3.png")
+image mio 3s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/3.png")
+image mio 3t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/3.png")
+image mio 3u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/3.png")
+image mio 3v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/3.png")
+image mio 3w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/3.png")
+image mio 3x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/3.png")
+image mio 3y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/3.png")
+image mio 3z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/3.png")
+
+image mio 4a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/4.png")
+image mio 4ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/4.png")
+image mio 4b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/4.png")
+image mio 4c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/4.png")
+image mio 4d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/4.png")
+image mio 4e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/4.png")
+image mio 4f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/4.png")
+image mio 4g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/4.png")
+image mio 4h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/4.png")
+image mio 4i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/4.png")
+image mio 4j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/4.png")
+image mio 4k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/4.png")
+image mio 4l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/4.png")
+image mio 4m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/4.png")
+image mio 4n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/4.png")
+image mio 4o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/4.png")
+image mio 4p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/4.png")
+image mio 4q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/4.png")
+image mio 4r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/4.png")
+image mio 4s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/4.png")
+image mio 4t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/4.png")
+image mio 4u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/4.png")
+image mio 4v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/4.png")
+image mio 4w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/4.png")
+image mio 4x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/4.png")
+image mio 4y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/4.png")
+image mio 4z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/4.png")
+
+image mio 5a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/5.png")
+image mio 5ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/5.png")
+image mio 5b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/5.png")
+image mio 5c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/5.png")
+image mio 5d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/5.png")
+image mio 5e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/5.png")
+image mio 5f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/5.png")
+image mio 5g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/5.png")
+image mio 5h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/5.png")
+image mio 5i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/5.png")
+image mio 5j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/5.png")
+image mio 5k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/5.png")
+image mio 5l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/5.png")
+image mio 5m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/5.png")
+image mio 5n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/5.png")
+image mio 5o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/5.png")
+image mio 5p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/5.png")
+image mio 5q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/5.png")
+image mio 5r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/5.png")
+image mio 5s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/5.png")
+image mio 5t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/5.png")
+image mio 5u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/5.png")
+image mio 5v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/5.png")
+image mio 5w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/5.png")
+image mio 5x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/5.png")
+image mio 5y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/5.png")
+image mio 5z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/5.png")
+
+image mio 6a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/6.png")
+image mio 6ay  = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/6.png")
+image mio 6b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/6.png")
+image mio 6c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/6.png")
+image mio 6d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/6.png")
+image mio 6e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/6.png")
+image mio 6f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/6.png")
+image mio 6g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/6.png")
+image mio 6h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/6.png")
+image mio 6i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/6.png")
+image mio 6j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/6.png")
+image mio 6k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/6.png")
+image mio 6l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/6.png")
+image mio 6m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/6.png")
+image mio 6n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/6.png")
+image mio 6o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/6.png")
+image mio 6p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/6.png")
+image mio 6q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/6.png")
+image mio 6r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/6.png")
+image mio 6s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/6.png")
+image mio 6t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/6.png")
+image mio 6u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/6.png")
+image mio 6v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/6.png")
+image mio 6w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/6.png")
+image mio 6x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/6.png")
+image mio 6y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/6.png")
+image mio 6z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/6.png")
+
+image mio 7a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/7.png")
+image mio 7ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/7.png")
+image mio 7b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/7.png")
+image mio 7c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/7.png")
+image mio 7d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/7.png")
+image mio 7e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/7.png")
+image mio 7f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/7.png")
+image mio 7g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/7.png")
+image mio 7h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/7.png")
+image mio 7i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/7.png")
+image mio 7j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/7.png")
+image mio 7k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/7.png")
+image mio 7l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/7.png")
+image mio 7m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/7.png")
+image mio 7n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/7.png")
+image mio 7o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/7.png")
+image mio 7p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/7.png")
+image mio 7q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/7.png")
+image mio 7r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/7.png")
+image mio 7s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/7.png")
+image mio 7t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/7.png")
+image mio 7u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/7.png")
+image mio 7v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/7.png")
+image mio 7w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/7.png")
+image mio 7x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/7.png")
+image mio 7y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/7.png")
+image mio 7z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/7.png")
+
+image mio 8a = im.Composite((960, 960), (0, 0), "mio/a.png", (0, 0), "mio/8.png")
+image mio 8ay = im.Composite((960, 960), (0, 0), "mio/ay.png", (0, 0), "mio/8.png")
+image mio 8b = im.Composite((960, 960), (0, 0), "mio/b.png", (0, 0), "mio/8.png")
+image mio 8c = im.Composite((960, 960), (0, 0), "mio/c.png", (0, 0), "mio/8.png")
+image mio 8d = im.Composite((960, 960), (0, 0), "mio/d.png", (0, 0), "mio/8.png")
+image mio 8e = im.Composite((960, 960), (0, 0), "mio/e.png", (0, 0), "mio/8.png")
+image mio 8f = im.Composite((960, 960), (0, 0), "mio/f.png", (0, 0), "mio/8.png")
+image mio 8g = im.Composite((960, 960), (0, 0), "mio/g.png", (0, 0), "mio/8.png")
+image mio 8h = im.Composite((960, 960), (0, 0), "mio/h.png", (0, 0), "mio/8.png")
+image mio 8i = im.Composite((960, 960), (0, 0), "mio/i.png", (0, 0), "mio/8.png")
+image mio 8j = im.Composite((960, 960), (0, 0), "mio/j.png", (0, 0), "mio/8.png")
+image mio 8k = im.Composite((960, 960), (0, 0), "mio/k.png", (0, 0), "mio/8.png")
+image mio 8l = im.Composite((960, 960), (0, 0), "mio/l.png", (0, 0), "mio/8.png")
+image mio 8m = im.Composite((960, 960), (0, 0), "mio/m.png", (0, 0), "mio/8.png")
+image mio 8n = im.Composite((960, 960), (0, 0), "mio/n.png", (0, 0), "mio/8.png")
+image mio 8o = im.Composite((960, 960), (0, 0), "mio/o.png", (0, 0), "mio/8.png")
+image mio 8p = im.Composite((960, 960), (0, 0), "mio/p.png", (0, 0), "mio/8.png")
+image mio 8q = im.Composite((960, 960), (0, 0), "mio/q.png", (0, 0), "mio/8.png")
+image mio 8r = im.Composite((960, 960), (0, 0), "mio/r.png", (0, 0), "mio/8.png")
+image mio 8s = im.Composite((960, 960), (0, 0), "mio/s.png", (0, 0), "mio/8.png")
+image mio 8t = im.Composite((960, 960), (0, 0), "mio/t.png", (0, 0), "mio/8.png")
+image mio 8u = im.Composite((960, 960), (0, 0), "mio/u.png", (0, 0), "mio/8.png")
+image mio 8v = im.Composite((960, 960), (0, 0), "mio/v.png", (0, 0), "mio/8.png")
+image mio 8w = im.Composite((960, 960), (0, 0), "mio/w.png", (0, 0), "mio/8.png")
+image mio 8x = im.Composite((960, 960), (0, 0), "mio/x.png", (0, 0), "mio/8.png")
+image mio 8y = im.Composite((960, 960), (0, 0), "mio/y.png", (0, 0), "mio/8.png")
+image mio 8z = im.Composite((960, 960), (0, 0), "mio/z.png", (0, 0), "mio/8.png")
+
+image mc 1a = im.Composite((960, 960), (0, 0), "player/a.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1b = im.Composite((960, 960), (0, 0), "player/b.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1c = im.Composite((960, 960), (0, 0), "player/c.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1d = im.Composite((960, 960), (0, 0), "player/d.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1e = im.Composite((960, 960), (0, 0), "player/e.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1e2 = im.Composite((960, 960), (0, 0), "player/error.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1e3 = im.Composite((960, 960), (0, 0), "player/error1.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1f = im.Composite((960, 960), (0, 0), "player/f.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1g = im.Composite((960, 960), (0, 0), "player/g.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1h = im.Composite((960, 960), (0, 0), "player/h.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1i = im.Composite((960, 960), (0, 0), "player/i.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1j = im.Composite((960, 960), (0, 0), "player/j.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1k = im.Composite((960, 960), (0, 0), "player/k.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1l = im.Composite((960, 960), (0, 0), "player/l.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1m = im.Composite((960, 960), (0, 0), "player/m.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1n = im.Composite((960, 960), (0, 0), "player/n.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1o = im.Composite((960, 960), (0, 0), "player/o.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1p = im.Composite((960, 960), (0, 0), "player/p.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1q = im.Composite((960, 960), (0, 0), "player/q.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1r = im.Composite((960, 960), (0, 0), "player/r.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1s = im.Composite((960, 960), (0, 0), "player/s.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1s2 = im.Composite((960, 960), (0, 0), "player/shock.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1t = im.Composite((960, 960), (0, 0), "player/t.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1u = im.Composite((960, 960), (0, 0), "player/u.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1v = im.Composite((960, 960), (0, 0), "player/v.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1w = im.Composite((960, 960), (0, 0), "player/w.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1x = im.Composite((960, 960), (0, 0), "player/x.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1y = im.Composite((960, 960), (0, 0), "player/y.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 1z = im.Composite((960, 960), (0, 0), "player/z.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+
+image mc 2a = im.Composite((960, 960), (0, 0), "player/a.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2b = im.Composite((960, 960), (0, 0), "player/b.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2c = im.Composite((960, 960), (0, 0), "player/c.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2d = im.Composite((960, 960), (0, 0), "player/d.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2e = im.Composite((960, 960), (0, 0), "player/e.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2e2 = im.Composite((960, 960), (0, 0), "player/error.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2e3 = im.Composite((960, 960), (0, 0), "player/error1.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2f = im.Composite((960, 960), (0, 0), "player/f.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2g = im.Composite((960, 960), (0, 0), "player/g.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2h = im.Composite((960, 960), (0, 0), "player/h.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2i = im.Composite((960, 960), (0, 0), "player/i.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2j = im.Composite((960, 960), (0, 0), "player/j.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2k = im.Composite((960, 960), (0, 0), "player/k.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2l = im.Composite((960, 960), (0, 0), "player/l.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2m = im.Composite((960, 960), (0, 0), "player/m.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2n = im.Composite((960, 960), (0, 0), "player/n.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2o = im.Composite((960, 960), (0, 0), "player/o.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2p = im.Composite((960, 960), (0, 0), "player/p.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2q = im.Composite((960, 960), (0, 0), "player/q.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2r = im.Composite((960, 960), (0, 0), "player/r.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2s = im.Composite((960, 960), (0, 0), "player/s.png", (0, 0), "player/1l.png", (0, 0), "player/1r.png")
+image mc 2s2 = im.Composite((960, 960), (0, 0), "player/shock.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2t = im.Composite((960, 960), (0, 0), "player/t.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2u = im.Composite((960, 960), (0, 0), "player/u.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2v = im.Composite((960, 960), (0, 0), "player/v.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2w = im.Composite((960, 960), (0, 0), "player/w.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2x = im.Composite((960, 960), (0, 0), "player/x.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2y = im.Composite((960, 960), (0, 0), "player/y.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+image mc 2z = im.Composite((960, 960), (0, 0), "player/z.png", (0, 0), "player/2l.png", (0, 0), "player/2r.png")
+
+image mc 3a = im.Composite((960, 960), (0, 0), "player/a.png", (0, 0), "player/3.png")
+image mc 3b = im.Composite((960, 960), (0, 0), "player/b.png", (0, 0), "player/3.png")
+image mc 3c = im.Composite((960, 960), (0, 0), "player/c.png", (0, 0), "player/3.png")
+image mc 3d = im.Composite((960, 960), (0, 0), "player/d.png", (0, 0), "player/3.png")
+image mc 3e = im.Composite((960, 960), (0, 0), "player/e.png", (0, 0), "player/3.png")
+image mc 3e2 = im.Composite((960, 960), (0, 0), "player/error.png", (0, 0), "player/3.png")
+image mc 3e3 = im.Composite((960, 960), (0, 0), "player/error1.png", (0, 0), "player/3.png")
+image mc 3f = im.Composite((960, 960), (0, 0), "player/f.png", (0, 0), "player/3.png")
+image mc 3g = im.Composite((960, 960), (0, 0), "player/g.png", (0, 0), "player/3.png")
+image mc 3h = im.Composite((960, 960), (0, 0), "player/h.png", (0, 0), "player/3.png")
+image mc 3i = im.Composite((960, 960), (0, 0), "player/i.png", (0, 0), "player/3.png")
+image mc 3j = im.Composite((960, 960), (0, 0), "player/j.png", (0, 0), "player/3.png")
+image mc 3k = im.Composite((960, 960), (0, 0), "player/k.png", (0, 0), "player/3.png")
+image mc 3l = im.Composite((960, 960), (0, 0), "player/l.png", (0, 0), "player/3.png")
+image mc 3m = im.Composite((960, 960), (0, 0), "player/m.png", (0, 0), "player/3.png")
+image mc 3n = im.Composite((960, 960), (0, 0), "player/n.png", (0, 0), "player/3.png")
+image mc 3o = im.Composite((960, 960), (0, 0), "player/o.png", (0, 0), "player/3.png")
+image mc 3p = im.Composite((960, 960), (0, 0), "player/p.png", (0, 0), "player/3.png")
+image mc 3q = im.Composite((960, 960), (0, 0), "player/q.png", (0, 0), "player/3.png")
+image mc 3r = im.Composite((960, 960), (0, 0), "player/r.png", (0, 0), "player/3.png")
+image mc 3s = im.Composite((960, 960), (0, 0), "player/s.png", (0, 0), "player/3.png")
+image mc 3s2 = im.Composite((960, 960), (0, 0), "player/shock.png", (0, 0), "player/3.png")
+image mc 3t = im.Composite((960, 960), (0, 0), "player/t.png", (0, 0), "player/3.png")
+image mc 3u = im.Composite((960, 960), (0, 0), "player/u.png", (0, 0), "player/3.png")
+image mc 3v = im.Composite((960, 960), (0, 0), "player/v.png", (0, 0), "player/3.png")
+image mc 3w = im.Composite((960, 960), (0, 0), "player/w.png", (0, 0), "player/3.png")
+image mc 3x = im.Composite((960, 960), (0, 0), "player/x.png", (0, 0), "player/3.png")
+image mc 3y = im.Composite((960, 960), (0, 0), "player/y.png", (0, 0), "player/3.png")
+image mc 3z = im.Composite((960, 960), (0, 0), "player/z.png", (0, 0), "player/3.png")
+
+
 ###### Character Variables ######
 # These configure the shortcuts for writing dialog for each character.
 define narrator = Character(ctc="ctc", ctc_position="fixed", window_background=Image ("textbox.png", xalign=0.5, yalign=1.0))
-define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#686362") ])
+define mco = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#686362") ])
 define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_sayori.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#7079eb") ])
 define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_monika.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#73d95c") ])
 define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_natsuki.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ff9bca") ])
@@ -1660,6 +2017,9 @@ define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc",
 
 define a = DynamicCharacter('a_name', image='aoki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_aoki.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#791c74") ])
 define ka = DynamicCharacter('ka_name', image='mc', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
+define mi = DynamicCharacter('mi_name', image='mio', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_mio.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#eb694f") ])
+define mc = DynamicCharacter('mc_name', image='player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_realmc.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#fdd106") ])
+
 
 
 
@@ -1680,6 +2040,7 @@ define pa = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_po
 define pl = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b79b82") ])
 define kiyomi = Character('Kiyomi',what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ffe898") ])
 define qmc2r = Character('MC', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
+define tl = Character('Teacher', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b89b82") ])
 
 
 
@@ -1739,6 +2100,9 @@ default p_name = "???"
 
 default a_name = "Aoki"
 default ka_name = "Kane"
+default mi_name = "Mio"
+default mc_name = "MC"
+
 
 # Instantiating variables for poem appeal. This is how much each character likes the poem for each day.
 # -1 = Dislike, 0 = Neutral, 1 = Like

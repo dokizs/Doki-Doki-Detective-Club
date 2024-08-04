@@ -1,22 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/story.rpy", line 501, in script
-    label choice_memevid:
-Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 80, in _init_language
+    renpy.change_language(language)
+  File "game/screens.rpy", line 1248, in <module>
+    outlines [(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]
+NameError: name 'text_outline_color' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story.rpy", line 501, in script
-    label choice_memevid:
-  File "renpy/ast.py", line 1567, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "renpy/execution.py", line 710, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+  File "renpy/bootstrap.py", line 331, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 662, in main
+    run(restart)
+  File "renpy/main.py", line 78, in run
+    renpy.translation.init_translation()
+  File "renpy/translation/__init__.py", line 561, in init_translation
+    renpy.store._init_language() # @UndefinedVariable
+  File "renpy/common/00start.rpy", line 80, in _init_language
+    renpy.change_language(language)
+  File "renpy/translation/__init__.py", line 645, in change_language
+    new_change_language(tl, language)
+  File "renpy/translation/__init__.py", line 607, in new_change_language
+    i.apply()
+  File "renpy/ast.py", line 2675, in apply
+    value = renpy.python.py_eval(expr)
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/screens.rpy", line 1248, in <module>
+    outlines [(4, text_outline_color, 0, 0), (2, text_outline_color, 2, 2)]
+NameError: name 'text_outline_color' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Doki Doki Detective Club 1.1.2
-Wed Jul 31 03:29:44 2024
+Sun Aug  4 02:21:15 2024
