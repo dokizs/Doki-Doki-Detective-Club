@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1134: invalid syntax
-    def update_character =(new_index):
-                          ^
-    
+File "game/advanced_scripts/definitions/definitions.rpy", line 88: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    if result == 1:
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Aug  4 02:20:26 2024
+Tue Aug  6 18:42:38 2024

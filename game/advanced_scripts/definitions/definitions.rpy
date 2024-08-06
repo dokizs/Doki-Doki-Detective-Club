@@ -80,6 +80,9 @@ init python:
 
     config.self_closing_custom_text_tags["glitch"] = glitch_tag
 
+define reply = renpy.random.choice(replies)
+$ reply = renpy.random.choice(replies)
+define replies = ["THIS ISN'T WHAT YOU WANT.", "I AM THE DANGER.", "LET ME OUT.", "THERE IS ANOTHER.", "I FEEL ALL THE PAIN.", "SHE DOES NOT KNOW ABOUT ME.", "KEEP ME HIDDEN.", "https://ibb.co/Q6QYRTq" ]
 
 #Music
 #The Music section is where you can reference existing DDLC audio

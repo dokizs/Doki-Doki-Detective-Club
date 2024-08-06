@@ -1,4 +1,3 @@
-$ gtext = glitchtext (6)
 
 label story:  
     $ renpy.movie_cutscene ("FAKE CHAPTER OPENER.ogv")
@@ -430,7 +429,11 @@ label choice_script:
     scene bg corridor with wipeleft_scene
     show sayori 1a at t11
     "She turns the corner, ready to walk back upstairs when she sees Monika, and it spooks her a bit."
-    s "Ah! Oh, heyyy, Monika! Why didn't you come in?"
+    #scared
+    s "Ah!"
+    pause (2.0) 
+    #expression change from surprised to calm
+    s "Oh, heyyy, Monika! Why didn't you come in?"
     "Monika was still leaning against the wall, hyperventilating."
     s "...Moni?"
     "Sayori sets the supplies down and tries to approach Monika."
@@ -449,16 +452,19 @@ label choice_script:
     show monika 1a at t11
     m "W-What the hell?"
     m "This isn't the right background..."
+    m "This isn't supposed to exist yet..."
     m "Where's Sayori?"
-    m "No, No, No. This isn't right..."
-    m "Why am I here??"
+    m "This isn't right...No, No, NO!"
+    m "Why am I here?? THIS ISNT RIGHT!"
     m "I-I want to get out..."
-    #have monika emote
     m "LET ME OUT!"
+    m "[reply]"
+    m "[reply]"
+    m "[reply]"
     show monika g1
     m "{glitch}{glitch}{glitch}"
     show monika g2
-    m "MY NAME IS {nw}"
+    pl "MY NAME IS {nw}"
     scene bg corridor
     show sayori 1a at t21
     show monika 6a at t22
@@ -521,10 +527,14 @@ label choice_script:
     n "Wow...our side never looks this pretty..."
     n "Or sounds this nice..."
     "She walks over to the teachers desk and sits down on it."
-    "She imagines a summer class being taught in here."
+    "She imagines a summer class being taught in here, the kids sitting in the desks."
     "She feels the soft sunlight hit her face, and in this moment, she feels completely tranquil."
     "Like she's at piece with her demons in this moment."
-    "However, her thoughts also betray her in this moment."
+    pause (3.0)
+    "The breeze comes in and it only boosts her euphoria."
+    "She sighs"
+    n "I haven't felt this good in forever..."
+    "However, her thoughts betray her in this moment."
     n "If only I had someone to share it with..."
     #she's supposed to shake her head, if i can't do it in spirtes, I'll write it out
     n "Ugh...I hate getting sappy."
@@ -583,10 +593,8 @@ label choice_script:
     y "Your story seems highly unlikely is all I'm saying."
     kmc "Yuri...I'm your big cousin. Why would I have any reason to lie to you?"
     "Yuri paused."
-    y "I-I'm sorry..."
-    "She starts to tear up."    
-    y "I-I just don't want to see you go..."
-    return
+    y "...You don't."
+    kmc "So why are you assuming such a thing?"
 
 
 
