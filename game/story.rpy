@@ -264,7 +264,7 @@ label choice_script:
     kmc "I-I'm moving, alright?"
     y "W-Why didn't you tell us sooner?"
     kmc "Don't you think I would've if I knew??"
-    kmc "My asswipes that I used to call parents only just told me this morning..."
+    kmc "My 'parents' or at least the people that I used to call parents only just told me this morning..."
     n "I-It must be some sort of April Fools joke or something?!"
     m "It's September {nw}"
     "A silent head shake from Koto told her everything she needed to."
@@ -295,7 +295,7 @@ label choice_script:
     "...That's strange."
     "She kind of hit it directly on the head, almost like she had a glimpse inside her head. It was eerie but it struck with more of a sympathetic tone than anything."
     y "Actually...it might be."
-    "Everyone looks at Yuri." #when everyone's focused on yuri she switches positons
+    "Everyone looks at Yuri." #when everyone's focused on yuri, saysay switches positons
     m "Hm? What do you mean?"
     show monika 1a at t51
     show sayori 1a at t52
@@ -330,7 +330,7 @@ label choice_script:
     n "I have some cupcakes in my home economics room!!"
     m "But Natsuki, aren't those for a project?"
     n "Who cares?! I can make more, they don't take awfully long to make!"
-    n "I'm not just gonna sit here and let us sulk in silence for the next hour."
+    n "Plus I'm not just gonna sit here and let us sulk in silence for the next hour."
     m "Bu{nw}"
     n "Don't question me! It'll just be a quick snatch and grab!"
     "And without letting anyone protest, she left the room."
@@ -357,7 +357,7 @@ label choice_script:
     show koto 1a at t33
     "Monika turns to Kotonoha."
     m "I guess we're having a celebration for your departure, Koto."
-    "Monika smiles awkwardly. This wasn't on her itinerary at all. And while she didn't just want to sulk around for the next hour, she wanted to continue club activities."
+    "Monika smiles awkwardly. This wasn't on her itinerary at all. And while she didn't just want to sulk around for the next hour, she wanted to continue club activities like normal."
     kmc "I mean, it doesn't look like they're giving us much of a choice, are they?"
     m "It appears not...well, I guess me and Sayori are going to pitch in as well.."
     s "Ooo, ooo! I can find some decorations in the art classroom! They're holding a meeting right now too, and they'll have a ton of supplies that can help!"
@@ -373,6 +373,7 @@ label choice_script:
     kmc "Thank you, Moni. I appreciate it."
     m "Of course!"
     "Monika walks to the door."
+    show monika 1a at t51
     m "{size=10}This is the last time I let things out of my control.{/size}"
     scene black with wipeleft_scene
     stop music fadeout 3.0 
@@ -381,90 +382,135 @@ label choice_script:
     pause (3.0)
     scene bg corridor with wipeleft_scene
     show sayori 1a at t11
-    s "Ok, art room isssssssssss {w=3}here!"
-    "Sayori would step into the art room."
+    s "Ok, art room is{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}{w=0.7}s {w=3}here!" 
+    "Sayori would step into the art room." 
     scene bg AR with wipeleft_scene
-    "Some of the kids in the classroom looked at Sayori as she entered. She recognized some of them. But she wasn't here to goof around." 
+    "Some of the kids in the classroom looked at Sayori as she entered. She recognized some of them, waving shyly at a couple of friends." 
+    "But she wasn't here to goof around." 
     "She needed to see if there was something she could use for Koto's party!!"
-    show sayori 1l at t11
-    s "Hey guys! Happen to know if there's any art supplies I can borrow for a bit?" 
-    show sayori 5b at t11
+    "She glanced around the room, her excitement could be felt with every extra step she took." 
+    show sayori 1l at t11 
+    s "Hey guys! Happen to know if there's any art supplies I can steal from you guys?" 
+    show sayori 5b at t11 
     s "I need to make a little something on short notice, eheh..."
-    k1 "Oh, hey Sayori! Maybe you should ask the teacher! She'd probably be happy to help!"
-    show sayori 1m at t11
-    s "Really?!"
-    show sayori 4r at t11
-    s "Thank you so much!!"
-    "Sayori happily skips over to the teachers desk."
-    s "Hi, Missus!"
-    t "Sayori! How are you still at school?"
+    "The other students exchange curious glances, and one or two of them smile sympathetically. Sayori's enthusiasm was infectious, and they could see she was on a mission." 
+    k1 "Oh, hey Sayori! Maybe you should ask the teacher! She'd probably be happy to help!" 
+    show sayori 1m at t11 
+    s "Really?!" 
+    show sayori 4r at t11 
+    s "Thank you so much!! I really appreciate it!" 
+    "Sayori skips over to the teacher's desk, her shoes making a soft pat-pat sound on the floor." 
+    s "Hi, Missus!" 
+    t "Sayori! How are you still at school?" 
     s "Oh, I'm in the literature club on the 3rd floor!!"
-    t "How...interesting. I may need to stop by at some point."
-    s "Uhhh, yeah!! Say...do you have any spare art supplies I can borrow? I need it for something. Any streamers or confetti, or glitter..."
-    t "Sayori, that's not really traditional art supplies..."
-    s "O-Oh..."
-    "The teacher sighs but then smiles at Sayori."
-    t "In the cubicles."
-    "Sayori perks up."
-    s "Thank you Missus!"
-    t "Of course, Sayori."
-    "Sayori skips over to the 3x3 cubicle and gets on her knees, peeking inside of them."
-    "She found mostly everything she thought they needed and she started to ravage the cubicle."
-    scene bg corridor with wipeleft_scene
-    show monika 1a at t11
-    "Monika would look inside the classroom, seeing Sayori and the teacher having a conversation."
-    "She sees the Sayori skip away from the teacher, and the teacher glances out of her classroom door's window."
-    "Monika stares back at her and something about her looks...off."
-    "She gets a bit nervous and decides to avert her gaze, stepping out of sight of the door window."
-    "She just leans up against the wall beside the door, and waits."
-    "She starts hyperventilating. Who was that teacher? She had never seen her before..."
+    t "How... interesting. I may need to stop by at some point." 
+    s "Uhhh, yeah!! Say... do you have any spare art supplies I can borrow? I need it for something. Any streamers or confetti, or glitter... anything that can make a party pop!" 
+    t "A party? Sayori, that's not really traditional art supplies...we don't usually have those things around here…" 
+    "She wasn't lying. Now that Sayori thought about it, there was a distinction between art supplies and party supplies." 
+    s "O-Oh... I guess I didn't think about that. I just...we were gonna do a thing and..."
+    "She trailed off not knowing if she wanted to continue."
+    #cri
+    s "{size=10}And we wanted to make it special...{/size}" 
+    "The teacher sighs heavily at first but then smiles warmly at Sayori, her eyes softening." 
+    t "In the cubicles." 
+    "Sayori gasps as her face lights up, and she bounces on the balls of her feet in excitement." 
+    s "Thank you Missus! I'll be quick!" 
+    t "Of course, Sayori." 
+    "Sayori skips over to the 3x3 cubicle and gets on her knees, peeking inside with a look of determined curiosity." 
+    "She finds mostly everything she thought she needed—colorful papers, streamers, and even a bit of glitter. She starts to eagerly rummage through the cubicle, her hands moving quickly." 
+    "With each item she finds, her excitement grows. She giggles as she sorts through the supplies, imagining all the fun decorations she can make." 
+    scene bg corridor with wipeleft_scene 
+    show monika 1a at t11 
+    "Monika would look inside the classroom, seeing Sayori and the teacher having a conversation." 
+    "She notices Sayori skip away from the teacher, and the teacher glances out of her classroom door's window." 
+    "Monika stares back at her and something about her looks... off." 
+    "She gets a bit nervous and decides to avert her gaze, stepping out of sight of the door window." 
+    "She leans up against the wall beside the door, her heart racing slightly." 
+    "Soon, she starts hyperventilating. Who was that teacher? She had never seen her before..."
     scene bg AR with wipeleft_scene
     "The teacher would stare at Monika through the glass. She knew {i}exactly{/i} who she was."
     show sayori 1a at t11
     s "I got what I needed! Thank you, missus!!!"
     t "You're welcome, Sayori! Now run along! I think someone is waiting for you."
     s "Huh? Oh right, Moni!! Thank you! I'm sure she's on her way!!"
-    "The teacher would nod her away."
-    "Sayori flashes another smile as she walks out of the classroom."
+    "The teacher would nod her away, her gaze lingering for a moment longer as Sayori exits."
+    "Sayori flashes another bright smile as she walks out of the classroom, her arms filled with the supplies she's gathered."
     scene bg corridor with wipeleft_scene
     show sayori 1a at t11
     "She turns the corner, ready to walk back upstairs when she sees Monika, and it spooks her a bit."
     #scared
     s "Ah!"
-    pause (2.0) 
+    pause (2.0)
     #expression change from surprised to calm
     s "Oh, heyyy, Monika! Why didn't you come in?"
-    "Monika was still leaning against the wall, hyperventilating."
+    show layer master at heartbeat
+    show vignette:
+    play music ("HeartBreath (Moni Song).mp3")
+    "Monika is pressed against the wall, her posture was tense and rigid, unlike her usual composed self." 
+    "Her face is pale and her eyes dart around erratically, as if she’s struggling to focus on anything." 
+    "Her breaths come in short, shallow gasps, each one seeming to come with visible effort. Her hands are clenched at her sides, fingers trembling slightly."
+    "She occasionally brings one hand up to her chest, as if trying to steady her heartbeat. Her shoulders rise and fall rapidly with each uneven breath, and she sways slightly, almost as if she’s about to collapse."
+    "Monika's breathing is labored, with a faint wheezing sound accompanying each inhale. She occasionally bites her lip, trying to suppress the rising panic, but it’s clear that she’s overwhelmed."
+    "Her wide and glassy eyes show a sense of fear and confusion."
     s "...Moni?"
-    "Sayori sets the supplies down and tries to approach Monika."
-    "Monika snaps out of her little attack."
+    "Sayori sets the supplies down gently, her concern growing as she approaches Monika cautiously."
+    s "M-{w=1}Monika?…"
+    "Monika snaps out of her little attack, blinking rapidly as she tries to regain her composure."
+    hide vignette
+    show layer master
+    stop music fadeout 1.0
     show sayori 1a at t21
     show monika 1a at t22
-    m "H-Huh?"
-    s "I asked why you didn't come in? Are you feeling ok?"
-    m "I-I'm alright, Sayori...I see you got the materials..."
-    s "Oh, yeah, I did!"
-    "She'd pick the stuff back up."
-    s "Could you help carry some of it back upstairs?"
-    m "O-Of course..."
-    "Monika grabs some things from Sayori and they both walk back upstairs."
+    m "H-Hm?"
+    s "Are you ok? You're on the floor and you don't look too good...like at all..."
+    m "Oh, um, yes! Of course, I'm fine!"
+    "Monika stands up and brushes herself off."
+    m "I just… since I was behind you, I saw you getting the things and just decided to wait for you. I didn't expect you to be out so soon…"
+    "Sayori reaches out, placing a comforting hand on Monika's shoulder."
+    s "You don't look fine. Are you sure you're okay?"
+    "Monika takes a deep breath, slowly removing Sayori's hand, her breathing slowly calming as she forces a small smile."
+    m "I'm okay now, really. I just... had a bit of a panic. It's nothing."
+    s "Awww, but I feel sorry for you, Moni!."
+    "Sayori gasps as she gets a bit of an idea."
+    s "Let's talk about it while we walk, okay? Maybe I can help you calm down and feel better!!"
+    "She blushes at the prospect. Spending time with Monika was always great..."
+    "Monika shakes her head, her eyes softening as she appreciates Sayori's concern."
+    m "Thanks, Sayori. But I'm ok, really."
+    "Sayori's face drops slightly but regardless, she picks up the supplies again, giving Monika a reassuring smile while she leaves some of it for her to grab."
+    s "Alright, well then let's head upstairs. I'm sure Koto's waiting on us!!"
+    m "I suppose so."
+    "Monika picks up her fair share of supplies and follows Sayori, the two of them starting to walk up the stairs- {nw}"
     scene bg MR
     show monika 1a at t11
+    play music m1 fadein 0.5
     m "W-What the hell?"
     m "This isn't the right background..."
     m "This isn't supposed to exist yet..."
-    m "Where's Sayori?"
+    m "Where's Sayo{nw}"
+    m "wait..."
+    m "Someone else is here{w=3}...someone{w=2}...like me."
+    m "Someone real...{nw}"
+    #fix screen tear 
+    #She knows MC is here now so this is how she explains her usage of her powers. 
+    #She wants to make sure everything goes perfectly for the "New member", 
+    #especially if it felt "Like her and not like the others", she wants out and 
+    #another presense that she feels thats similar to hers? No reason not to take that oppurtunity. 
+    #Even if he couldn't get her out, she wanted to see who or what it was (reason im calling 
+    #MC it is because this is all her speculation. Shes been here in the game and aware for a while and you 
+    #might be asking, why am I writing cliff notes for lore thats not going to be in the mod? 
+    #I dunno. :P) but the game "resets" her, or so it thinks (you might also be asking why am i personifying the game itself?
+    #also dunno)
     m "This isn't right...No, No, NO!"
     m "Why am I here?? THIS ISNT RIGHT!"
     m "I-I want to get out..."
     m "LET ME OUT!"
-    m "[reply]"
-    m "[reply]"
-    m "[reply]"
+    #fix replies tag
+    m "fix replies tag"
     show monika g1
     m "{glitch}{glitch}{glitch}"
     show monika g2
     pl "MY NAME IS {nw}"
+    stop music
     scene bg corridor
     show sayori 1a at t21
     show monika 6a at t22
@@ -479,13 +525,68 @@ label choice_script:
     pause (2.0)
     show monika 1g at t22
     m "H-Huh?"
-    s "Monika, we can go get you something to drink, or I could take you to the bathroom {nw}"
+    s "You spaced out..."
+    s "Moni, we can go get you something to drink, I have a few yen in my purs{nw}"
     m "N-No!! I'm alright, please, Sayori."
     m "Let's just get this stuff back to the club."
-    s "...{w=1}alright Moni, let's just go."
-    "They both pick up their boxes and head back upstairs."
+    s "...{w=1}alright Monika, well then let's just go. I don't like seeing you like this."
+    m "Seeing me like what? I'm ok!"
+    "Sayori pauses mentally. She knows it isn't true. Something is amiss!! But dang it, if she isn't going to take her {glitch}'s word."
+    s "If you say so..."
+    m "Now, c'mon. Let's get this stuff upstairs for Koto, hm?"
+    s "Y-You're right..."
+    "Sayori spots some empty discarded boxes that they could use."
+    "They loaded the supplies into 2 separate boxed before picking them up and heading back upstairs."
     hide monika
     hide sayori
+    scene bg SS with wipeleft_scene
+    pause (2.0)
+    "As Monika and Sayori trudge up the stairs, Monika is left to think."
+    m "{i}What...who...is that..??{/i}"  
+    m "{i}It's like no one else here.{/i}"
+    m "{i}It feels like me. Or well...felt.{/i}"
+    "Monika starts to mentally connect the dots."
+    m "{i}That's it! Sayori warped the game when she went off script...{/i}" 
+    #She's wrong obviously, the MC just pops in the world one day and that time can be when the game is downloaded
+    #and lets just say that the person who installed got busy and decided not to play yet. Well when he does start 
+    #to play, koto has successfully moved and DDLC continues on as normal. This also gives Moni good reason to be
+    #suspicious of Sayori hence why she starts to look like she's just playing the friend card in the main game
+    #and that could be why sayo dies first.
+    m "{i}But how..? I thought I was the only one?{/i}"
+    m "{i}She hasn't shown any signs...and I haven't felt her...{/i}"
+    m "{i}Can she hide her power?{/i}"
+    m "{i}Why hasn't she told me? She's an airhead, it's in her character to tell me!{/i}"
+    m "{i}This is all so frusterating!!{/i}"
+    m "{i}{b}UGH!!{/i}{/b}"
+    "She takes an extra loud stomp as her thoughts peak."
+    "Sayori looks back at Monika, about to open her mouth before Monika waves her hand, advising her not to."
+    "She barely nods back as she continues to walk, reaching the landing between Floor 1 and 2."
+    pause (3.0)
+    "...{nw}"
+    "Monika takes a quiet but sharp breath."
+    m "{i}...{/i}"
+    m "{i}There are too many questions right now.{/i}"
+    m "{i}I just really thought I was the only one...{/i}"
+    m "{i}Now there may be three?{/i}"
+    "She lets out a sigh out loud."
+    "Sayori looks back at her, this time determined not to keep her mouth shut.."
+    s "Are you tired already? Is that it?"
+    m "Uhm...{nw}"
+    m "Yes...just very...tired..."
+    s "Aww, c'mon, you can't be tired!!"
+    s "You're overexerting yourself, we're not running a marathon! We're just carrying boxes! For Koto!"
+    m "Mhm...right.."
+    "Monika was skeptical of Sayori now, but she also didn't want to have a conversation with her right now."
+    "And her facial expressions, silently and seemingly politely telling Sayori to stop didn't seem to be registering."
+    "She wanted to get back to her thoughts."
+    s "We're almost at the third floor! Just another flight!"
+    "Monika out of annoyance rolls her eyes and responds sarcastically."
+    m "Of course...I can't be tired! Not now! Not when were {i}soooooo{/i} close...."
+    "Sayori however, still didn't seem to get the hint and took it as a positive statement."
+    s "That's the spirt! Now, c'mon!"
+    "Sayori finally stops talking and they start to silently walk up the stairs again."
+    m "...{w=1}{i}I've got my eye on you, Sayori.{/i}"
+    m "{i}And whoever your little friend is too...{/i}"
     tl "..."
     scene bg SC with wipeleft_scene
     "After a hefty walk to the other side of the building, Natsuki gets to her Home Economics class."
@@ -522,34 +623,52 @@ label choice_script:
     show natsuki 2e at t11 
     n "Alright, this is where we usually put our stuff when we finish."
     "She's about to walk over to the closet but she stops."
-    "She looks around her and unconciously takes a deep breath."
-    "The windows were slightly open and the sun was setting."
-    n "Wow...our side never looks this pretty..."
-    n "Or sounds this nice..."
-    "She walks over to the teachers desk and sits down on it."
-    "She imagines a summer class being taught in here, the kids sitting in the desks."
+    "She looks around her and unconsciously takes a deep breath."
+    "The windows were slightly open and the sun was setting, casting a warm glow across the room."
+    n "Wow... our side never looks this pretty.."
+    n "...Or sounds this nice... The quiet is almost…creepy."
+    "She walks over to the teacher's desk and sits down on it, her fingers tracing the soft wooden surface as her eyes start to soften as she takes in the view."
+    "She could picture a summer class in here, with kids happily working away, chatting, and enjoying themselves."
     "She feels the soft sunlight hit her face, and in this moment, she feels completely tranquil."
-    "Like she's at piece with her demons in this moment."
+    "Like she's at peace with her demons, feeling a rare moment of serenity."
     pause (3.0)
-    "The breeze comes in and it only boosts her euphoria."
-    "She sighs"
-    n "I haven't felt this good in forever..."
-    "However, her thoughts betray her in this moment."
-    n "If only I had someone to share it with..."
+    "The breeze comes in and it only boosts her euphoria, carrying with it the faint scent of blooming flowers."
+    n "I haven't felt this good in forever. It's like all my problems are…gone, even if it's just for now…."
+    "She closes her eyes for a moment, letting the tranquility wash over her."
+    "Her breathing slows, and a soft smile tugs at her lips."
+    n "This is what I needed... a moment of quiet, a break from everything."
+    "However, her thoughts start to betray the lovely moment of self reflection.."
+    n "If only I had someone to share it with... someone who could really appreciate how perfect this feels. The perfect person…"
+    n "No..the perfect guy. In the perfect spot…"
+    "She opens her eyes, looking around the empty room, the warmth and quiet now tinged with a sense of solitude."
+    "She sighs harshly, feeling a pang of loneliness as she shoves herself off the desk.."
     #she's supposed to shake her head, if i can't do it in spirtes, I'll write it out
     n "Ugh...I hate getting sappy."
-    "Time to do what she broke in here to do."
-    "She holds the bulky tray of cupcakes."
-    n "Gonna need all these for Sayori, heh."
-    "She looks around, still a bit suspicious."
-    n "Alright, I'm getting out of here before I get caught."
-    "She quickly locks the door behind her and slides it closed."
+    n "Time to do what I broke in here to do..."
+    "She walks over to the closet and goes for the low shelf where she put her cupcakes."
+    "She folds the closet door shut as she holds the bulky tray of cupcakes."
+    n "Gonna need all these for Sayori's ass. By the time I turn around, she'll have eaten all of them."
+    "She chuckles to herself before she hears noises outside. Some she can't decipher."
+    "She turns around quick, suspicious of what the noises are. She consciously decides that whatever it is, isn't good."
+    n "That's my que. I'm getting the hell out of here before I get caught."
+    "She quickly tip toes over to the door, ducking under the glass, waiting for the noises to pass."
+    "Turns out it was students talking."
+    "She could just walk out now, but she doesn't know those kids. They might be the snitching type."
+    n "And no one likes a snitch...."
+    "After a while, the conversation moves elsewhere."
+    "Time to escape."
+    n "Go go go!!"
+    "She quickly locks the door before slipping between the small crack in the door she made and slides it closed again quietly, just in case."
     scene bg SC with wipeleft_scene
     show natsuki 1a at t11
-    "She walks back to the other side of the building feeling accomplished, even though what she just did was wrong."
-    "She looks at her surroundings as she walks back. She wasn't gonna lie about that part, it was pretty."
-    "She thinks about the other part of what she said though."
+    "Natsuki takes one more look around to see if anyone was listening or watching to the naked eye."
+    n "I...think I'm clear..."
+    "She smirks a devilish smirk to herself as she walks back to the other side of the building feeling accomplished, even though what she just did was very wrong."
+    "Natsuki looks out the windows lining the halls as she makes her trek back. She wasn't gonna lie about that part, it was pretty."
+    "She thinks about the other part of what she said in the class though. The thing about needing 'the perfect guy'."
     n "No...that's stupid. I don't need anyone."
+    "She fake gags, even though no ones around to see it."
+    "She didn't need anyone, let alone a sweaty, stinky, testosterone filled, boy. {w=2} Gross."
     scene bg corridor with wipeleft_scene
     "Natsuki finally makes her way back over to the part of school she recognized."
     show natsuki 5d at t11
@@ -566,13 +685,19 @@ label choice_script:
     n "So much for me being first."
     show sayori 1a at t32
     s "You were first! We were just...coming up at the same time!"
-    n "Whatever."
-    "Natsuki catches a glimpse of Monika."
-    n "Monika, you alright?"
-    m "Hm? Oh yes, I'm ok!!"
+    n "Whatever. I still got here first!"
+    s "Is that...not what I said...?"
+    n "Ugh, just shut up!"
+    "As Natsuki finally turns to face the two, she catches a glimpse of Monika."
+    n "Monika, you look a bit green."
+    n "You alright?"
+    "Monika zones back in."
+    m "Hm?"
+    n "Earth to Monika? I asked if you were ok."
+    m "Oh yes, I'm ok!!"
     "Natsuki shrugs."
     n "If you say so..."
-    s "Can we, uh,, head inside now? My arms are starting to hurt..."
+    s "Can we, uh, head inside now? My arms are starting to hurt..."
     n "Oh yeah, here."
     "Natsuki opens the door and the three of them flood inside."
     scene bg closet with wipeleft_scene
@@ -593,8 +718,141 @@ label choice_script:
     y "Your story seems highly unlikely is all I'm saying."
     kmc "Yuri...I'm your big cousin. Why would I have any reason to lie to you?"
     "Yuri paused."
+    play music ("Lamentation3.mp3")
     y "...You don't."
     kmc "So why are you assuming such a thing?"
+    #yuri crying sprites
+    y "I-I don't know, ok?"
+    kmc "Yuri, talk to me."
+    y "I feel...hurt."
+    y "Like you could've said something so much sooner..."
+    kmc "But I couldn't- {nw}"
+    y "{b}I KNOW.{/b}"
+    pause (2.0)
+    y "I just...can't shake that feeling...my brain won't accept it..."
+    "Yuri chuckles slightly."
+    y "My conscience thinks that this is all ridiculous."
+    kmc "But you know that {nw}"
+    y "-this is reality?"
+    y "..."
+    y "Yes.{w=1} I do."
+    y "It's just...hard to accept."
+    "Koto gives Yuri a reassuring smile and pats her on the back."
+    kmc "...{w=1}You don't think I don't think it's ridiculous either?"
+    kmc "I mean, who just does that to someone?"
+    kmc "Let alone their own child."
+    "Tears threatened to leave Kotonoha's own eyes, but she refused. She needed to comfort Yuri in this moment."
+    "She needed her."
+    kmc "If you {nw}"
+    "Yuri runs up to Kotonoha and envelops her in tight hug."
+    y "Please don't go..."
+    "Yuri was now softly sobbing in Kotonoha's arms."
+    "Koto sighs, her voice pained as she speaks."
+    kmc "I tried being rebelious. My parents already settled everything."
+    kmc "All my affairs have been set behind my back."
+    "Yuri cries a little harder now."
+    y "T-There has to be some way! Some way!!!"
+    kmc "I'm afraid not, Yuri."
+    kmc "This is how things are..."
+    "Kotonoha strokes Yuri's silky purple hair, trying to offer some comfort."
+    pause (2.0)
+    "Koto sits there and strokes Yuri's head for a good 5 minutes."
+    "Yuri's tears begin to dry slightly as she's comforted by her eldest cousin, finally glad she was able to get this heartache off her chest."
+    kmc "You feeling better now?"
+    "Yuri sniffles, trying to recompose herself."
+    y "I am...thank you..."
+    pause (2.0)
+    "After a short while, Yuri was still slightly teary, but she felt much better now, and she wanted to try and lighten the mood."
+    y "You haven't changed a bit, you know?"
+    kmc "And what's that supposed to mean?"
+    "Yuri chuckles, a tinge of sadness still in her voice."
+    y "It was a compliment."
+    kmc "Hm...well thank you. I appreciate it..."
+    kmc "You know...I could say the same about you."
+    "Yuri rolls her eyes."
+    y "Are you kidding? I've grown up signifigantly since I was a toddler!"
+    kmc "Then what are you doing?"
+    "Kotonoha smirks teasingly."
+    kmc "Still crying in your older cousins arms."
+    "Yuri's face flares red and she quickly fixes her positioning, trying to prove Koto wrong, even though she's obviously right."
+    y "I-I was not!"
+    kmc "Sure, you weren't."
+    "Koto chuckles before going silent."
+    pause (3.0)
+    "The silence was deafening. Too much for Kotonoha to handle. She hated silence."
+    kmc "....Say...How about something a bit more {w=1.3}mature for you?"
+    kmc "Like...{w=1}a hug?"
+    y "Hm...That does sound a bit better."
+    "Yuri eagerly steps into Kotonoha, not even waiting for her to open her arms."
+    "Kotonoha stumbles but settles into the hug, wrapping her arms around Yuri."
+    n "Ugh. Gay."
+    "Kotonoha lets go of her cousin and turns to the doorway, seeing Natsuki leaned in the frame."
+    kmc "Excuse me?"
+    kmc "We're related...?"
+    n "So?? People do crazy shit all the time! and I thought americans were weiro, trying to marry their sisters in Colarado!!"
+    y "You mean Alabama, Natsuki?"
+    n "Shut up! American history is dumb anyway!"
+    y "Just don't be disgusting or crude when you speak, Natsuki."
+    y "Especially when you walk in on a moment unprompted."
+    n "...{w=3}Whatever..."
+    "Natsuki steps aside, letting Monika and Sayori walk in."
+    show monika 1m at t51
+    show sayori 4x at t52
+    show natsuki 5y at t53
+    show yuri 4a at t54
+    show koto 1f at t55
+    s "We got the stuff!!"
+    "Yuri's tea kettle would begin to blow steam."
+    show yuri 2i at t54
+    y "Looks like everything is right on time."
+    show yuri 2j at t54
+    y "Ill be back."
+    hide yuri
+    show monika 1m at t41
+    show sayori 4x at t42
+    show natsuki 5i at t43
+    show koto 1f at t44
+    n "Finally. You know how much I had to go through to get these things?!"
+    "Monika finally regains her sense of self, ending her little mini epiisode."
+    "Just as Natsuki had spoken."
+    m "What did you have to do to get them?"
+    n "I had to break into the Home Ec class!"
+    m "You broke into a class?! Why didn't you just come find us and tell us the room was locked??"
+    n "Because, {i}{b}Monika.{/i}{/b}"
+    n ".{w=3}.{w=3}.{w=3}"
+    "Monika stares quizzically."
+    m "Because what?"
+    n "BECAUSEEEEEEEEEEEEEEEEE.{w=1}I don't fall behind on my promises."
+    show natsuki 5t at t43
+    n "I do what I say I'm gonna do!"
+    show natsuki 5i at t43
+    pause (2.0)
+    show monika 1n at t41
+    m "Well, that surely is an....admirable trait to have..."
+    n "Damn straight."
+    n "Now we gonana get this party started or what?"
+    m "I guess we should."
+    s "Time to decorate!!!"
+    scene black with wipeleft_scene
+    "The girls would get to hastily decorating the class to the best of their ability on such short notice."
+    "Natsuki unwrapped the cupcakes out of their foil and meticulously placed them on each desk."
+    "Yuri sat some of her scented candles on each desk alongside Natsuki, before placing 5 main tea cups on the teachers desk."
+    "And despite their wishes, Koto helped decorate for her own party."
+    "She helped Monika and Sayori put up all the miscillanious banners and streamers."
+    "After a while, it was all starting to come togetther."
+    "They all took a step back and collectivly wiped their brows."
+    scene bg KPR with wipeleft_scene
+    show monika 1m at t51
+    show sayori 4x at t52
+    show natsuki 5y at t53
+    show yuri 4a at t54
+    show koto 1f at t55
+    kmc "Wow everyone...this looks beautiful..."
+    "Natsuki was about to speak, probably about to say something snarky, but Monika was already glaring at her as if retroactivly saying 'Save It.'"
+    return
+
+
+    
 
 
 

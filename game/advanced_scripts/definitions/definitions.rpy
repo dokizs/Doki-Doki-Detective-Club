@@ -80,10 +80,6 @@ init python:
 
     config.self_closing_custom_text_tags["glitch"] = glitch_tag
 
-define reply = renpy.random.choice(replies)
-$ reply = renpy.random.choice(replies)
-define replies = ["THIS ISN'T WHAT YOU WANT.", "I AM THE DANGER.", "LET ME OUT.", "THERE IS ANOTHER.", "I FEEL ALL THE PAIN.", "SHE DOES NOT KNOW ABOUT ME.", "KEEP ME HIDDEN.", "https://ibb.co/Q6QYRTq" ]
-
 #Music
 #The Music section is where you can reference existing DDLC audio
 
@@ -134,6 +130,12 @@ define audio.t10 = "<loop 5.861>bgm/10.ogg"   #Confession
 define audio.t10y = "<loop 0>bgm/10-yuri.ogg"
 define audio.td = "<loop 36.782>bgm/d.ogg"
 define audio.Faded = "<loop 0> A Faded Memory.mp3" #Custom; Sad Musica
+define audio.YuriSadge1 = "<loop 0> Lamentation1.mp3" #Custom
+define audio.YuriSadge2 = "<loop 0> Lamentation2.mp3" #Custom
+define audio.YuriSadge3 = "<loop 0> Lamentation3.mp3" #Custom
+define audio.Heartbeat = "<loop 0> HeartBreath.mp3" #Custom
+define audio.Heartbeat2 = "<loop 0> HeartBreath (Moni Song).mp3" #Custom
+
 
 define audio.m1 = "<loop 0>bgm/m1.ogg" #Monika and her spaceroom music
 define audio.mend = "<loop 6.424>bgm/monika-end.ogg" #Monika music post-deletion
@@ -198,6 +200,8 @@ image bg AIR = "aokiinterrigationroom.png"
 image bg MCL = "Middle Class Loft.png"
 image bg SKD = "sayokitchendecoy.png"
 image bg MCL = "Middle Class Loft.png"
+image bg SS = "schoolstair.png"
+image bg KPR= "KotoPartyRoom.png"
 
 
 

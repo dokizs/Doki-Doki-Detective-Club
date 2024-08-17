@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/advanced_scripts/definitions/definitions.rpy", line 88: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
-    if result == 1:
+File "game/advanced_scripts/definitions/definitions.rpy", line 204: expected statement.
+    = "KotoPartyRoom.png"
     ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Aug  6 18:42:38 2024
+Fri Aug 16 21:32:43 2024
