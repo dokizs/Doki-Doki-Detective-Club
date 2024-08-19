@@ -810,7 +810,7 @@ label choice_script:
     hide yuri
     show monika 1m at t41
     show sayori 4x at t42
-    show natsuki 5i at t43
+    show natsuki 5h at t43
     show koto 1f at t44
     n "Finally. You know how much I had to go through to get these things?!"
     "Monika finally regains her sense of self, ending her little mini epiisode."
@@ -822,7 +822,7 @@ label choice_script:
     n ".{w=3}.{w=3}.{w=3}"
     "Monika stares quizzically."
     m "Because what?"
-    n "BECAUSEEEEEEEEEEEEEEEEE.{w=1}I don't fall behind on my promises."
+    n "BECAUSEEEEEEEEEEEEEEEEE.{w=1} I don't fall behind on my promises."
     show natsuki 5t at t43
     n "I do what I say I'm gonna do!"
     show natsuki 5i at t43
@@ -831,8 +831,19 @@ label choice_script:
     m "Well, that surely is an....admirable trait to have..."
     n "Damn straight."
     n "Now we gonana get this party started or what?"
-    m "I guess we should."
-    s "Time to decorate!!!"
+    m "I guess we should. Club's end at 6 and it's already 4:45."
+    s "Ehehe, yayyy! Time to decorate!!"
+    "Yuri returns with teacups on a metal tray."
+    show monika 1n at t51
+    show sayori 4x at t52
+    show natsuki 5i at t53
+    show yuri 2i at t54
+    show koto 1f at t55
+    y "and quick. Like Monika said our time is limited, so let's not waste it."
+    m "I couldn't have said it better. Let's get to it, girls!"
+    e "Yeah!!"
+    s "Not Koto, though!"
+    exk "Yeah!"
     scene black with wipeleft_scene
     "The girls would get to hastily decorating the class to the best of their ability on such short notice."
     "Natsuki unwrapped the cupcakes out of their foil and meticulously placed them on each desk."
@@ -849,6 +860,109 @@ label choice_script:
     show koto 1f at t55
     kmc "Wow everyone...this looks beautiful..."
     "Natsuki was about to speak, probably about to say something snarky, but Monika was already glaring at her as if retroactivly saying 'Save It.'"
+    s "Only the best for you!"
+    kmc "Well, shall we party?"
+    n "That we shall!"
+    "Natsuki would rummage in her bag and would pull out a portable speaker."
+    "Everyone gives her a funny look."
+    n "Ahem...I use it for bathroom parties, ok?"
+    m "...Alright, I suppose."
+    n "Natsuki puts on some high energy dance music."
+    n "Now this is good shit!!"
+    y "Natsuki..."
+    n "Nope, don't even! I'm not letting you all turn this into a pity party! This bitch is gonna have some energy!"
+    m "We understand, but maybe something less...'rave-equse' and something at least a bit less high energy?"
+    n "Ugh, buzzkills, I swear!!"
+    s "Just let me pick the music!"
+    n "Cold day in hell! You're probably gonna find a My Little Pony Intro 10 Hour loop to put on!"
+    s "I would not! Monika, don't you trust me to pick music?"
+    n "Doesn't matter what Monika thinks, it's my speaker, paired to my phone!"
+    m "Natsuki, we didn't even plan on having music, but it seems that your taste is a bit...too hype for what we're going for."
+    n "That was only a bit of the first song!"
+    n "You're actually gonna judge me off of a snippet of the {i}first{/i} song I put on?"
+    m "...{w=1.5}just...let Sayori {i}try{/i}. For all of our sakes?"
+    "Sayori turns to Natsuki with puppy dog eyes."
+    n "No! I don't want to!"
+    s "Ple{w=0.7}e{w=0.7}e{w=0.7}e{w=0.7}e{w=0.7}e{w=0.7}e{w=0.7}e{w=0.7}e{w=0.7}ase?"
+    n "Ugh, fine!!!"
+    "Natsuki fiddles with her phone, unpairing it from the speaker."
+    speak "デバイスを検索しています"
+    "Natsuki rolls her eyes."
+    n "There, now pair your stupid phone."
+    s "I will!"
+    "Sayori sticks out her tongue, before messing with her own phone, trying to find the device."
+    s "Is it called 'ナツキの超超クールスピーカー'?"
+    "Natsuki gets in a blushing fit."
+    n "S-Shut up!"
+    s "Ehehe, that's a yes for me!"
+    "Sayori pairs her phone."
+    speak "ペアリングされました。"
+    s "Alright, now time to put on something that'll match the mood!"
+    n "I swear if I hear any cartoony bullshit exit my speaker, I'm gonna rip your damn hair out."
+    "Sayori blushes in a nervous sweat, the pressure is on."
+    s "Uh...ok, I think this is good..."
+    n "It better be."
+    "Sayori puts on something more everyone's speed."
+    "Natsuki was about to yell, but she looked at everyone's expressions."
+    "Specifically Kotonoha's."
+    m "Koto, does this sound nice to you?"
+    menu: 
+        "This is much better!":
+            jump choice_Sayori
+        "I liked Natsuki's music better.":
+            jump choice_Natsuki
+    
+
+    label choice_Natsuki:
+    "Koto's face kind of shifts."
+    kmc "I'm not sure...I think I like Natsuki's music more..."
+    kmc "Sorry Sayori."
+    show sayori glitch
+    s "{glitch}{glitch}{glitch}{glitch}{glitch}{glitch}
+    {glitch}{glitch}{glitch}
+    {glitch}{glitch}{glitch}{glitch}
+    {glitch}{glitch}
+    {glitch}{glitch}{glitch}{glitch}{glitch}
+    {glitch}{glitch}{glitch}{glitch}{glitch}{glitch}"
+    hide monika
+    pause (2.0)
+    show monika 1a at t11
+    m "Wrong choice. Pick again."
+    menu: 
+        "This is much better!":
+            jump choice_Sayori
+        "I liked Natsuki's music better.":
+            jump choice_Natsuki2
+
+    label choice_Natsuki2:
+    m "WRONG."
+    m "P{w=0.4}I{w=0.4}C{w=0.4}K{w=0.4}A{w=0.4}G{w=0.4}A{w=0.4}I{w=0.4}N."
+    
+    menu: 
+        "This is much better!":
+            jump choice_Sayori
+        "I liked Natsuki's music better.":
+            jump choice_Natsuki3
+
+    
+    
+    label choice_Natsuki3:
+    m "Hm. I see."
+    m "I can play that game too, silly!"
+    m "While I can't seem to make any huge changes to your game like deleting your saves like a little flower..."
+    m "Or disable the skip button..."
+    m "I sure as hell can piss you off!"
+    m "See you soon.{nw}"
+    return
+
+    
+    label choice_Sayori:
+    "Koto was smiling."
+    kmc "You made a good choice, Sayori."
+    kmc "Sorry, Natsuki."
+    n "Ugh, whatever."
+    m "Natsuki, don't."
+    "Natsuki rolls her eyes."
     return
 
 

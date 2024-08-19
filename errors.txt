@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/advanced_scripts/definitions/definitions.rpy", line 204: expected statement.
-    = "KotoPartyRoom.png"
-    ^
+File "game/story.rpy", line 927: end of line expected.
+    show monika at 1a at t11
+                    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Fri Aug 16 21:32:43 2024
+Sat Aug 17 20:57:51 2024

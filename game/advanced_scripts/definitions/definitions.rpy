@@ -201,7 +201,7 @@ image bg MCL = "Middle Class Loft.png"
 image bg SKD = "sayokitchendecoy.png"
 image bg MCL = "Middle Class Loft.png"
 image bg SS = "schoolstair.png"
-image bg KPR= "KotoPartyRoom.png"
+image bg KPR = "KotoPartyRoom.png"
 
 
 
@@ -2048,6 +2048,11 @@ define pl = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_po
 define kiyomi = Character('Kiyomi',what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ffe898") ])
 define qmc2r = Character('MC', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
 define tl = Character('Teacher', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b89b82") ])
+define e = Character('Everyone', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define exk = Character('Everyone (ex Koto)', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define speak = Character('Speaker', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+
+
 
 
 

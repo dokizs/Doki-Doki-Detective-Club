@@ -1,13 +1,13 @@
-Fri Aug 16 21:32:33 2024
+Mon Aug 19 15:06:19 2024
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.30s
+Bootstrap to the start of init.init took 0.28s
 Early init took 0.01s
-Loader init took 0.23s
-Loading error handling took 0.10s
-Loading script took 9.22s
+Loader init took 0.45s
+Loading error handling took 0.23s
+Loading script took 9.04s
 Loading persistent.
 Traceback (most recent call last):
   File "renpy/persistent.py", line 201, in load
@@ -22,239 +22,36 @@ Traceback (most recent call last):
   File "renpy/loadsave.py", line 63, in loads
     return cPickle.loads(s)
 ImportError: No module named revertable
-Loading save slot metadata. took 0.14s
-Loading persistent took 0.00s
-
-File "game/advanced_scripts/definitions/definitions.rpy", line 204: expected statement.
-    = "KotoPartyRoom.png"
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.60s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1366, 768)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'Intel'
-Renderer: 'Intel(R) UHD Graphics 600'
-Version: '4.5.0 - Build 25.20.100.6617'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
-Maximum texture size: 4096x4096
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Resetting cache.
-Bootstrap to the start of init.init took 127.21s
-Early init took 0.00s
-Loader init took 0.24s
-Loading error handling took 0.07s
-Loading script took 11.95s
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading persistent.
-Traceback (most recent call last):
-  File "renpy/persistent.py", line 201, in load
-    persistent = loads(s)
-  File "renpy/loadsave.py", line 63, in loads
-    return cPickle.loads(s)
-ImportError: No module named revertable
-Loading save slot metadata. took 0.20s
+Loading save slot metadata. took 0.48s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
- - Init at renpy/common/00updater.rpy:23 took 0.53938 s.
- - Init at game/advanced_scripts/gui.rpy:11 took 0.72613 s.
- - Init at renpy/common/00library.rpy:387 took 0.46289 s.
-Running init code took 2.75s
-Loading analysis data took 0.30s
-Analyze and compile ATL took 0.20s
-Index archives took 0.01s
+ - Init at renpy/common/00updater.rpy:23 took 0.25231 s.
+ - Init at game/advanced_scripts/gui.rpy:11 took 0.44104 s.
+Running init code took 1.35s
+Loading analysis data took 0.11s
+Analyze and compile ATL took 0.10s
+Index archives took 0.00s
 Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
-Dump and make backups. took 0.72s
+Dump and make backups. took 0.31s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.19s
+Initial gc. took 0.12s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
+Creating interface object took 0.18s
 Cleaning stores took 0.00s
-Init translation took 0.31s
-Build styles took 0.02s
+Init translation took 0.15s
+Build styles took 0.01s
 Load screen analysis took 0.03s
-Analyze screens took 0.05s
-Save screen analysis took 0.12s
-Prepare screens took 0.35s
-Save pyanalysis. took 0.23s
+Analyze screens took 0.04s
+Save screen analysis took 0.13s
+Prepare screens took 0.19s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.22s
-Running _start took 0.01s
+Running _start took 0.00s
 Performance test:
-Interface start took 1.93s
+Interface start took 1.15s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -266,3 +63,10 @@ Version: '4.5.0 - Build 25.20.100.6617'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.01s
+Build styles took 0.02s
+Load screen analysis took 0.08s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
