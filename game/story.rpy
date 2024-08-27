@@ -76,7 +76,7 @@ label choice_script:
     kd "...Only for you, dearest."
     "Kotonoha's mother exits the room, leaving her father to break the news."
     "He'd shake her slightly."
-    kd "Koto, dear. Wake up..."
+    kd "Koto, wake up now dear."
     show koto 1bp at t11
     kmc "Five more minutes..."
     show koto 1bi at t11
@@ -90,9 +90,9 @@ label choice_script:
     pause (.1)
     show koto 1bw at t11
     pause (1.0)
-    kd "finally."
+    kd "Finally."
     show koto 1bp2 at t11
-    kmc "Dad...? It's not even 7 yet, why-{nw}"
+    kmc "Dad? It's not even 7 yet, why-{nw}"
     kd "Listen Kotonoha. You're..."
     show koto 1bu at t11
     "Kotonoha's eyes would narrow."
@@ -101,7 +101,7 @@ label choice_script:
     show koto 1bw2 at t11
     kd "Well...it's something a bit...serious."
     show koto 1bv1 at t11 
-    kmc "L-Like what, Dad?"
+    kmc "L-Like what Dad?"
     show koto 1bw2 at t11
     "Kotonoha felt a shiver run down her spine as she waited for an answer."
     "Her parents never usually confronted her on anything, and if she was reading her father's face right, this wasn't a joke or something minor."
@@ -116,16 +116,17 @@ label choice_script:
     kmc "Are we going somewhere?"
     kd "Well..."
     show koto 4bp at t11
-    kmc "...Dad...please be honest with me. What's going on?"
+    kmc "Dad.."
+    kmc "Please be honest with me, what is going on?"
     show koto 4bf at t11
     kd  "...Alright, sweetheart. {b}{i}We{/b}{/i} aren't going anywhere persay. But {b}{i}you{/b}{/i} are..."
     show koto 1be at t11
     "The gears inside her head would start to turn, her brain getting to work on figuring out what her father meant, and surely enough, she caught on quick."
     show koto 1bp2 at t11
-    kmc "I...I'm moving schools??"
+    kmc "I..I'm moving schools?"
     "Tears would well up in her eyes before she even got a 'yes'."
     kd "...Yes, and you need to pack when you get home. Now, if you think you can get little bit in. It's a lovely place up west."
-    kmc "W-What? Dad, that's so far from here! Why didn't you tell me sooner!!"
+    kmc "W-What? Dad, that's so far from here! Why didn't you tell me sooner!?"
     kd "Listen, that was a mistake on me and your mothers parts. We decided not to tell you until today. I'm sorry it's such short notice but...you leave tonight."
     kmc "W-What?! That's ridiculous! You're lying!"
     "Silence falls over both of them."
@@ -153,9 +154,9 @@ label choice_script:
     "How could they just do this to her? She knew it was an epidemic. Almost every person she had talked to said that thier parents had packed them up and moved them here."
     "But that's just it. Those parents sent their kids off to {b}this{/b} school. Koto had been in this district since she was a child and now, she had to move to one all the way up west."
     "This would be the last time she saw her room. The last time she saw her parents, her friends, her real home."
-    "After high school was college and she had already thought about where she wanted to go and was already taking dual credit classes and saving up for the ridiculously expensive room and board."
+    "After high school was college, and she had already thought about where she wanted to go. She was already taking dual credit classes and saving up for the ridiculously expensive room and board."
     "She had no reason to come back here. Maybe when she finished? But that was 6 years from now! Her friends would be long gone, her parents older, the school filled with new and unfamilar faces."
-    "However, this was no time to think about what was shaping up to be her a pretty shitty day. It was 7:05. She needed to get ready for school. She had 8 hours to say goodbye to everyone."
+    "However, this was no time to think about what was shaping up to be her pretty shitty day. It was 7:05. She needed to get ready for school. She had 8 hours to say goodbye to everyone."
     "And an extra 2 to announce it to the club. What would they even say to her...?...It doesn't matter, at least not yet..."
     "That's later in the afternoon. She hasn't even left the house, let alone gotten ready."
     "She needed to hurry."
@@ -444,7 +445,7 @@ label choice_script:
     #expression change from surprised to calm
     s "Oh, heyyy, Monika! Why didn't you come in?"
     show layer master at heartbeat
-    show vignette:
+    show vignette
     play music ("HeartBreath (Moni Song).mp3")
     "Monika is pressed against the wall, her posture was tense and rigid, unlike her usual composed self." 
     "Her face is pale and her eyes dart around erratically, as if she’s struggling to focus on anything." 
