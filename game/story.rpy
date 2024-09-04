@@ -895,7 +895,7 @@ label choice_script:
     s "Is it called 'ナツキの超超クールスピーカー'?"
     "Natsuki gets in a blushing fit."
     n "S-Shut up!"
-    s "Ehehe, that's a yes for me!"
+    s "Ehehe! Guess that's your way of saying 'yes'!"
     "Sayori pairs her phone."
     speak "ペアリングされました。"
     s "Alright, now time to put on something that'll match the mood!"
@@ -937,7 +937,7 @@ label choice_script:
 
     label choice_Natsuki2:
     m "WRONG."
-    m "P{w=0.4}I{w=0.4}C{w=0.4}K{w=0.4}A{w=0.4}G{w=0.4}A{w=0.4}I{w=0.4}N."
+    m "P{w=0.4}I{w=0.4}C{w=0.4}K{w=0.4} A{w=0.4}G{w=0.4}A{w=0.4}I{w=0.4}N."
     
     menu: 
         "This is much better!":
@@ -964,23 +964,70 @@ label choice_script:
     n "Ugh, whatever."
     m "Natsuki, don't."
     "Natsuki rolls her eyes."
+    pause (2.0)
+    #have someone emote
+    kmc "Well, what are we standing around for?"
+    kmc "You guys got this all together last minute, and even though I didn't pick your music, I agree with you."
+    kmc "If we're gonna have this party, it's not gonna be out of pity!"
+    "Natsuki smirks at the mention, she's glad her voice hadn't completly fallen on deaf ears."
+    s "Koto{nw}"
+    n "AHEM. {w=0.5}"
+    s ".{w=1}.{w=1}.{w=1}Natsuki...{w=0.5}is right..."
+    s "This party needs to be super happy and fun! My playlist is gonna make sure that the mood is up, up, up!!"
+    y "Let's not forget, we're at school, we still need to be civil and quiet."
+    m "Yuri's right, let's not completely forget where we are. Let's not make our club neighbors mad."
+    n "Again..."
+    s "Oh, right, that time we got into it with the anime club!! How'd that even happen?"
+    y "I believe it was because of you or Natsuki."
+    s "What?! It definitly wasn't me!! I think..."
+    s "I'd remember something like that! It had to be Natsuki!"
+    n "Me? Hell no, it wasn't! Like you said, you think!"
+    n "You must have short term memory loss or something!"
+    m "Girls, girls, Calm down."
+    n "Hmph."
+    pause (1.0)
+    y "Didn't it end up being a good thing in the end?"
+    m "Hmm...Oh, you're right, Yuri! We started a little 'rivalry' with them!"
+    n "Oh, right, how could I forget! Me and Sayori had our own little division away from you two."
+    m "Really?"
+    s "Ehehe, it's true!! I was a spy!"
+    y "Sayori, you little sneak."
+    "Sayori and Yuri snicker."
+    s "It was fun!!"
+    n "And of course, {b}I{/b} was the mastermind behind it all!"
+    m "Mastermind behind...oh. my. goodness."
+    y "That was the 'foul play' they accused us of!"
+    y "You could've jeapordized our chances of winning!"
+    n "C'mon, I was HELPING, jeez..."
+    n "You all were taking too long to leap, and I was feeling froggy!"
+    m "Did you really have to rope Sayori into it though?"
+    s "I wanted to join, she didn't force me!"
+    "Monika and Yuri's faces shift strangely."
+    m "...Really?"
+    n "Trust me, I was kidding earlier."
+    n "She was the one that came up with more than half of it!"
+    n "I was shocked myself."
+    "The girls look at Sayori."
+    s "What?"
+    s "I can't be bad sometimes?"
+    y "I..I suppose so..."
+    m "Everyone has been bad at some point in their life, but it's usually on accident..."
+    s "What, now I can't be honest?!"
+    m "No, Sayori, it isn't that-{nw}"
+    "Sayori speaks as she begins to giggle."
+    s "Man, you all are confusing..."
+    "The giggling is infectious and before long the entire club was giggling."
+    "After hopping from one talking point to another, the giggling turned to laughing, and the girls we're now crying laughing while trying to continue the conversation."
+    "Everyone except{nw}"
+    kmc "Me."
+    "Koto had been silent the entire time, watching and listening to her friends bring up memories."
+    "They all looked genuinely joyous, reminiscing on memories."
+    "Man, I'm gonna miss them. So, so bad."
     return
 
 
+
     
-
-
-
-
-
-
-
-
-
-
-
-
-
 label choice_teaser:
     scene black
     scene bg DC with dissolve_scene_full

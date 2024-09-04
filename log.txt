@@ -1,13 +1,13 @@
-Mon Aug 19 15:06:19 2024
+Wed Sep  4 17:34:04 2024
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
 
-Bootstrap to the start of init.init took 0.28s
+Bootstrap to the start of init.init took 0.20s
 Early init took 0.01s
-Loader init took 0.45s
-Loading error handling took 0.23s
-Loading script took 9.04s
+Loader init took 1.49s
+Loading error handling took 0.11s
+Loading script took 1.19s
 Loading persistent.
 Traceback (most recent call last):
   File "renpy/persistent.py", line 201, in load
@@ -22,36 +22,33 @@ Traceback (most recent call last):
   File "renpy/loadsave.py", line 63, in loads
     return cPickle.loads(s)
 ImportError: No module named revertable
-Loading save slot metadata. took 0.48s
+Loading save slot metadata. took 0.24s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
- - Init at renpy/common/00updater.rpy:23 took 0.25231 s.
- - Init at game/advanced_scripts/gui.rpy:11 took 0.44104 s.
-Running init code took 1.35s
-Loading analysis data took 0.11s
-Analyze and compile ATL took 0.10s
+Running init code took 0.43s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.07s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
-Dump and make backups. took 0.31s
+Dump and make backups. took 0.17s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.12s
+Initial gc. took 0.11s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.18s
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.15s
+Init translation took 0.11s
 Build styles took 0.01s
-Load screen analysis took 0.03s
-Analyze screens took 0.04s
-Save screen analysis took 0.13s
-Prepare screens took 0.19s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.13s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.22s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 1.15s
+Interface start took 0.98s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
@@ -63,10 +60,632 @@ Version: '4.5.0 - Build 25.20.100.6617'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 4160, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 727, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1323, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1323, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/behavior.py", line 983, in event
+    return handle_click(self.clicked)
+  File "renpy/display/behavior.py", line 918, in handle_click
+    rv = run(action)
+  File "renpy/display/behavior.py", line 330, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+  File "renpy/loadsave.py", line 771, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/python.py", line 2200, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/python.py", line 2014, in rollback
+    self.load_failed()
+  File "renpy/python.py", line 1932, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+While running game code:
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 Cleaning stores took 0.00s
-Init translation took 0.01s
+Init translation took 0.00s
 Build styles took 0.02s
 Load screen analysis took 0.08s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.01s
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 4160, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/transition.py", line 48, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 727, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1323, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1323, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/behavior.py", line 983, in event
+    return handle_click(self.clicked)
+  File "renpy/display/behavior.py", line 918, in handle_click
+    rv = run(action)
+  File "renpy/display/behavior.py", line 330, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+  File "renpy/loadsave.py", line 771, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/python.py", line 2200, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/python.py", line 2014, in rollback
+    self.load_failed()
+  File "renpy/python.py", line 1932, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+While running game code:
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+Resetting cache.
+Bootstrap to the start of init.init took 154.68s
+Early init took 0.00s
+Loader init took 0.17s
+Loading error handling took 0.10s
+Loading script took 4.65s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading save slot metadata. took 0.13s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.35s
+Loading analysis data took 0.06s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Dump and make backups. took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.13s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.14s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 1.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 504, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 504, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 514, in _execute_python_hide
+    renpy.load("_reload-2")
+  File "renpy/loadsave.py", line 771, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/python.py", line 2200, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/python.py", line 2014, in rollback
+    self.load_failed()
+  File "renpy/python.py", line 1932, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+While running game code:
+  File "renpy/common/00start.rpy", line 212, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 504, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 504, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 514, in _execute_python_hide
+    renpy.load("_reload-2")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+Full traceback:
+  File "game/story.rpy", line 967, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 967, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+Resetting cache.
+Bootstrap to the start of init.init took 272.78s
+Early init took 0.00s
+Loader init took 0.13s
+Loading error handling took 0.06s
+Loading script took 0.70s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading save slot metadata. took 0.08s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.31s
+Loading analysis data took 0.05s
+Analyze and compile ATL took 0.06s
+Index archives took 0.00s
+Dump and make backups. took 0.16s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.13s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.13s
+Build styles took 0.01s
+Load screen analysis took 0.05s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.56s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story.rpy", line 967, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 967, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+Resetting cache.
+Bootstrap to the start of init.init took 295.67s
+Early init took 0.00s
+Loader init took 0.15s
+Loading error handling took 0.08s
+Loading script took 0.97s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading save slot metadata. took 0.11s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.42s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.08s
+Index archives took 0.00s
+Dump and make backups. took 0.30s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.20s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.26s
+Build styles took 0.02s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.29s
+Save pyanalysis. took 0.08s
+Save bytecode. took 0.00s
+Running _start took 0.01s
+Performance test:
+Interface start took 1.14s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story.rpy", line 967, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 967, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+Resetting cache.
+Bootstrap to the start of init.init took 324.67s
+Early init took 0.00s
+Loader init took 0.23s
+Loading error handling took 0.09s
+Loading script took 1.83s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading save slot metadata. took 0.11s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.41s
+Loading analysis data took 0.08s
+Analyze and compile ATL took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
+Dump and make backups. took 0.30s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.19s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.17s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.04s
+Save screen analysis took 0.10s
+Prepare screens took 0.18s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.78s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story.rpy", line 1021, in script
+    "Everyone except{me}"
+  File "renpy/ast.py", line 721, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "renpy/exports.py", line 1419, in say
+    who(what, *args, **kwargs)
+  File "renpy/character.py", line 1249, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/character.py", line 901, in do_display
+    **display_args)
+  File "renpy/character.py", line 647, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3839, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "renpy/display/core.py", line 2565, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/screen.py", line 688, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 826, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/display/layout.py", line 1264, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "renpy/text/text.py", line 2096, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "renpy/text/text.py", line 610, in __init__
+    self.paragraphs = self.segment(text.tokens, style, renders, text)
+  File "renpy/text/text.py", line 1259, in segment
+    raise Exception("Unknown text tag %r" % text)
+Exception: Unknown text tag u'me'
+
+While processing text tag {me} in u'Everyone except{me}'.:
+  File "game/story.rpy", line 1021, in script
+    "Everyone except{me}"
+Exception: Unknown text tag u'me'
+Resetting cache.
+Bootstrap to the start of init.init took 393.22s
+Early init took 0.00s
+Loader init took 0.21s
+Loading error handling took 0.06s
+Loading script took 1.45s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ImportError: No module named revertable
+Loading save slot metadata. took 0.10s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.38s
+Loading analysis data took 0.07s
+Analyze and compile ATL took 0.07s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
+Dump and make backups. took 0.21s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.18s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.17s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.09s
+Prepare screens took 0.17s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.78s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1184, 666) drawable=(1184, 666)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 4160, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/transition.py", line 48, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 727, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1323, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/behavior.py", line 983, in event
+    return handle_click(self.clicked)
+  File "renpy/display/behavior.py", line 918, in handle_click
+    rv = run(action)
+  File "renpy/display/behavior.py", line 323, in run
+    new_rv = run(i, *args, **kwargs)
+  File "renpy/display/behavior.py", line 330, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+  File "renpy/loadsave.py", line 771, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/python.py", line 2200, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/python.py", line 2014, in rollback
+    self.load_failed()
+  File "renpy/python.py", line 1932, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
