@@ -125,38 +125,67 @@ label choice_script:
     show koto 1bp2 at t11
     kmc "I..I'm moving schools?"
     "Tears would well up in her eyes before she even got a 'yes'."
+    show koto 1bu at t11
     kd "...Yes, and you need to pack when you get home. Now, if you think you can get little bit in. It's a lovely place up west."
+    show koto 1bu3 at t11
     kmc "W-What? Dad, that's so far from here! Why didn't you tell me sooner!?"
+    show koto 1bu at t11
     kd "Listen, that was a mistake on me and your mothers parts. We decided not to tell you until today. I'm sorry it's such short notice but...you leave tonight."
+    show koto 2bt1 at t11
     kmc "W-What?! That's ridiculous! You're lying!"
+    show koto 1bp3 at t11
     "Silence falls over both of them."
+    show koto 1bp2 at t11
     kmc "You're...not lying."
+    show koto 1bp3 at t11
     kd "Koto, sweetheart, we're both sorry."
+    show koto 2bu at t11
     "Her father would reach out to touch her but she gave him the cold shoulder."
+    show koto 2bu3 at t11
     kmc "How...how could you?! First, you switch my schools even though I never wanted to leave, and then you only give me one day to pack?"
+    show koto 1bu2 at t11
     kmc "To say goodbye to {i}all{/i} of my friends??"
+    show koto 1bu at t11
     kd "We switched you because it offers more extensive programs than this backwater school!"
+    show koto 2bu3 at t11
     kmc "Oh yeah? Well this 'backwater school'? I love it. With all my heart."
+    show koto 1bu4 at t11
     kmc "And don't even get me started on the 'extra programs' bullshit. I'm a highschooler! I can look into that myself when I'm a senior! It's not time to think about any of that yet!!"
+    show koto 2bu2 at t11
     kmc "I'm only a sophomore, I don't need anything extra right now!"
+    show koto 1bu at t11
     kd "...{w=0.5}It's always nice to start early."
+    show koto 2bt at t11
     "Kotonoha would grunt and throw her pillow at her desk, frustrated as to why any of this was held from her. She looks back at her father defiantly."
+    show koto 1bu2 at t11
     kmc "I'm not going."
+    show koto 1bw at t11
     kd "You must. You've already been unenlisted. Today {b}{i}is{/b}{/i} your last day. If you show up tommorow, you're not a registered student and they'll throw you off campus."
+    show koto 1bv1 at t11
     kd "And if you're not in your new school, they'll prosecute all of us, as you have to be in a school building as a sophomore."
     kd "It has already been done and there's no if's and's or but's about it, young lady."
+    show koto 1bp3 at t11
     "Koto looks defeated. She was powerless in this moment. Everything had been taken care of behind her back."
     "Her father takes a look at his watch."
     kd "Ah, you don't have any more spare time. It's six fifty five already. Just get dressed. You can pack when you get home."
+    show koto 1bp2 at t11
     kmc "B-But-{nw}"
+    show koto 1bp3 at t11
     kd "We can discuss later if necessary. Now, get ready."
+    show koto 1bs3 at t11
     "Her father left the room, leaving Kotonoha alone to think."
+    show koto 1bp at t11
     "How could they just do this to her? She knew it was an epidemic. Almost every person she had talked to said that thier parents had packed them up and moved them here."
     "But that's just it. Those parents sent their kids off to {b}this{/b} school. Koto had been in this district since she was a child and now, she had to move to one all the way up west."
+    show koto 1bo at t11
     "This would be the last time she saw her room. The last time she saw her parents, her friends, her real home."
+    show koto 1bp3 at t11
     "After high school was college, and she had already thought about where she wanted to go. She was already taking dual credit classes and saving up for the ridiculously expensive room and board."
+    show koto 1bw at t11
     "She had no reason to come back here. Maybe when she finished? But that was 6 years from now! Her friends would be long gone, her parents older, the school filled with new and unfamilar faces."
-    "However, this was no time to think about what was shaping up to be her pretty shitty day. It was 7:05. She needed to get ready for school. She had 8 hours to say goodbye to everyone."
+    show koto 1bv1 at t11
+    "However, this was no time to think about what was shaping up to be a pretty shitty day. Maybe her worst, but it was hard to tell. There was a competetor for that spot."
+    "At least for now. It was 7:05. She needed to get ready for school. She had 8 hours to say goodbye to everyone."
     "And an extra 2 to announce it to the club. What would they even say to her...?...It doesn't matter, at least not yet..."
     "That's later in the afternoon. She hasn't even left the house, let alone gotten ready."
     "She needed to hurry."
@@ -205,35 +234,51 @@ label choice_script:
     show natsuki 5b at t21
     show yuri 1q at t22
     n "And that's why anteaters are weird!!"
+    show yuri 1o at t22
     y "You think they're weird because they...do what they're named after doing?"
+    show natsuki 5e at t21
     n "Yeah!! Like why can't they be called cakeeaters or somethin?!"
+    show yuri 1h at t22
     y "Cakeaters? Really?"
+    show yuri 1h at t22
+    show natsuki 5d at t21
     n "It's better than ants!!!"
-    hide yuri
-    hide natsuki
+    hide yuri at t22
+    hide natsuki at t21
     scene bg closet
     show sayori 1u at t21
     show monika 1d at t22
     m "So you did that the other day??" 
     show sayori 4w at t21
     s "The cheer team dared me to! I would never do that on purpose!!"
+    show monika 4r at t22
     m "Even if they did, Sayori, you didn't have to go through with it. You could've reported them to a higher offical. This behavior won't be tolerated inside or outside of this club."
+    show sayori 2v at t21
     s "I-I understand..."
     hide sayori
     hide monika
     scene bg club_day
-    show koto 1u at t11
+    show koto 1u at t51
     "She'd make her steps a little louder than usual on purpose to catch everyone's attention."
+    show koto 1u at t52
     "Monika almost immediently takes notice and walks over to Kotonoha."
     show koto 1u at t21
-    show monika 5a at t22
+    show monika 5c at t22
     m "Koto! Welcome! We were waiting on you to share poems! {nw}"
+    show koto 1u2 at t21
     kmc "Monika...hey.."
+    show monika 1g at t22
     m "Is something the matter?"
+    show koto 1p2 at t21
     kmc "Could you just...round everyone up, please? I've got something kind of important to say."
+    show koto 1p3 at t21
+    show monika 1i at t22
     m "Oh! Uh..well...I suppose so."
+    show monika 4i at t22
     m "You're usually never one to joke so if you say it's something important, I trust you."
-    stop music fadeout 1.0 
+    stop music fadeout 1.0
+    hide monika
+    hide koto
     "Monika calls out to the rest of the club members and they all reluctantly stop their conversations and walk towards Monika, all congregated in the front as they tend to do."
     show monika 1a at t51
     show sayori 1a at t52
@@ -1022,7 +1067,62 @@ label choice_script:
     kmc "Me."
     "Koto had been silent the entire time, watching and listening to her friends bring up memories."
     "They all looked genuinely joyous, reminiscing on memories."
-    "Man, I'm gonna miss them. So, so bad."
+    "Man, I'm gonna miss them."
+    "So, so bad."
+    "Koto looks around, soaking in the enviroment."
+    hide monika 
+    hide natsuki
+    hide sayori
+    hide yuri
+    show koto 1q at t11
+    pause (1.0)
+    show koto 1p at t11
+    pause (1.0)
+    show koto 1q at t11
+    pause (1.0)
+    show koto 1p at t11
+    pause (1.0)
+    show koto 1p3 at t11
+    pause (2.0)
+    show koto 1p2 at t11
+    kmc "Why is saying goodbye so hard?"
+    kmc "Why can't I just tell them goodbye and be on my way?"
+    kmc "Why are we just do a simple group hug and just move on?"
+    kmc "This feels pointless..."
+    show koto 1o at t11
+    #have static fade gradually sooner than this
+    pause (5.0)
+    #cut it off when yuri arrives
+    show yuri 1a at t21
+    show koto 1a at t22
+    y "Are you okay?"
+    "Kotonoha snaps out of her little daze, holding her head for a second."
+    "She slowly turns to her cousin and smiles a sweet smile before taking a tiny sip of her tea."
+    kmc "I'm okay, Yuri. Promise."
+    y "If you say so, Koto."
+    "Sayori looked up from her cupcake, speaking with her mouth full." #make cupcake mess for sayori like i did for natsuki
+    show sayori 1a at t52
+    show yuri 1a at t54
+    show koto 1a at t55
+    s "Mmf!! Boff uv yu! Come over here!!"
+    "Sayori starts to choke."
+    show natsuki 1a at t51
+    "Natsuki rolls her eyes and smacks Sayori's back, making the lodged piece of cake fall out of her mouth."
+    n "First of all, don't talk with your mouth full."
+    n "And SECOND! DON'T WASTE MY DAMN CUPCAKES OR I'LL RIP YOUR HAIR OUT ANYWAY!"
+    "Sayori covers her head."
+    s "Okay, okay!! Stop trying to yank my hair out, yeesh!!!"
+    kmc "We should probably get back over there before they kill each other..."
+    y "Wise idea."
+    "Yuri chuckles as she grabs Kotonoha's hand and forces her over with the rest of the girls."
+
+
+
+
+
+    
+    
+
     return
 
 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 927: end of line expected.
-    show monika at 1a at t11
-                    ^
+File "game/story.rpy", line 254: expected 'simple_expression' not found.
+    show monika 4r at at t22
+                      ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Aug 17 20:57:51 2024
+Sun Sep  8 20:03:52 2024

@@ -1391,6 +1391,8 @@ image monika 4r = im.Composite((960, 960), (0, 0), "monika/2l.png", (0, 0), "mon
 
 image monika 5a = im.Composite((960, 960), (0, 0), "monika/3a.png")
 image monika 5b = im.Composite((960, 960), (0, 0), "monika/3b.png")
+image monika 5c = im.Composite((960, 960), (0, 0), "monika/3c.png")
+
 
 image monika 6a = "monicrazed.png"
 
@@ -2010,6 +2012,14 @@ image mc 3w = im.Composite((960, 960), (0, 0), "player/w.png", (0, 0), "player/3
 image mc 3x = im.Composite((960, 960), (0, 0), "player/x.png", (0, 0), "player/3.png")
 image mc 3y = im.Composite((960, 960), (0, 0), "player/y.png", (0, 0), "player/3.png")
 image mc 3z = im.Composite((960, 960), (0, 0), "player/z.png", (0, 0), "player/3.png")
+
+
+image koto 1p3 = im.Composite((960, 960), (0, 0), "kotonoha/1.png", (0, 0), "kotonoha/p3.png")
+image koto 1bp3 = im.Composite((960, 960), (0, 0), "kotonoha/1b.png", (0, 0), "kotonoha/p3.png")
+image koto 1bu4 = im.Composite((960, 960), (0, 0), "kotonoha/1b.png", (0, 0), "kotonoha/u4.png")
+image koto 1bs3 = im.Composite((960, 960), (0, 0), "kotonoha/1b.png", (0, 0), "kotonoha/s3.png")
+image koto 1bs3r = im.Composite((960, 960), (0, 0), "kotonoha/1b.png", (0, 0), "kotonoha/s3r.png")
+
 
 
 ###### Character Variables ######
