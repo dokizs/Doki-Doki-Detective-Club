@@ -280,19 +280,32 @@ label choice_script:
     hide monika
     hide koto
     "Monika calls out to the rest of the club members and they all reluctantly stop their conversations and walk towards Monika, all congregated in the front as they tend to do."
-    show monika 1a at t51
-    show sayori 1a at t52
-    show natsuki 1a at t53
-    show yuri 1a at t54
-    show koto 1a at t55
+    show monika 1c at t51
+    show sayori 1b2 at t52
+    show natsuki 5g at t53
+    show yuri 1f2 at t54
+    show koto 1p3 at t55
+    pause (2.0)
+    show monika 3d at t51
     m "So...your news...?"
+    show koto 1p at t55
     kmc "Right..."
+    show natsuki 5e at t53
     n "Oh, come on! You have Monika round us all up and then you forget your damn question?? This is a waste of time!!"
+    show koto 1p2 at t55
     kmc "Natsuki, this is ser {nw}"
-    m "NATSUKI! Kotonoha doesn't like to slack off unlike the rest of you. It's something important, at least to her, as far as you know."
+    show monika 4i at t51
+    m "NATSUKI!{w=1} Kotonoha doesn't like to slack off unlike the rest of you. It's something important, at least to her, as far as you know."
+    show monika 1b at t51
     m "Her and Yuri actually. The family ties are the most obvious in that aspect."
+    show yuri 3c at t54
+    show koto 5h1 at t55
     "Koto and Yuri would share a smile at Monika, appreciating the compliement."
+    "Monika smiles back before turning back to Natsuki."
+    show monika 5b at t51  
     m "So if you would kindly be quiet and let our fellow club member speak, it'd be gladly appreciated."
+    show monika 1h at t51
+    show natsuki 22bta at t53
     "Natsuki piped down after getting softly scolded by Monika."
     kmc "Thank you, Moni."
     kmc "So...my announcement. I...I..."
@@ -1115,6 +1128,26 @@ label choice_script:
     kmc "We should probably get back over there before they kill each other..."
     y "Wise idea."
     "Yuri chuckles as she grabs Kotonoha's hand and forces her over with the rest of the girls."
+    "Koto smiles and giggles but she allows herself to be dragged."
+    "She quickly joined in on the joking with the girls, even starting to share personal stories."
+    "Let's just say {w=1} tears of joy weren't the only tears shed that afternoon."
+    pause (3.0)
+    "Monika repeatedly checks the clock on the wall."
+    "Her foot practically was slamming against the floor in anticipation."
+    "She needed to check the code, see what was amiss."
+    "{i}RING RONG RING{/i}"
+    sspeak "Attention students, the time is 5:50. Please wrap up your club activites and clean your classrooms!"
+    sspeak "All clubs end at 6 and all students must be out of the building by 6:15."
+    sspeak "Have a great rest of your day!"
+    "{i}RING RONG RING{/i}"
+    "Monika perks up."
+    m "You heard her, you guys! Time to start cleaning up!"
+    s "Wait!!"
+    "Monika rolls her eyes to the side before turning to face Sayori."
+    m "What is it, Sayori..?"
+    s "I have stuff to say!!"
+    m "What kind of stuff?"
+    "Sayori stands up, one foot on her desk and the other on her chair."
 
 
 
