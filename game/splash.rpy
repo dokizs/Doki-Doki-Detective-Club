@@ -300,7 +300,7 @@ label splashscreen:
     show white
     $ persistent.ghost_menu = False
     $ splash_message = renpy.random.choice(splash_messages)
-    $ config.main_menu_music = audio.t1
+    $ config.main_menu_music = "itzmenu.mp3"
     $ renpy.music.play(config.main_menu_music)
     show intro with Dissolve(0.5, alpha=True)
     pause 2.5

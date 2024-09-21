@@ -217,7 +217,7 @@ style say_label:
     size gui.name_text_size
     xalign gui.name_xalign
     yalign 0.5
-    outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
+    outlines [(3, "#c5b7c0", 0, 0), (1, "#c5b7c0", 1, 1)]
 
 style say_dialogue:
     xpos gui.text_xpos
@@ -478,6 +478,8 @@ screen navigation():
 
             textbutton _("Characters") action [ShowMenu("bio_screen"), SensitiveIf(renpy.get_screen("bio_screen") == None)]
             
+            textbutton _("Achievements") action ShowMenu("achievement_gallery")
+
             #textbutton _("About") action ShowMenu("about")
         
 
@@ -505,7 +507,7 @@ style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
     font "gui/font/RifficFree-Bold.ttf"
     color "#fff"
-    outlines [(4, "#b59", 0, 0), (2, "#b59", 2, 2)]
+    outlines [(4, "#c5b7c0", 0, 0), (2, "#c5b7c0", 2, 2)]
     hover_outlines [(4, "#fac", 0, 0), (2, "#fac", 2, 2)]
     insensitive_outlines [(4, "#fce", 0, 0), (2, "#fce", 2, 2)]
 
@@ -528,7 +530,7 @@ screen main_menu():
          add "menu_art_y_ghost"
          add "menu_art_n_ghost"
     else:
-        add "menu_bg"
+        add "themenu.png"
         add "menu_art_y"
         add "menu_art_n"
     frame:
@@ -729,7 +731,7 @@ style game_menu_label_text:
     font "gui/font/RifficFree-Bold.ttf"
     size gui.title_text_size
     color "#fff"
-    outlines [(6, "#b59", 0, 0), (3, "#b59", 2, 2)]
+    outlines [(6, "#c5b7c0", 0, 0), (3, "#c5b7c0", 2, 2)]
     yalign 0.5
 
 style return_button:
@@ -1064,7 +1066,7 @@ style pref_label_text:
     font "gui/font/RifficFree-Bold.ttf"
     size 24
     color "#fff"
-    outlines [(3, "#b59", 0, 0), (1, "#b59", 1, 1)]
+    outlines [(3, "#c5b7c0", 0, 0), (1, "#c5b7c0", 1, 1)]
     yalign 1.0
 
 style pref_vbox:
@@ -1121,10 +1123,10 @@ init -10 python:
 
 # Example character data
 define characters = [
-    BioCharacter("Monika", "President of the Literature Club, Monika is best known for her stellar looks, superb athleticism, and being at the top of her class. Much like a book, though, there's a lot more to her than what's on the surface...\n\nHeight: 5'1'' / 160.02cm\nWeight: 125lbs / 56.7kg\nEye Color: Green\nEthnicity: Unknown", "Doki Doki Literature Club!  (2017)\nMonika After Story               (2017)\nDDLC Plus!                             (2021)", "gui/menu_art_m.png", "mod_assets/bio_ddlc.png", "gui/poemgame/m_sticker_1.png", "gui/poemgame/m_sticker_2.png"),
-    BioCharacter("Natsuki", "An aficionado at all things baking and unhesitant to put you in your place, Natsuki brings equal amounts of sweet and sour to the table...not specifically for you, or anything. No calling her cute!\n\nHeight: 4'11'' / 149.86cm\nWeight: 92.5lbs / 42kg\nEye Color: Magenta\nEthnicity: Japan", "Doki Doki Literature Club!  (2017)\nExit Music                               (2018)\nDDLC Plus!                              (2021)", "gui/menu_art_n.png", "mod_assets/bio_ddlc.png", "gui/poemgame/n_sticker_1.png", "gui/poemgame/n_sticker_2.png"),
-    BioCharacter("Sayori", "A best friend to the very end! Sayori's trademark smiles and clumsy attitude never fail to lift the spirits of nearly anyone she meets. Don't be too fooled by it, though, for those who smile the widest tend to cry the hardest...\n\nHeight: 5'2'' / 157.48cm\nWeight: 119lbs / 54kg\nEye Color: Blue\nEthnicity: Japan", "Doki Doki Literature Club!  (2017)\nSalvation                                 (2018)\nDDLC Plus!                              (2021)", "gui/menu_art_s.png", "mod_assets/bio_ddlc.png", "gui/poemgame/s_sticker_1.png", "gui/poemgame/s_sticker_2.png"),
-    BioCharacter("Yuri", "When she's not buried in the world of books, Yuri shyly brings an air of serenity to wherever she goes, sometimes accompanied by a hot cup of tea. Trust in her eyes goes a long way, so be sure to never break hers.\n\nHeight: 5'5'' / 165.1cm\nWeight: 130lbs / 59kg\nEye Color: Purple\nEthnicity: Japan", "Doki Doki Literature Club!  (2017)\nFallen Angel                           (2019)\nDDLC Plus!                              (2021)", "gui/menu_art_y.png", "mod_assets/bio_ddlc.png", "gui/poemgame/y_sticker_1.png", "gui/poemgame/y_sticker_2.png")
+    BioCharacter("Kotonoha", "Enter description!\n\nHeight: i dunno'' / cm\nWeight: sigh / kg\nEye Color: Purple\nEthnicity: Japanese", "Doki Doki Literature Club!  (2017)\nMonika After Story               (2017)\nDDLC Plus!                             (2021)", "gui/kotomenu.png", "mod_assets/bio_ddlc.png", "gui/poemgame/m_sticker_1.png", "gui/poemgame/m_sticker_2.png"),
+    BioCharacter("Mio", "Enter description!\n\nHeight: i dunno'' / cm\nWeight: sigh / kg\nEye Color: Red\nEthnicity: Japanese", "Doki Doki Literature Club!  (2017)\nExit Music                               (2018)\nDDLC Plus!                              (2021)", "gui/miomenu.png", "mod_assets/bio_ddlc.png", "gui/poemgame/n_sticker_1.png", "gui/poemgame/n_sticker_2.png"),
+    BioCharacter("Kane", "Enter description!\n\nHeight: i dunno'' / cm\nWeight: sigh / kg\nEye Color: Brown\nEthnicity: Japanese", "Doki Doki Literature Club!  (2017)\nSalvation                                 (2018)\nDDLC Plus!                              (2021)", "gui/mcmenu.png", "mod_assets/bio_ddlc.png", "gui/poemgame/s_sticker_1.png", "gui/poemgame/s_sticker_2.png"),
+    BioCharacter("Kiyomi", "Enter description!\n\nHeight: i dunno'' / cm\nWeight: sigh / kg\nEye Color: Blue\nEthnicity: Japanese", "Doki Doki Literature Club!  (2017)\nFallen Angel                           (2019)\nDDLC Plus!                              (2021)", "gui/kiyomimenu.png", "mod_assets/bio_ddlc.png", "gui/poemgame/y_sticker_1.png", "gui/poemgame/y_sticker_2.png")
 ]
 
 default index = 0

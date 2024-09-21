@@ -32,6 +32,8 @@ label story:
             jump choice_teaser
         "Memes":
             jump choice_memevid
+        "Phone":
+            jump choice_phone
 
 
 label choice_sure:
@@ -56,10 +58,14 @@ label choice_no:
     show sayori 4s
     s "T-That just means more cookies for me!!"
     
+label choice_phone:
+    call phone_call_test
+    call phone_discussion_test
 
 label choice_script:
     pause (5.0)
     scene black
+    $ startgame.grant()
     km "Look at her. Fast asleep."
     kd "She's grown up so fast."
     km "Oh, I don't think I could tell her..."

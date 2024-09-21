@@ -1,6 +1,21 @@
 # Entry point
 define config.developer = True
 
+$ default_mouse = "spin"
+
+image mouse spin:
+    "gui/spin0.png"
+    rotate 0.0
+    linear 1.0 rotate 360.0
+
+    # Pause so image prediction can happen.
+    pause 1.0
+
+    repeat
+
+define config.mouse_displayable = MouseDisplayable(
+    "gui/arrow.png", 0, 0).add("spin", "mouse spin", 9.9, 9.9)
+
 label start:
 
     # ID of this playtrhoguh

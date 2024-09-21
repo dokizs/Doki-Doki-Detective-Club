@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 254: expected 'simple_expression' not found.
-    show monika 4r at at t22
-                      ^
+File "game/phone/definitions/01definitions.rpy", line 51: invalid syntax
+    phone end discussion
+           ^
 
-Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Sep  8 20:03:52 2024
+File "game/phone/definitions/01definitions.rpy", line 60: invalid syntax
+    phone end call
+           ^
+
+Ren'Py Version: Ren'Py 8.2.3.24061702
+Fri Sep 20 22:10:57 2024
