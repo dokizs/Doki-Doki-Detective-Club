@@ -1,31 +1,31 @@
-renpy.geometry renpy.matrixcolor renpy.solid
-renpy.matrixcolor renpy.alpha renpy.solid
-shaders.circle shaders.circle
-renpy.geometry renpy.imagedissolve
-renpy.texture
-renpy.texture renpy.texture
+renpy.matrixcolor renpy.solid
+renpy.alpha renpy.texture
 renpy.alpha renpy.texture renpy.texture
 renpy.alpha renpy.geometry renpy.matrixcolor renpy.solid
-renpy.alpha renpy.geometry renpy.texture
-renpy.matrixcolor renpy.texture
 renpy.matrixcolor renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
-renpy.matrixcolor renpy.solid
+shaders.circle shaders.circle
+renpy.alpha renpy.geometry renpy.texture
+renpy.geometry renpy.texture
+renpy.solid
+renpy.ftl
+renpy.alpha renpy.geometry renpy.solid
+renpy.imagedissolve renpy.imagedissolve
+renpy.matrixcolor renpy.texture
+renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
+renpy.alpha renpy.solid
+renpy.geometry renpy.matrixcolor renpy.solid
+renpy.blur renpy.geometry
+renpy.geometry renpy.texture shader.rounded_corners
+renpy.geometry renpy.imagedissolve
+renpy.blur renpy.geometry renpy.matrixcolor
+shader.rounded_corners renpy.texture renpy.texture
+renpy.texture
 renpy.geometry renpy.matrixcolor renpy.texture
+renpy.dissolve renpy.dissolve
+renpy.dissolve renpy.geometry
+renpy.texture renpy.texture
+renpy.matrixcolor renpy.alpha renpy.solid
 renpy.geometry renpy.solid
+renpy.alpha renpy.geometry renpy.matrixcolor renpy.texture
 renpy.matrixcolor renpy.alpha renpy.texture
 renpy.geometry shaders.circle
-shader.rounded_corners renpy.texture renpy.texture
-renpy.alpha renpy.geometry renpy.matrixcolor renpy.texture
-renpy.geometry renpy.texture shader.rounded_corners
-renpy.texture -renpy.texture renpy.blur renpy.texture -renpy.texture renpy.blur
-renpy.dissolve renpy.dissolve
-renpy.geometry renpy.texture
-renpy.alpha renpy.solid
-renpy.dissolve renpy.geometry
-renpy.imagedissolve renpy.imagedissolve
-renpy.alpha renpy.texture
-renpy.blur renpy.geometry renpy.matrixcolor
-renpy.solid
-renpy.blur renpy.geometry
-renpy.alpha renpy.geometry renpy.solid
-renpy.ftl

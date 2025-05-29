@@ -182,7 +182,6 @@ image bg bedroom = "bg/bedroom.png"
 image bg sayori_bedroom = "bg/sayori_bedroom.png"
 image bg house = "bg/house.png"
 image bg kitchen = "bg/kitchen.png"
-
 image bg field = "field.png"
 image bg confrence = "Confrence.png"
 image bg HEC = "Home EC.png"
@@ -199,9 +198,37 @@ image bg SC = "sunsetcorridor.png"
 image bg AIR = "aokiinterrigationroom.png"
 image bg MCL = "Middle Class Loft.png"
 image bg SKD = "sayokitchendecoy.png"
-image bg MCL = "Middle Class Loft.png"
 image bg SS = "schoolstair.png"
 image bg KPR = "KotoPartyRoom.png"
+image bg TFJ = "threefloorjamboree.png"
+image bg SL = "schoollobby.png"
+image bg FOTS = "FrontoftheSchool.png"
+image bg SCY = "schoolcourtyard.png"
+image bg MCUL = "middle class upstairs landing.png"
+image bg MCLR = "middle class living room.png"
+image bg MCK2 = "middle class kitchen op_2.png"
+image bg RH = "richhome.png"
+image bg DT = "drivethru.png"
+image bg TB = "thebridge.png"
+image bg TBD = "thebridgeday.png"
+image bg GC = "gloomycity.png"
+image bg NH = "newhome.png"
+image bg NB = "newbed.png"
+image bg NHW = "newhall.png"
+image bg NBR = "newbath.png"
+image bg RD = "rainyday.png"
+image bg NS = "newschool.png"
+image bg NSH = "newschoolhallway.png"
+image bg NSH2 = "newschoolhall2.png"
+image bg MD = "mathdoorway.png"
+image bg MC = "mathclass.png"
+image bg DT = "detention.png"
+image bg C2 = "cafeteria2.png"
+image bg SB = "schoolbathroom.png"
+image bg UUS = "uhohstinky.png"
+image bg CS = "compsci.png"
+
+
 
 
 
@@ -328,6 +355,7 @@ image sayori 1v = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "say
 image sayori 1w = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/w.png")
 image sayori 1x = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/x.png")
 image sayori 1y = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/y.png")
+image sayori 1z = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/z.png")
 
 
 image sayori 2 = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/a.png")
@@ -356,6 +384,7 @@ image sayori 2v = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "say
 image sayori 2w = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/w.png")
 image sayori 2x = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/x.png")
 image sayori 2y = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/y.png")
+image sayori 2z = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/z.png")
 
 image sayori 3 = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
 image sayori 3a = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/a.png")
@@ -383,6 +412,7 @@ image sayori 3v = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "say
 image sayori 3w = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/w.png")
 image sayori 3x = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/x.png")
 image sayori 3y = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/y.png")
+image sayori 4y = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/z.png")
 
 image sayori 4 = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/a.png")
 image sayori 4a = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/a.png")
@@ -410,6 +440,7 @@ image sayori 4v = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "say
 image sayori 4w = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/w.png")
 image sayori 4x = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/x.png")
 image sayori 4y = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/y.png")
+image sayori 4z = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/z.png")
 
 image sayori 5 = im.Composite((960, 960), (0, 0), "sayori/3a.png")
 image sayori 5a = im.Composite((960, 960), (0, 0), "sayori/3a.png")
@@ -442,6 +473,7 @@ image sayori 1bv = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "s
 image sayori 1bw = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/w.png")
 image sayori 1bx = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/x.png")
 image sayori 1by = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/y.png")
+image sayori 1bz = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/z.png")
 
 image sayori 2ba = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/a.png")
 image sayori 2bb = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/b.png")
@@ -468,6 +500,7 @@ image sayori 2bv = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "s
 image sayori 2bw = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/w.png")
 image sayori 2bx = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/x.png")
 image sayori 2by = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/y.png")
+image sayori 2bz = im.Composite((960, 960), (0, 0), "sayori/1bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/z.png")
 
 image sayori 3ba = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/a.png")
 image sayori 3bb = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/b.png")
@@ -494,6 +527,7 @@ image sayori 3bv = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "s
 image sayori 3bw = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/w.png")
 image sayori 3bx = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/x.png")
 image sayori 3by = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/y.png")
+image sayori 3bz = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/1br.png", (0, 0), "sayori/z.png")
 
 image sayori 4ba = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/a.png")
 image sayori 4bb = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/b.png")
@@ -520,6 +554,7 @@ image sayori 4bv = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "s
 image sayori 4bw = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/w.png")
 image sayori 4bx = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/x.png")
 image sayori 4by = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/y.png")
+image sayori 4bz = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/z.png")
 
 image sayori glitch:
     "sayori/glitch1.png"
@@ -557,6 +592,34 @@ image natsuki 1x = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "n
 image natsuki 1y = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/y.png")
 image natsuki 1z = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/z.png")
 
+image natsuki 112 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t2.png")
+image natsuki 1a2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/a2.png")
+image natsuki 1b2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/b2.png")
+image natsuki 1c2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/c2.png")
+image natsuki 1d2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/d2.png")
+image natsuki 1e2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/e2.png")
+image natsuki 1f2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/f2.png")
+image natsuki 1g2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/g2.png")
+image natsuki 1h2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/h2.png")
+image natsuki 1i2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/i2.png")
+image natsuki 1j2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/j2.png")
+image natsuki 1k2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/k2.png")
+image natsuki 1l2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/l2.png")
+image natsuki 1m2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/m2.png")
+image natsuki 1n2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/n2.png")
+image natsuki 1o2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/o2.png")
+image natsuki 1p2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/p2.png")
+image natsuki 1q2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/q2.png")
+image natsuki 1r2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/r2.png")
+image natsuki 1s2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/s2.png")
+image natsuki 1t2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/t2.png")
+image natsuki 1u2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/u2.png")
+image natsuki 1v2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/v2.png")
+image natsuki 1w2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/w2.png")
+image natsuki 1x2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/x2.png")
+image natsuki 1y2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/y2.png")
+image natsuki 1z2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/z2.png")
+
 image natsuki 21 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t.png")
 image natsuki 2a = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/a.png")
 image natsuki 2b = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/b.png")
@@ -584,6 +647,34 @@ image natsuki 2w = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "n
 image natsuki 2x = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/x.png")
 image natsuki 2y = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/y.png")
 image natsuki 2z = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/z.png")
+
+image natsuki 212 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t2.png")
+image natsuki 2a2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/a2.png")
+image natsuki 2b2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/b2.png")
+image natsuki 2c2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/c2.png")
+image natsuki 2d2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/d2.png")
+image natsuki 2e2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/e2.png")
+image natsuki 2f2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/f2.png")
+image natsuki 2g2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/g2.png")
+image natsuki 2h2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/h2.png")
+image natsuki 2i2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/i2.png")
+image natsuki 2j2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/j2.png")
+image natsuki 2k2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/k2.png")
+image natsuki 2l2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/l2.png")
+image natsuki 2m2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/m2.png")
+image natsuki 2n2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/n2.png")
+image natsuki 2o2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/o2.png")
+image natsuki 2p2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/p2.png")
+image natsuki 2q2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/q2.png")
+image natsuki 2r2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/r2.png")
+image natsuki 2s2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/s2.png")
+image natsuki 2t2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/t2.png")
+image natsuki 2u2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/u2.png")
+image natsuki 2v2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/v2.png")
+image natsuki 2w2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/w2.png")
+image natsuki 2x2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/x2.png")
+image natsuki 2y2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/y2.png")
+image natsuki 2z2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/z2.png")
 
 image natsuki 31 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t.png")
 image natsuki 3a = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/a.png")
@@ -613,6 +704,34 @@ image natsuki 3x = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "n
 image natsuki 3y = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/y.png")
 image natsuki 3z = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/z.png")
 
+image natsuki 312 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t2.png")
+image natsuki 3a2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/a2.png")
+image natsuki 3b2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/b2.png")
+image natsuki 3c2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/c2.png")
+image natsuki 3d2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/d2.png")
+image natsuki 3e2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/e2.png")
+image natsuki 3f2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/f2.png")
+image natsuki 3g2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/g2.png")
+image natsuki 3h2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/h2.png")
+image natsuki 3i2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/i2.png")
+image natsuki 3j2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/j2.png")
+image natsuki 3k2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/k2.png")
+image natsuki 3l2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/l2.png")
+image natsuki 3m2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/m2.png")
+image natsuki 3n2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/n2.png")
+image natsuki 3o2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/o2.png")
+image natsuki 3p2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/p2.png")
+image natsuki 3q2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/q2.png")
+image natsuki 3r2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/r2.png")
+image natsuki 3s2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/s2.png")
+image natsuki 3t2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/t2.png")
+image natsuki 3u2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/u2.png")
+image natsuki 3v2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/v2.png")
+image natsuki 3w2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/w2.png")
+image natsuki 3x2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/x2.png")
+image natsuki 3y2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/y2.png")
+image natsuki 3z2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/z2.png")
+
 image natsuki 41 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t.png")
 image natsuki 4a = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/a.png")
 image natsuki 4b = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/b.png")
@@ -640,6 +759,34 @@ image natsuki 4w = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "n
 image natsuki 4x = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/x.png")
 image natsuki 4y = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/y.png")
 image natsuki 4z = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/z.png")
+
+image natsuki 412 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t2.png")
+image natsuki 4a2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/a2.png")
+image natsuki 4b2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/b2.png")
+image natsuki 4c2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/c2.png")
+image natsuki 4d2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/d2.png")
+image natsuki 4e2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/e2.png")
+image natsuki 4f2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/f2.png")
+image natsuki 4g2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/g2.png")
+image natsuki 4h2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/h2.png")
+image natsuki 4i2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/i2.png")
+image natsuki 4j2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/j2.png")
+image natsuki 4k2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/k2.png")
+image natsuki 4l2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/l2.png")
+image natsuki 4m2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/m2.png")
+image natsuki 4n2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/n2.png")
+image natsuki 4o2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/o2.png")
+image natsuki 4p2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/p2.png")
+image natsuki 4q2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/q2.png")
+image natsuki 4r2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/r2.png")
+image natsuki 4s2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/s2.png")
+image natsuki 4t2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/t2.png")
+image natsuki 4u2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/u2.png")
+image natsuki 4v2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/v2.png")
+image natsuki 4w2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/w2.png")
+image natsuki 4x2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/x2.png")
+image natsuki 4y2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/y2.png")
+image natsuki 4z2 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/z2.png")
 
 image natsuki 12 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/2t.png")
 image natsuki 12a = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/2ta.png")
@@ -692,6 +839,35 @@ image natsuki 5y = im.Composite((960, 960), (18, 22), "natsuki/y.png", (0, 0), "
 image natsuki 5z = im.Composite((960, 960), (18, 22), "natsuki/z.png", (0, 0), "natsuki/3.png")
 image natsuki 52 = im.Composite((960, 960), (0, 0), "natsuki/3.png", (0, 0), "natsuki/4t.png")
 
+image natsuki 512 = im.Composite((960, 960), (18, 22), "natsuki/1t2.png", (0, 0), "natsuki/3.png")
+image natsuki 5a2 = im.Composite((960, 960), (18, 22), "natsuki/a2.png", (0, 0), "natsuki/3.png")
+image natsuki 5b2 = im.Composite((960, 960), (18, 22), "natsuki/b2.png", (0, 0), "natsuki/3.png")
+image natsuki 5c2 = im.Composite((960, 960), (18, 22), "natsuki/c2.png", (0, 0), "natsuki/3.png")
+image natsuki 5d2 = im.Composite((960, 960), (18, 22), "natsuki/d2.png", (0, 0), "natsuki/3.png")
+image natsuki 5e2 = im.Composite((960, 960), (18, 22), "natsuki/e2.png", (0, 0), "natsuki/3.png")
+image natsuki 5f2 = im.Composite((960, 960), (18, 22), "natsuki/f2.png", (0, 0), "natsuki/3.png")
+image natsuki 5g2 = im.Composite((960, 960), (18, 22), "natsuki/g2.png", (0, 0), "natsuki/3.png")
+image natsuki 5h2 = im.Composite((960, 960), (18, 22), "natsuki/h2.png", (0, 0), "natsuki/3.png")
+image natsuki 5i2 = im.Composite((960, 960), (18, 22), "natsuki/i2.png", (0, 0), "natsuki/3.png")
+image natsuki 5j2 = im.Composite((960, 960), (18, 22), "natsuki/j2.png", (0, 0), "natsuki/3.png")
+image natsuki 5k2 = im.Composite((960, 960), (18, 22), "natsuki/k2.png", (0, 0), "natsuki/3.png")
+image natsuki 5l2 = im.Composite((960, 960), (18, 22), "natsuki/l2.png", (0, 0), "natsuki/3.png")
+image natsuki 5m2 = im.Composite((960, 960), (18, 22), "natsuki/m2.png", (0, 0), "natsuki/3.png")
+image natsuki 5n2 = im.Composite((960, 960), (18, 22), "natsuki/n2.png", (0, 0), "natsuki/3.png")
+image natsuki 5o2 = im.Composite((960, 960), (18, 22), "natsuki/o2.png", (0, 0), "natsuki/3.png")
+image natsuki 5p2 = im.Composite((960, 960), (18, 22), "natsuki/p2.png", (0, 0), "natsuki/3.png")
+image natsuki 5q2 = im.Composite((960, 960), (18, 22), "natsuki/q2.png", (0, 0), "natsuki/3.png")
+image natsuki 5r2 = im.Composite((960, 960), (18, 22), "natsuki/r2.png", (0, 0), "natsuki/3.png")
+image natsuki 5s2 = im.Composite((960, 960), (18, 22), "natsuki/s2.png", (0, 0), "natsuki/3.png")
+image natsuki 5t2 = im.Composite((960, 960), (18, 22), "natsuki/t2.png", (0, 0), "natsuki/3.png")
+image natsuki 5u2 = im.Composite((960, 960), (18, 22), "natsuki/u2.png", (0, 0), "natsuki/3.png")
+image natsuki 5v2 = im.Composite((960, 960), (18, 22), "natsuki/v2.png", (0, 0), "natsuki/3.png")
+image natsuki 5w2 = im.Composite((960, 960), (18, 22), "natsuki/w2.png", (0, 0), "natsuki/3.png")
+image natsuki 5x2 = im.Composite((960, 960), (18, 22), "natsuki/x2.png", (0, 0), "natsuki/3.png")
+image natsuki 5y2 = im.Composite((960, 960), (18, 22), "natsuki/y2.png", (0, 0), "natsuki/3.png")
+image natsuki 5z2 = im.Composite((960, 960), (18, 22), "natsuki/z2.png", (0, 0), "natsuki/3.png")
+image natsuki 522 = im.Composite((960, 960), (0, 0), "natsuki/3.png", (0, 0), "natsuki/4t.png")
+
 
 image natsuki 1ba = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/a.png")
 image natsuki 1bb = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/b.png")
@@ -720,6 +896,33 @@ image natsuki 1bx = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), 
 image natsuki 1by = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/y.png")
 image natsuki 1bz = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/z.png")
 
+image natsuki 1ba2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/a.png")
+image natsuki 1bb2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/b.png")
+image natsuki 1bc2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/c.png")
+image natsuki 1bd2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/d.png")
+image natsuki 1be2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/e.png")
+image natsuki 1bf2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/f.png")
+image natsuki 1bg2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/g.png")
+image natsuki 1bh2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/h.png")
+image natsuki 1bi2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/i.png")
+image natsuki 1bj2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/j.png")
+image natsuki 1bk2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/k.png")
+image natsuki 1bl2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/l.png")
+image natsuki 1bm2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/m.png")
+image natsuki 1bn2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/n.png")
+image natsuki 1bo2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/o.png")
+image natsuki 1bp2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/p.png")
+image natsuki 1bq2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/q.png")
+image natsuki 1br2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/r.png")
+image natsuki 1bs2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/s.png")
+image natsuki 1bt2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/t.png")
+image natsuki 1bu2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/u.png")
+image natsuki 1bv2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/v.png")
+image natsuki 1bw2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/w.png")
+image natsuki 1bx2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/x.png")
+image natsuki 1by2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/y.png")
+image natsuki 1bz2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/z.png")
+
 image natsuki 2ba = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/a.png")
 image natsuki 2bb = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/b.png")
 image natsuki 2bc = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/c.png")
@@ -746,6 +949,34 @@ image natsuki 2bw = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), 
 image natsuki 2bx = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/x.png")
 image natsuki 2by = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/y.png")
 image natsuki 2bz = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/z.png")
+
+
+image natsuki 2ba2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/a2.png")
+image natsuki 2bb2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/b2.png")
+image natsuki 2bc2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/c2.png")
+image natsuki 2bd2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/d2.png")
+image natsuki 2be2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/e2.png")
+image natsuki 2bf2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/f2.png")
+image natsuki 2bg2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/g2.png")
+image natsuki 2bh2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/h2.png")
+image natsuki 2bi2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/i2.png")
+image natsuki 2bj2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/j2.png")
+image natsuki 2bk2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/k2.png")
+image natsuki 2bl2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/l2.png")
+image natsuki 2bm2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/m2.png")
+image natsuki 2bn2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/n2.png")
+image natsuki 2bo2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/o2.png")
+image natsuki 2bp2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/p2.png")
+image natsuki 2bq2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/q2.png")
+image natsuki 2br2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/r2.png")
+image natsuki 2bs2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/s2.png")
+image natsuki 2bt2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/t2.png")
+image natsuki 2bu2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/u2.png")
+image natsuki 2bv2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/v2.png")
+image natsuki 2bw2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/w2.png")
+image natsuki 2bx2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/x2.png")
+image natsuki 2by2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/y2.png")
+image natsuki 2bz2 = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/z2.png")
 
 image natsuki 3ba = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/a.png")
 image natsuki 3bb = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/b.png")
@@ -774,6 +1005,33 @@ image natsuki 3bx = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), 
 image natsuki 3by = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/y.png")
 image natsuki 3bz = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/z.png")
 
+image natsuki 3ba2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/a2.png")
+image natsuki 3bb2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/b2.png")
+image natsuki 3bc2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/c2.png")
+image natsuki 3bd2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/d2.png")
+image natsuki 3be2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/e2.png")
+image natsuki 3bf2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/f2.png")
+image natsuki 3bg2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/g2.png")
+image natsuki 3bh2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/h2.png")
+image natsuki 3bi2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/i2.png")
+image natsuki 3bj2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/j2.png")
+image natsuki 3bk2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/k2.png")
+image natsuki 3bl2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/l2.png")
+image natsuki 3bm2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/m2.png")
+image natsuki 3bn2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/n2.png")
+image natsuki 3bo2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/o2.png")
+image natsuki 3bp2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/p2.png")
+image natsuki 3bq2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/q2.png")
+image natsuki 3br2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/r2.png")
+image natsuki 3bs2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/s2.png")
+image natsuki 3bt2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/t2.png")
+image natsuki 3bu2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/u2.png")
+image natsuki 3bv2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/v2.png")
+image natsuki 3bw2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/w2.png")
+image natsuki 3bx2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/x2.png")
+image natsuki 3by2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/y2.png")
+image natsuki 3bz2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/z2.png")
+
 image natsuki 4ba = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/a.png")
 image natsuki 4bb = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/b.png")
 image natsuki 4bc = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/c.png")
@@ -800,6 +1058,33 @@ image natsuki 4bw = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), 
 image natsuki 4bx = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/x.png")
 image natsuki 4by = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/y.png")
 image natsuki 4bz = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/z.png")
+
+image natsuki 4ba2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/a2.png")
+image natsuki 4bb2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/b2.png")
+image natsuki 4bc2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/c2.png")
+image natsuki 4bd2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/d2.png")
+image natsuki 4be2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/e2.png")
+image natsuki 4bf2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/f2.png")
+image natsuki 4bg2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/g2.png")
+image natsuki 4bh2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/h2.png")
+image natsuki 4bi2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/i2.png")
+image natsuki 4bj2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/j2.png")
+image natsuki 4bk2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/k2.png")
+image natsuki 4bl2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/l2.png")
+image natsuki 4bm2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/m2.png")
+image natsuki 4bn2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/n2.png")
+image natsuki 4bo2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/o2.png")
+image natsuki 4bp2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/p2.png")
+image natsuki 4bq2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/q2.png")
+image natsuki 4br2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/r2.png")
+image natsuki 4bs2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/s2.png")
+image natsuki 4bt2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/t2.png")
+image natsuki 4bu2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/u2.png")
+image natsuki 4bv2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/v2.png")
+image natsuki 4bw2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/w2.png")
+image natsuki 4bx2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/x2.png")
+image natsuki 4by2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/y2.png")
+image natsuki 4bz2 = im.Composite((960, 960), (0, 0), "natsuki/2bl.png", (0, 0), "natsuki/2br.png", (0, 0), "natsuki/z2.png")
 
 image natsuki 12ba = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/2bta.png")
 image natsuki 12bb = im.Composite((960, 960), (0, 0), "natsuki/1bl.png", (0, 0), "natsuki/1br.png", (0, 0), "natsuki/2btb.png")
@@ -943,7 +1228,9 @@ image natsuki glitch1:
     "natsuki 4e"
 
 image natsuki scream = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/scream.png")
+image natsuki scream2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/scream2.png")
 image natsuki vomit = "natsuki/vomit.png"
+image natsuki vomit2 = "natsuki/vomit2.png"
 
 image n_blackeyes = "images/natsuki/blackeyes.png"
 image n_eye = "images/natsuki/eye.png"
@@ -2039,6 +2326,7 @@ define a = DynamicCharacter('a_name', image='aoki', what_prefix='"', what_suffix
 define ka = DynamicCharacter('ka_name', image='mc', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
 define mi = DynamicCharacter('mi_name', image='mio', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_mio.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#eb694f") ])
 define mc = DynamicCharacter('mc_name', image='player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_realmc.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#fdd106") ])
+define kiy = DynamicCharacter('kiy_name', image='kiyomi', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#fdd106") ])
 
 
 
@@ -2058,13 +2346,37 @@ define qmc = Character('MC???', what_prefix='"', what_suffix='"', ctc="ctc", ctc
 define qmc2 = Character('MC???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
 define pa = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_aoki.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#791c74") ])
 define pl = Character('???', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b79b82") ])
-define kiyomi = Character('Kiyomi',what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ffe898") ])
+define kiy = Character('Kiyomi',what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kiyomi.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#ffe898") ])
 define qmc2r = Character('MC', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_kane.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#343434") ])
 define tl = Character('Teacher', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", window_background=Image ("textbox_libitina.png", xalign=0.5, yalign=1.0), who_outlines=[ (3, "#b89b82") ])
 define e = Character('Everyone', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define exk = Character('Everyone (ex Koto)', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define speak = Character('Speaker', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
 define sspeak = Character('Loudspeaker', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define c = Character('Chauffeur', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define reg = Character('Reginald', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define emp = Character('Employee', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define j = Character('Jock', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define j2 = Character('Jock #2', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define hct = Character('homeecplaceholder', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define dct = Character('detentionplaceholder', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define mt = Character('mathplaceholder', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define ll = Character('Server Lady', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define g1 = Character('Girl 1', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define g2 = Character('Girl 2', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define g3 = Character('Girl 3', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define g4 = Character('Girl 4', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define g5 = Character('All Girls', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define cst = Character('computerscienceplaceholder', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+
+
+
+
+
+
+
+
+
 
 
 

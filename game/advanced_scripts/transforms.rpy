@@ -511,7 +511,7 @@ image vignette:
 transform vignettefade(t=0):
     alpha 0.0
     t
-    linear 25.0 alpha 1.00
+    linear 15.0 alpha 1.00
 #A random flickering in and out of the vignette
 transform vignetteflicker(t=0):
     alpha 0.0

@@ -2,13 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/phone/definitions/01definitions.rpy", line 51: invalid syntax
-    phone end discussion
-           ^
+File "game/advanced_scripts/definitions/definitions.rpy", line 651: is not terminated with a newline. (Check strings and parenthesis.)
+    image natsuki 212 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t2.png"
 
-File "game/phone/definitions/01definitions.rpy", line 60: invalid syntax
-    phone end call
-           ^
-
-Ren'Py Version: Ren'Py 8.2.3.24061702
-Fri Sep 20 22:10:57 2024
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun May 11 14:28:29 2025

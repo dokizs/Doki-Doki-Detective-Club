@@ -1,32 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 28, in script call
-    call story #story is the label.
-  File "game/story.rpy", line 62, in script call
-    call phone_call_test
-  File "game/phone/definitions/01definitions.rpy", line 56, in script
-    phone_koto "Hey!"
-Exception: Sayer 'phone_koto' is not defined.
+  File "game/story.rpy", line 2962, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 28, in script call
-    call story #story is the label.
-  File "game/story.rpy", line 62, in script call
-    call phone_call_test
-  File "game/phone/definitions/01definitions.rpy", line 56, in script
-    phone_koto "Hey!"
-  File "C:\renpy-8.2.3-sdk\renpy\ast.py", line 2560, in execute
-    Say.execute(self)
-  File "C:\renpy-8.2.3-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\renpy-8.2.3-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'phone_koto' is not defined.
+  File "game/story.rpy", line 2962, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
 
-Windows-10-10.0.22631 AMD64
-Ren'Py 8.2.3.24061702
+Windows-10-10.0.19041
+Ren'Py 7.4.11.2266
 Doki Doki Detective Club 1.1.2
-Fri Sep 20 22:25:10 2024
+Thu May 29 01:40:41 2025

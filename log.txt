@@ -1,46 +1,743 @@
-2024-09-21 22:54:21 UTC
-Windows-10-10.0.22631-SP0
-Ren'Py 8.4.0.24092001+nightly
+Thu May 29 00:17:30 2025
+Windows-10-10.0.19041
+Ren'Py 7.4.11.2266
+ 
 
-Early init took 2.36s
-Loading error handling took 0.20s
-Loading script took 4.25s
-Loading save slot metadata took 0.20s
+Bootstrap to the start of init.init took 0.19s
+Early init took 0.01s
+Loader init took 3.12s
+Loading error handling took 0.09s
+Loading script took 5.82s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading save slot metadata. took 0.94s
 Loading persistent took 0.00s
-Running init code took 0.85s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.13s
-Reloading save slot metadata took 0.08s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+ - Init at game/advanced_scripts/gui.rpy:11 took 0.28854 s.
+Running init code took 0.94s
+Loading analysis data took 0.13s
+Analyze and compile ATL took 0.06s
 Index archives took 0.00s
-Dump and make backups took 0.26s
+Dump and make backups. took 0.31s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.13s
+Initial gc. took 0.12s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.02s
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
 Init translation took 0.15s
 Build styles took 0.01s
-Load screen analysis took 0.08s
+Load screen analysis took 0.11s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.38s
+Prepare screens took 0.21s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.15s
 Running _start took 0.00s
-Interface start took 2.15s
+Performance test:
+Interface start took 0.98s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics'
-Version: b'4.6.0 - Build 31.0.101.5186'
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
 Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1366, 697) drawable=(1366, 697)
+Screen sizes: virtual=(1280, 720) physical=(681, 383) drawable=(681, 383)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1280, 720) physical=(1366, 697) drawable=(1366, 697)
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 4160, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/transition.py", line 48, in event
+    return self.new_widget.event(ev, x, y, st) # E1101
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/screen.py", line 727, in event
+    rv = self.child.event(ev, x, y, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1323, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "renpy/display/layout.py", line 273, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/layout.py", line 1102, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "renpy/display/behavior.py", line 983, in event
+    return handle_click(self.clicked)
+  File "renpy/display/behavior.py", line 918, in handle_click
+    rv = run(action)
+  File "renpy/display/behavior.py", line 323, in run
+    new_rv = run(i, *args, **kwargs)
+  File "renpy/display/behavior.py", line 330, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+  File "renpy/loadsave.py", line 771, in load
+    log.unfreeze(roots, label="_after_load")
+  File "renpy/python.py", line 2200, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "renpy/python.py", line 2014, in rollback
+    self.load_failed()
+  File "renpy/python.py", line 1932, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 173, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 173, in <module>
+    $ ui.interact()
+  File "renpy/common/00action_file.rpy", line 462, in __call__
+    renpy.load(fn)
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
+
+Full traceback:
+  File "game/story.rpy", line 65, in script call
+    label choice_script:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 65, in script call
+    label choice_script:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+Resetting cache.
+Bootstrap to the start of init.init took 608.15s
+Early init took 0.00s
+Loader init took 1.66s
+Loading error handling took 0.22s
+Loading script took 9.08s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading save slot metadata. took 0.88s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 1.12s
+Loading analysis data took 0.22s
+Analyze and compile ATL took 0.13s
+Index archives took 0.00s
+Dump and make backups. took 0.57s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.34s
+Build styles took 0.02s
+Load screen analysis took 0.15s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.50s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.01s
+Performance test:
+Interface start took 1.19s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 3012, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 3012, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+Resetting cache.
+Bootstrap to the start of init.init took 4834.26s
+Early init took 0.01s
+Loader init took 0.79s
+Loading error handling took 0.26s
+Loading script took 6.86s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading save slot metadata. took 0.61s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+ - Init at game/advanced_scripts/gui.rpy:11 took 0.37876 s.
+Running init code took 1.01s
+Loading analysis data took 0.11s
+Analyze and compile ATL took 0.07s
+Index archives took 0.00s
+Dump and make backups. took 0.29s
+Cleaning cache took 0.00s
+Making clean stores took 0.01s
+Initial gc. took 0.20s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.18s
+Build styles took 0.01s
+Load screen analysis took 0.10s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.21s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.01s
+Performance test:
+Interface start took 0.98s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story.rpy", line 3012, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 3012, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+Full traceback:
+  File "game/story.rpy", line 3012, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 3012, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+Full traceback:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+While running game code:
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
+
+Full traceback:
+  File "game/story.rpy", line 2959, in script
+    kiyomi "Goddamnit, Mom, SHUT UP!! Stop embarrassing me! I did what you asked, ok? I went to the stupid club and I hated it! It sucked!! Now, leave me alone! I just want to be left alone! GOD!"
+  File "renpy/ast.py", line 681, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'kiyomi' is not defined.
+
+While running game code:
+  File "game/story.rpy", line 2959, in script
+    kiyomi "Goddamnit, Mom, SHUT UP!! Stop embarrassing me! I did what you asked, ok? I went to the stupid club and I hated it! It sucked!! Now, leave me alone! I just want to be left alone! GOD!"
+Exception: Sayer 'kiyomi' is not defined.
+Resetting cache.
+Bootstrap to the start of init.init took 4967.70s
+Early init took 0.00s
+Loader init took 0.36s
+Loading error handling took 0.14s
+Loading script took 3.84s
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading persistent.
+Traceback (most recent call last):
+  File "renpy/persistent.py", line 201, in load
+    persistent = loads(s)
+  File "renpy/loadsave.py", line 63, in loads
+    return cPickle.loads(s)
+ValueError: unsupported pickle protocol: 5
+Loading save slot metadata. took 0.23s
+Loading persistent took 0.01s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 1.13s
+Loading analysis data took 0.10s
+Analyze and compile ATL took 0.09s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\AJ\\AppData\\Roaming/RenPy/backups\\Doki-Doki-Detective-Club':
+Dump and make backups. took 0.53s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.21s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.19s
+Build styles took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.06s
+Save screen analysis took 0.13s
+Prepare screens took 0.31s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.01s
+Performance test:
+Interface start took 0.85s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'Intel'
+Renderer: 'Intel(R) UHD Graphics 600'
+Version: '4.5.0 - Build 25.20.100.6617'
+Display Info: None
+Screen sizes: virtual=(1280, 720) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/story.rpy", line 2962, in script
+    return
+  File "renpy/ast.py", line 1567, in execute
+    next_node(renpy.game.context().lookup_return(pop=True))
+  File "renpy/execution.py", line 710, in lookup_return
+    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+
+While running game code:
+  File "game/story.rpy", line 2962, in script
+    return
+Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
