@@ -311,62 +311,102 @@ label choice_script:
     show monika 5b at t51  
     m "So if you would kindly be quiet and let our fellow club member speak, it'd be gladly appreciated."
     show monika 1h at t51
-    show natsuki 22bta at t53
+    show natsuki 13ba at s53
     "Natsuki piped down after getting softly scolded by Monika."
+    show koto 6p at t55
     kmc "Thank you, Moni."
+    show koto 1p2 at t55
     kmc "So...my announcement. I...I..."
+    show yuri 2g at t54
     "Yuri puts her hand on her cousin's shoulder."
+    show yuri 2h at t54
     y "Take your time."
     "Kotonoha would look at the clock. It was already 4:45. Enough time had passed. She only had until 6 to say goodbye. She had no time at all."
     "She'd finally break her tough girl facade."
+    show koto 1u5 at t55
     kmc "I-I DON'T HAVE TIME TO TAKE!!"
+    show koto 1u21 at t55
+    show yuri 1n at t54
     "Yuri flinches, her hand coming off Kotonoha's shoulder."
+    show monika 4d at t51
     m "Kotonoha...what are you trying to say?"
     play music ("A Faded Memory.mp3")
+    show koto 1u5 at t55
     kmc "I-I'm...I'M MOVING, ALRIGHT??"
+    #add reactions EVERYWHERE
+    show koto 1u42 at t55
     "She felt as if she was on the verge of tears and as she looked around, she saw the mood had immediately dampened significantly."
+    show sayori 2e at t52
     s "W-What...?"
+    show koto 2u2 at t55
     kmc "I-I'm moving, alright?"
+    show koto 1u21 at t55
+    show yuri 1t at t54
     y "W-Why didn't you tell us sooner?"
+    show koto 1u3 at t55
     kmc "Don't you think I would've if I knew??"
+    show koto 6t1 at t55
     kmc "My 'parents', or at least the people that I used to call parents only just told me this morning..."
+    show natsuki 4p at t53
     n "I-It must be some sort of April Fools joke or something?!"
+    show monika 1r at t51
     m "It's September {nw}"
     "A silent head shake from Koto told her everything she needed to."
+    show natsuki 5w at t53
     n "No...It can't be true..It can't!!"
     "Now Natsuki looked to be on Koto's level of emotion, looking like she was almost drawn to tears."
     s "You can't leave!! I WON'T LET YOU!!"
-    show monika 1a at t51
-    show natsuki 1a at t52
-    show yuri 1a at t53
-    show sayori 1a at t54
-    show koto 1a at t55
-    "Sayori runs up to Kotonoha, hugging her tightly." #sayori crying
+    show monika 1q at t51
+    show natsuki 1o at t52
+    show yuri 1o at t53
+    show sayori 1p at t54
+    show koto 1w2 at t55
+    "Sayori runs up to Kotonoha, hugging her tightly." 
+    show koto 3v1 at t55
     kmc "S-Sayori...plea{nw}"
+    show sayori 4v at t54
+    show yuri 4d at t53
     s "NO! I'M NOT LETTING GO!!!"
+    show monika 2g at t51
+    show natsuki 5s at t52
     m "Sayori, please let go of Kotonoha...she..."
+    show monika 1q at t51
+    pause (1.0)
+    show monika 1r at t51
     "Monika takes a deep and sharp inhale."
+    show monika 1i at t51
     m "She needs a bit of time to breathe."
+    show sayori 4w at t54
     s "S-She's gonna leave us, I-I won't let her leave!!"
+    show koto 1s at t55
     kmc "Sayori...please let me go. You're constricting my lungs..."
+    show sayori 4u at t54
+    show yuri 4c at t53
     "Sayori looks up at Koto with hurt, sadness and tears, threatening to fall."
+    show koto 1s2 at t55
     kmc "Please..."
+    show sayori 1u at t54
     "Sayori nods and finally lets go."
-    #sayori goes back to normal but stays where she is, moves back to og position later
+    show koto 1p at t55
     kmc "Thank you...I'm really sorry to all of you that it's on such short notice. Especially you, Monika."
+    show monika 2e2 at t51
     m "It's ok. I believe you when you say that your parents only told you this morning."
+    show monika 1b at t51
     m "While it is unconventional to let your child know that they are leaving you and their home they've known since as long as they've been alive, it's not anything to be worried about."
+    show monika 1j at t51
     "Monika smiles."
     "...That's strange."
+    show natsuki 1u at t52
+    show sayori 1g at t54
+    show koto 1e at t55
     "She kind of hit it directly on the head, almost like she had a glimpse inside her head. It was eerie but it struck with more of a sympathetic tone than anything."
     y "Actually...it might be."
-    "Everyone looks at Yuri." #when everyone's focused on yuri, saysay switches positions
+    "Everyone looks at Yuri."
+    show monika 4d at t51 
     m "Hm? What do you mean?"
-    show monika 1a at t51
     show sayori 1a at t52
     show natsuki 1a at t53
     show yuri 1a at t54
-    show koto 1a at t55
     y "The new policy of 'at least 5 members per club'. Remember?"
     m "Oh, you're right, Yuri. It slipped my mind."
     "Monika would facepalm softly."
@@ -2738,7 +2778,183 @@ label shared_route:
     "Koto would notice that Mrs. Reynolds and Kiyomi both had blonde hair, blue eyes."
     "She slowly saw the other features and then it clicked."
     "Her mother taught at the school ANd was the criminal justice teacher? Interesting."
-    return 
+
+    return
+    
+    #check text
+    "The door then opened again."
+    "Koto turned her head slightly, half-expecting another random student, but instead, it was Kane."
+    "He stepped inside casually, hands in his pockets, eyes surveying the room."
+    "Mrs. Reynolds looked up immediately."
+    r "You here for the club, or just wandering the halls looking charming?"
+    "Kane gave her a short grin, something between cocky and laid-back."
+    ka "Criminal Justice Club, ma’am. Thought I’d give it a shot."
+    "'Ma'am.' She raised a brow slightly at the unexpected formality, but nodded in approval."
+    r "Manners. I like that."
+    "She extended her hand out to him."
+    r "Mrs. Reynolds."
+    ka "Kane."
+    "They shook, and Koto watched as Kane's smile pulled a little wider. It was polite, smooth...too smooth."
+    "He looked completely in his element."
+    "But something about it didn’t sit right."
+    "She’d never seen him interact with a woman before, now that she thought about it, not for her, anyway."
+    "And this was the first time."
+    "His voice... it was different than how he spoke to her."
+    "Just a little deeper, a little more suave. Sensual, even."
+    "It made her want to melt but it also made her sick."
+    "Kiyomi, standing beside her, straightened up without saying a word."
+    "She subtly ran her fingers through her hair, brushing it over her shoulder."
+    "Her eyes locked onto Kane like she had just discovered gold."
+    "Koto caught the movement. She narrowed her eyes."
+    "She didn’t say anything, but the shift was obvious, Kiyomi was suddenly interested."
+    "And Koto didn’t like that she noticed."
+    "Mio looked toward Koto, noticing her glare."
+    mi "You know him?"
+    "Koto gave a small nod, but said nothing else."
+    "She felt her stomach twist slightly, not from excitement, like earlier, but something else."
+    "Something colder."
+    "Kane stepped deeper into the room, giving it a lazy once-over. Then his eyes landed on her."
+    ka "Oh. Didn’t know you were into this kinda thing too!"
+    "Koto blinked."
+    kmc "Guess I am."
+    "Her delivery comes off a little flat because of what she saw, plus Kiyomi was still fixing herself next to her."
+    "Koto wasn't smiling. Not like before, if she even was at all."
+    "And somehow, he noticed."
+    ka "...Cool. Well, looks like we’re clubmates now."
+    "He moved toward a seat, pulling it out with one hand and spinning it around so he could sit backward on it, arms slung across the backrest like he owned the room."
+    "It wasn’t cocky, that would’ve been obvious."
+    "But there was this calm ease to him, the kind people carried when they never had to try too hard to be liked."
+    "He barely glanced at Mrs. Reynolds as she began to talk, his focus more on his shoes than the club."
+    "He tapped his foot. Looked around. Rested his chin on his arm like he was just killing time."
+    "He didn’t look curious."
+    "He looked bored."
+    "And not the 'had a long day' kind of bored—the 'I've already decided this isn't worth my full attention' kind."
+    "It felt like he had shown up just to be seen. Not to learn. Not to do anything."
+    "Koto didn’t even realize she was frowning until Mio nudged her with her elbow."
+    "She sat up a little straighter and tried to take notes."
+    "It seemed like Mio was the only one taking them."
+    "Kane then leaned forward slightly and looked toward Mrs. Reynolds again."
+    ka "So like... are we doing mock arrests or something? Or are we just doing worksheets and talking?"
+    "Mrs. Reynolds paused mid-sentence and raised an eyebrow."
+    r "We’ll get to mock scenarios eventually, yes. But first, there’s foundation work to cover. Context. History. Law."
+    ka "Right. Cool."
+    "His voice had a polite tone, but it rang hollow. No follow-up. No interest. Just a checkbox ticked."
+    "He wasn’t disrespectful. But he wasn’t present, either."
+    "These things made Koto's stomach turn."
+    "How were her feelings just being shattered like this??"
+    "He showed just enough engagement to stay above suspicion, but not a single spark of actual investment."
+    "Koto looked back down at her notes. Her pencil hadn't moved in minutes, although she really did try to listen.."
+    "Kane leaned back again. This time, his eyes drifted across the group, landing on her briefly before sliding past to{nw}"
+    kiy "Heyyy, Kane, right? I’m Kiyomi."
+    "Kiyomi immediately moved closer to Kane as she spoke, pretending to adjust her shirt collar"
+    ka "Yeah. Nice to meet you."
+    "She stuck her hand out before he could react. He shook it anyway."
+    kiy "Didn’t expect to see someone like you here. Thought you were the sporty type?"
+    ka "Yeah, we'll seasons ending soon so..."
+    kiy "Hey, I never said you couldn't do two things! It's pretty cool that you're here, honestly."
+    ka "Yeah, figured it might be something different."
+    "Her laugh was short, sweet, a little breathy. Koto knew that laugh. She’d heard it earlier, in the hallway. It wasn’t real."
+    "Koto’s eyes drifted downward for a second."
+    "And just like that... the crush she’d built up in her head—the version of him she’d imagined—fell apart."
+    "It didn’t shatter."
+    "It just... dissolved."
+    "She didn’t hate him. He wasn’t rude, or mean, or doing anything particularly awful. But something inside her just... clicked out of place. Quietly."
+    "The pedestal she’d put him on? It was empty now."
+    "She barely noticed how still she had gotten."
+    "Kane leaned back in his chair again, scanning the room casually."
+    ka "Kinda figured this club would be all roleplay and handcuffs, not lectures and note-taking. Bit of a letdown."
+    "Koto’s eyes snapped toward him."
+    kmc "Then maybe you should’ve signed up for improv and left this one for people who actually care."
+    "The air tensed around them."
+    "Kane turned his head slowly to face her, blinking once."
+    ka "Was that for me, or just a general PSA?"
+    kmc "If the shoe fits."
+    "He gave a short laugh, not friendly, not cruel. Just... dismissive."
+    ka "Didn’t realize liking hands-on stuff made me the enemy."
+    kmc "It doesn’t. But walking in like this is your pit stop on your way to wherever you actually care about?"
+    kmc "Doesn't really scream {i}inspired{/i}."
+    "Kane raised his eyebrows now, glancing at her."
+    ka "Wow, so now there's a proper way to walk into a club?"
+    kmc "There's a difference between walking in and walking all over it."
+    "Kane’s brow lifted. His voice was still even, but it had cooled."
+    ka "Alright. So now you’re the standard for effort?"
+    "Kiyomi rolled her eyes."
+    kiy "He’s literally just sitting. You’re making a huge deal out of nothing."
+    kmc "You jumped in real quick to defend him, didn’t you?"
+    kiy "Because you’re attacking him for no reason!"
+    kmc "No reason? Please. You’re just mad I said it first."
+    kiy "Oh, my god, get over yourself."
+    ka "Can we not turn this into some weird competition?"
+    kmc "Funny, coming from the guy who walked in acting like he’s above it all."
+    ka "I never said I was above anything. I just didn’t realize I was gonna get psychoanalyzed on day one."
+    kmc "Right. Because that would require self-awareness."
+    "Even Mio shifted uncomfortably now."
+    kiy "Kotonoha, you’re literally the one starting everything."
+    kmc "No, I’m just not pretending it’s all fine when it clearly isn’t."
+    kiy "Maybe it is fine and you just don’t like not being the center of attention."
+    kmc "Girl, you’ve been orbiting him since he walked in. Don’t project on me."
+    "That shut Kiyomi up, only for a second."
+    ka "Okay, both of you can relax{nw}"
+    kmc "No. You started it. With your 'ugh, lectures?' attitude."
+    ka "I made a joke. If that rattles you, I’m not sure how you’re gonna handle anything serious."
+    kmc "I’m 'rattled' because people like you walk in, suck up all the space, and then act like you don’t even want to be in it."
+    ka "You don’t even know me."
+    kmc "I thought I did."
+    ka "And what made you think that?"
+    "That shut the room up again, as Koto had just secretly revealed that she had a crush on him."
+    "Koto opened her mouth to fire back{nw}"
+    mi "Hey."
+    "Koto blinked, her attention yanked sideways."
+    "Mio’s face was calm, but her eyes were asking her to stop."
+    "She didn’t say more, but that was enough."
+    "Koto took a breath and looked down, biting the inside of her cheek."
+    "Kane stayed quiet too, arms folded now, eyes flicking away."
+    "Kiyomi decided to speak up again."
+    kiy "I'm not just gonna let this go, you{nw}"
+    "{i}CLAP.{/i}"
+    #sfx
+    "Mrs. Reynolds slammed her hand down flat on the front desk. The sound cracked like thunder."
+    r "HEY. I don’t care who started it, all of you, knock it off."
+    "Silence. Every student flinched, especially Kiyomi."
+    r "This is not debate club. It’s not a soap opera. It's a space to learn. So if you're here to argue, take it outside."
+    "She let that hang for a breath, just long enough to sting."
+    r "Now sit down. Shut up. And let me teach."
+    "No one moved for a second. Then chairs creaked as everyone slowly faced forward."
+    "Mrs. Reynolds clears her throat."
+    r "Alright. Let’s bring it back."
+    "The tension deflated all at once. No one said anything, but they all shifted a little, sat straighter, quieter."
+    "The moment didn’t disappear, but no one was holding onto it either."
+    r "Looks like we’ve got a solid group..."
+    "She slides the room door closed." 
+
+
+    #check text
+    "Why don’t we start by going around, sharing your name and why you’re interested in this club."
+    "She pointed to Mio first."
+    mi "Oh! Um—I’m Mio. I’m here because I think criminal justice is cool and... I kinda want to be a cop someday?"
+    r "Good reason."
+    "She turned to the next person."
+    kmc "I’m Kotonoha. I guess... I’m just looking for something that feels right. Something that makes sense."
+    r "Makes perfect sense to me."
+    "She nodded once, then turned to Kiyomi."
+    kiy "Kiyomi. I’m here because my mom’s making me, but whatever. Might as well give it a shot."
+    "Mrs. Reynolds arched a brow but didn’t say anything."
+    "She turned finally to Kane."
+    ka "Kane. Uh... just wanted to try something new. Never really looked into this kind of stuff before."
+    "Koto glanced up."
+    "He didn’t look nervous."
+    "He didn’t even look that interested."
+    "But he knew exactly what to say."
+    "And Kiyomi? Kiyomi was practically sparkling beside him."
+    r "Good. I want all of you to stick around after today’s intro—I’ll be handing out some light case files for discussion. Just mock stuff, nothing heavy yet."
+    "Everyone gave a nod or hum of agreement."
+    "Mrs. Reynolds turned to the whiteboard and started scribbling out some bullet points."
+    "Koto leaned slightly back in her chair."
+    "Kiyomi was now leaning in toward Kane, her elbow lightly brushing against his. Kane didn’t seem to notice—or maybe he didn’t mind."
+    "Koto didn’t feel jealous. Not anymore."
+    "But she was watching."
+    "And something about him just didn’t feel right."
+ 
     
    
 

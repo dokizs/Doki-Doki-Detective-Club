@@ -13,11 +13,9 @@ init python:
         "Zayo is super epic. -Natz",
         "Doki Doki Lesbian Club shall come.",
         "Who do you think they are?",
-        "Who is your dialect coach, the Minions?",
         "You don't know who you're trying to fight.",
         "I am the danger.",
-        "Ufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufu",
-        "GO AWAY DRAKE -Nats"
+        "Ufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufufu"
     ]
 
 

@@ -1,22 +1,54 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/story.rpy", line 2962, in script
-    return
-Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/story.rpy", line 2962, in script
-    return
-  File "renpy/ast.py", line 1567, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "renpy/execution.py", line 710, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\Users\\AJ\\Desktop\\DDLC Mods\\My Mod/game/script.rpy', 1720650935, 3860).
+  File "game/story.rpy", line 2, in script call
+    label story:
+  File "renpy/common/00start.rpy", line 94, in script
+    python hide:
+  File "renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 94, in <module>
+    python hide:
+  File "renpy/common/00start.rpy", line 97, in _execute_python_hide
+    i()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/01main.rpy", line 139, in run
+    f()
+  File "renpy/curry.py", line 48, in __call__
+    return self.callable(*(self.args + args), **merged_kwargs)
+  File "game/phone/apps/calendar/calendar.rpy", line 133, in add_calendar_to_all_characters
+    add_calendar(year=year, month=month, first_day=first_day, key=key)
+  File "game/phone/apps/calendar/calendar.rpy", line 119, in add_calendar
+    if get_calendar(year=year, month=month, key=key) is not None:
+  File "game/phone/apps/calendar/calendar.rpy", line 139, in get_calendar
+    for calendar in data[key]["calendars"]:
+NameError: global name 'data' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 Doki Doki Detective Club 1.1.2
-Thu May 29 01:40:41 2025
+Sun Jun  1 16:21:04 2025

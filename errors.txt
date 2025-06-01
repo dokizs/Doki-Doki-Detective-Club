@@ -2,8 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/advanced_scripts/definitions/definitions.rpy", line 651: is not terminated with a newline. (Check strings and parenthesis.)
-    image natsuki 212 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t2.png"
+File "game/story.rpy", line 386: expected 'simple_expression' not found.
+    show koto 1p at at t55
+                    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun May 11 14:28:29 2025
+Sun Jun  1 14:10:06 2025
