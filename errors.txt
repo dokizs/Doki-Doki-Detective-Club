@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/story.rpy", line 386: expected 'simple_expression' not found.
-    show koto 1p at at t55
-                    ^
+The label shared_route is defined twice, at File "game/story.rpy", line 1084:
+label shared_route:
+and File "game/story.rpy", line 2478:
+label shared_route:
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jun  1 14:10:06 2025
+Sun Jun  8 17:24:59 2025

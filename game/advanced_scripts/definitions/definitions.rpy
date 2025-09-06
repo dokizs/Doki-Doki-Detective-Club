@@ -208,7 +208,7 @@ image bg MCUL = "middle class upstairs landing.png"
 image bg MCLR = "middle class living room.png"
 image bg MCK2 = "middle class kitchen op_2.png"
 image bg RH = "richhome.png"
-image bg DT = "drivethru.png"
+image bg DTW = "drivethru.png"
 image bg TB = "thebridge.png"
 image bg TBD = "thebridgeday.png"
 image bg GC = "gloomycity.png"
@@ -555,6 +555,16 @@ image sayori 4bw = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "s
 image sayori 4bx = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/x.png")
 image sayori 4by = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/y.png")
 image sayori 4bz = im.Composite((960, 960), (0, 0), "sayori/2bl.png", (0, 0), "sayori/2br.png", (0, 0), "sayori/z.png")
+
+image sayori 1lo = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/lo.png")
+image sayori 2lo = im.Composite((960, 960), (0, 0), "sayori/1l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/lo.png")
+image sayori 3lo = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/1r.png", (0, 0), "sayori/lo.png")
+image sayori 4lo = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/lo.png")
+
+image sayori lmno = im.Composite((960, 960), (0, 0), "sayori/2l.png", (0, 0), "sayori/2r.png", (0, 0), "sayori/lmno.png")
+
+
+
 
 image sayori glitch:
     "sayori/glitch1.png"
@@ -1163,6 +1173,14 @@ image natsuki 5bx = im.Composite((960, 960), (18, 22), "natsuki/x.png", (0, 0), 
 image natsuki 5by = im.Composite((960, 960), (18, 22), "natsuki/y.png", (0, 0), "natsuki/3b.png")
 image natsuki 5bz = im.Composite((960, 960), (18, 22), "natsuki/z.png", (0, 0), "natsuki/3b.png")
 
+image natsuki k31 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/k3.png")
+image natsuki k32 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/k3.png")
+image natsuki k33 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/k3.png")
+image natsuki k34 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/k3.png")
+image natsuki k35 = im.Composite((960, 960), (18, 22), "natsuki/k3.png", (0, 0), "natsuki/3.png")
+
+
+
 # Natsuki legacy
 image natsuki 1 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/1r.png", (0, 0), "natsuki/1t.png")
 image natsuki 2 = im.Composite((960, 960), (0, 0), "natsuki/1l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t.png")
@@ -1447,7 +1465,9 @@ image yuri 3bv = im.Composite((960, 960), (0, 0), "yuri/v.png", (0, 0), "yuri/2b
 image yuri 3bw = im.Composite((960, 960), (0, 0), "yuri/w.png", (0, 0), "yuri/2bl.png", (0, 0), "yuri/2br.png")
 
 image yuri 4ba = im.Composite((960, 960), (0, 0), "yuri/a2.png", (0, 0), "yuri/3b.png")
+image yuri 4ba2 = im.Composite((960, 960), (0, 0), "yuri/a3.png", (0, 0), "yuri/3.png")
 image yuri 4bb = im.Composite((960, 960), (0, 0), "yuri/b2.png", (0, 0), "yuri/3b.png")
+image yuri 4b3 = im.Composite((960, 960), (0, 0), "yuri/b3.png", (0, 0), "yuri/3.png")
 image yuri 4bc = im.Composite((960, 960), (0, 0), "yuri/c2.png", (0, 0), "yuri/3b.png")
 image yuri 4bd = im.Composite((960, 960), (0, 0), "yuri/d2.png", (0, 0), "yuri/3b.png")
 image yuri 4be = im.Composite((960, 960), (0, 0), "yuri/e2.png", (0, 0), "yuri/3b.png")
@@ -2353,6 +2373,12 @@ image koto 5u5 = im.Composite((960, 960), (0, 0), "kotonoha/5.png", (0, 0), "kot
 image koto 1bs3 = im.Composite((960, 960), (0, 0), "kotonoha/1b.png", (0, 0), "kotonoha/s3.png")
 image koto 1bs3r = im.Composite((960, 960), (0, 0), "kotonoha/1b.png", (0, 0), "kotonoha/s3r.png")
 
+image koto 1s4 = im.Composite((960, 960), (0, 0), "kotonoha/1.png", (0, 0), "kotonoha/s4.png")
+image koto 2s4 = im.Composite((960, 960), (0, 0), "kotonoha/2.png", (0, 0), "kotonoha/s4.png")
+image koto 3s4 = im.Composite((960, 960), (0, 0), "kotonoha/3.png", (0, 0), "kotonoha/s4.png")
+image koto 4s4 = im.Composite((960, 960), (0, 0), "kotonoha/4.png", (0, 0), "kotonoha/s4.png")
+image koto 5s4 = im.Composite((960, 960), (0, 0), "kotonoha/5.png", (0, 0), "kotonoha/s4.png")
+
 image koto 1u21 = im.Composite((960, 960), (0, 0), "kotonoha/1.png", (0, 0), "kotonoha/u21.png")
 image koto 2u21 = im.Composite((960, 960), (0, 0), "kotonoha/2.png", (0, 0), "kotonoha/u21.png")
 image koto 3u21 = im.Composite((960, 960), (0, 0), "kotonoha/3.png", (0, 0), "kotonoha/u21.png")
@@ -2370,6 +2396,25 @@ image koto 2u42 = im.Composite((960, 960), (0, 0), "kotonoha/2.png", (0, 0), "ko
 image koto 3u42 = im.Composite((960, 960), (0, 0), "kotonoha/3.png", (0, 0), "kotonoha/u42.png")
 image koto 4u42 = im.Composite((960, 960), (0, 0), "kotonoha/4.png", (0, 0), "kotonoha/u42.png")
 image koto 5u42 = im.Composite((960, 960), (0, 0), "kotonoha/5.png", (0, 0), "kotonoha/u42.png")
+
+image monika r2 = im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/1r.png", (0, 0), "monika/r2.png")
+image monika q2 = im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/1r.png", (0, 0), "monika/q2.png")
+
+image monika b4 = im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/2r.png", (0, 0), "monika/bcray.png")
+image monika b5 = im.Composite((960, 960), (0, 0), "monika/1l.png", (0, 0), "monika/1r.png", (0, 0), "monika/bcray2.png")
+
+image koto r21 = im.Composite((960, 960), (0, 0), "kotonoha/1.png", (0, 0), "kotonoha/r2.png")
+image koto r22 = im.Composite((960, 960), (0, 0), "kotonoha/2.png", (0, 0), "kotonoha/r2.png")
+image koto r23 = im.Composite((960, 960), (0, 0), "kotonoha/3.png", (0, 0), "kotonoha/r2.png")
+image koto r24 = im.Composite((960, 960), (0, 0), "kotonoha/4.png", (0, 0), "kotonoha/r2.png")
+image koto r25 = im.Composite((960, 960), (0, 0), "kotonoha/5.png", (0, 0), "kotonoha/r2.png")
+
+image koto r31 = im.Composite((960, 960), (0, 0), "kotonoha/1.png", (0, 0), "kotonoha/r3.png")
+image koto r32 = im.Composite((960, 960), (0, 0), "kotonoha/2.png", (0, 0), "kotonoha/r3.png")
+image koto r33 = im.Composite((960, 960), (0, 0), "kotonoha/3.png", (0, 0), "kotonoha/r3.png")
+image koto r34 = im.Composite((960, 960), (0, 0), "kotonoha/4.png", (0, 0), "kotonoha/r3.png")
+image koto r35 = im.Composite((960, 960), (0, 0), "kotonoha/5.png", (0, 0), "kotonoha/r3.png")
+
 
 
 

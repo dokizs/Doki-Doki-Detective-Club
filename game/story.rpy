@@ -9,7 +9,7 @@ label story:
     "Oh, there she is!"
     show sayori 1a at t11
     show yuri 1h at t33
-    s "Hey, MC!"
+    s "Hey, UP!"
     show yuri 1n at t33
     mc "Oh, hey Yuri- {nw}"
     hide yuri with moveoutleft
@@ -333,7 +333,6 @@ label choice_script:
     play music ("A Faded Memory.mp3")
     show koto 1u5 at t55
     kmc "I-I'm...I'M MOVING, ALRIGHT??"
-    #add reactions EVERYWHERE
     show koto 1u42 at t55
     "She felt as if she was on the verge of tears and as she looked around, she saw the mood had immediately dampened significantly."
     show sayori 2e at t52
@@ -400,82 +399,143 @@ label choice_script:
     show sayori 1g at t54
     show koto 1e at t55
     "She kind of hit it directly on the head, almost like she had a glimpse inside her head. It was eerie but it struck with more of a sympathetic tone than anything."
+    show yuri 4b3 at t53
     y "Actually...it might be."
     "Everyone looks at Yuri."
     show monika 4d at t51 
     m "Hm? What do you mean?"
-    show sayori 1a at t52
-    show natsuki 1a at t53
-    show yuri 1a at t54
+    show sayori 1u at t52
+    show natsuki 1u at t53
+    show yuri 4ba2 at t54
     y "The new policy of 'at least 5 members per club'. Remember?"
+    show yuri 4b at t54
     m "Oh, you're right, Yuri. It slipped my mind."
+    show monika 3b at t51
     "Monika would facepalm softly."
+    show monika 3k at t51
     m "Well, if any of you forgot like I foolishly did, last week, we had a schoolwide meeting. All clubs were there and a new rule was established, we have to have a minimum of 5 members."
+    show monika 3i at t51
     m "Which means that along with the sad news of Kotonoha's departure, it means we're going to have to find another member to stay together, or we may get disbanded..."
+    show monika 1o at t51
+    show sayori 2y at t52
+    show natsuki 4s at t53
+    show yuri 3n at t54
+    show koto 3s4 at t55
     "Everyone looks much worse now. Not only was it sad that Kotonoha was leaving but it's so detrimental that they might not even have a club anymore!!"
+    show sayori 3l at t52
     s "Well...I wouldn't say that..."
     "Everyone would now look at Sayori."
+    show sayori 4s at t52
+    show yuri 1e at t54
+    show koto 1b at t55
     s "I was kind of planning to invite someone! Before Koto said she was leaving, of course, so we could have 6 members!"
+    show sayori 3x at t52
     s "But now that Kotonoha's leaving, they could be our 5th!"
+    show monika 2c at t51
     "Monika looks deep in thought."
+    show monika 2d at t51
     m "Would they be willing to join?"
+    show sayori 2lo at t52
     s "Pfft, yeah, they would!"
+    show monika 1b at t51
+    show yuri 3c at t54
+    show koto 1h at t55
     m "Hm, well then I suppose that's a problem solved!"
+    show yuri 2c at t54
+    show monika 1a at t51
+    show sayori 5b at t52
     "Sayori was scared out of her mind. She knew he had been struggling to even look at clubs, let alone join one..."
     "Announcing him as 'The Fifth Member' didn't help much either. Now the girls were counting on Sayori to make good on her promise."
     "Looks like she had some seeds to plant and some cute faces to make."
     "Monika clears her throat interrupting Sayori's train of thought."
+    show monika 4l at t51
     m "Let's not let that overtake our sadness over the loss of one of our original members however."
+    show yuri 1l at t54
     y "Kotonoha is still leaving and we must keep the mood appropriate."
+    show monika 1i at t51
     m "Thank you, Yuri. Kotonoha, we're sorry for your unfortunate situation."
+    show monika 1p at t51
     m "I wish we could've done more..."
-    pause (5.0)
-    #natsuki changes expressions (intervals)
+    show natsuki 4n at t53
+    pause (2.0)
+    show natsuki k34 at t53
+    pause (2.0)
+    show natsuki 4k at t53
     n "...Wait! I got it!"
+    show natsuki 1l at t53
     n "I have some cupcakes in my home economics room!!"
-    m "But Natsuki, aren't those for a project?"
-    n "Who cares?! I can make more, they don't take awfully long to make!"
+    show monika 1n at t51
+    m "But Natsuki, aren't those for an end of quarter project?"
+    show natsuki 5e at t53
+    n "Who cares?! I can make more, they don't take long to make!"
+    show natsuki 1l at t53
     n "Plus I'm not just gonna sit here and let us sulk in silence for the next hour."
+    show monika 3g at t51
     m "Bu{nw}"
+    show natsuki 1v at t53
     n "Don't question me! It'll just be a quick snatch and grab!"
     "And without letting anyone protest, she left the room."
     hide natsuki
-    show monika 1a at t41
-    show sayori 1a at t42
-    show yuri 1a at t43
-    show koto 1a at t44
+    show monika 1q at t41
+    show sayori 1o at t42
+    show yuri 1e at t43
+    show koto 1e at t44
     "Monika sighs tiredly."
+    show monika 3l at t41
     m "Well, I guess we're having cupcakes this afternoon!"
+    show yuri 1f at t43 
     y "Only cupcakes?"
+    show monika q2 at t41
+    show yuri 1i at t43
     "Monika looked at Yuri, understanding what she was implying."
+    show monika 1r at t41
     "She sighs again."
+    show monika r2 at t41
     m "You want to make tea, don't y{nw}"
+    show yuri 1j at t43
     y "I want to make tea, yes."
     pause (2.0)
-    #have monika emote
+    show yuri 4a at t43
+    show monika 2h at t41
+    pause (2.0)
+    show monika b4 at t41
     m "You know what? Why not!"
+    show monika b5 at t41
+    show yuri 3d at t43
     y "Thank you, Monika!"
     "Yuri would hurriedly sprint over to the closet to retrieve her tea set."
     hide yuri
-    show monika 1a at t31
-    show sayori 1a at t32
+    show monika 1r at t31
+    show sayori 1n at t32
     show koto 1a at t33
     "Monika turns to Kotonoha."
+    show monika 4n at t31
     m "I guess we're having a celebration for your departure, Koto."
+    show monika 1m at t31
     "Monika smiles awkwardly. This wasn't on her itinerary at all. And while she didn't just want to sulk around for the next hour, she wanted to continue club activities like normal."
+    show koto 2s at t33
     kmc "I mean, it doesn't look like they're giving us much of a choice, are they?"
+    show monika 3l at t31
     m "It appears not...well, I guess me and Sayori are going to pitch in as well.."
+    show sayori 4r at t32
     s "Ooo, ooo! I can find some decorations in the art classroom! They're holding a meeting right now too, and they'll have a ton of supplies that can help!"
-    "Sayori doesn't even let her idea process in anyone else's head and she leaves without a second thought."
     hide sayori
-    show monika 1a at t21
-    show koto 1a at t22
+    show monika 1q at t21
+    show koto 1e at t22
+    "Sayori doesn't even let her idea process in anyone else's head and she leaves without a second thought."
     "Monika just can't catch a break today."
+    show monika 1p at t21
     m "Well! I suppose I'll go help her!"
+    show koto 2s2 at t22
     kmc "Maybe I could come with!"
+    show monika 4n at t21
     m "Come with? It's your party, Koto! Just sit back and watch!"
+    show koto 2p2 at t22
     "Kotonoha looks a bit sad but it's quickly replaced with happiness. She had been thinking about something like this all day, but she never thought she would actually get it!"
+    show koto r22 at t22
     kmc "Thank you, Moni. I appreciate it."
+    show koto r23 at t22
+    show monika 1b at t21
     m "Of course!"
     "Monika walks to the door."
     show monika 1a at t51
@@ -490,7 +550,11 @@ label choice_script:
     s "Ok, art room is{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}s{w=0.7}{w=0.7}s {w=3}here!" 
     "Sayori would step into the art room." 
     scene bg AR with wipeleft_scene
-    "Some of the kids in the classroom looked at Sayori as she entered. She recognized some of them, waving shyly at a couple of friends." 
+    show sayori 1a at t11
+    "Some of the kids in the classroom looked at Sayori as she entered."
+    show sayori 3l at t11
+    "She recognized some of them, waving shyly at a couple of friends." 
+    show sayori 1f at t11
     "But she wasn't here to goof around." 
     "She needed to see if there was something she could use for Koto's party!"
     "She glanced around the room, her excitement could be felt with every extra step she took." 
@@ -498,34 +562,49 @@ label choice_script:
     s "Hey guys! Happen to know if there's any art supplies I can steal from you guys?" 
     show sayori 5b at t11 
     s "I need to make a little something on short notice, eheh..."
-    "The other students exchange curious glances, and one or two of them smile sympathetically. Sayori's enthusiasm was infectious, and they could see she was on a mission." 
+    "The other students exchange curious glances, and one or two of them smile sympathetically."
+    "Sayori's enthusiasm was infectious, and they could see she was on a mission." 
     k1 "Oh, hey Sayori! Maybe you should ask the teacher! She'd probably be happy to help!" 
     show sayori 1m at t11 
     s "Really?!" 
     show sayori 4r at t11 
     s "Thank you so much!! I really appreciate it!" 
     "Sayori skips over to the teacher's desk, her shoes making a soft pat-pat sound on the floor." 
-    s "Hi, Missus!" 
+    show sayori 1s at t11 
+    s "Hi, Missus!"
     t "Sayori! How are you still at school?" 
+    show sayori 2x at t11
     s "Oh, I'm in the literature club on the 3rd floor!!"
     t "How... interesting. I may need to stop by at some point." 
-    s "Uhhh, yeah!! Say... do you have any spare art supplies I can borrow? I need it for something. Any streamers or confetti, or glitter... anything that can make a party pop!" 
-    t "A party? Sayori, that's not really traditional art supplies...we don't usually have those things around here…" 
-    "She wasn't lying. Now that Sayori thought about it, there was a distinction between art supplies and party supplies." 
+    show sayori 1c at t11
+    s "Uhhh, yeah!! Say... do you have any spare art supplies I can borrow? I need it for something."
+    show sayori 3c at t11
+    s "Any streamers or confetti, or glitter... anything that can make a party pop!" 
+    t "A party? Sayori, that's not really traditional art supplies...we don't usually have those things around here in class…" 
+    "She wasn't lying. Now that Sayori thought about it, there was a distinction between art supplies and party supplies."
+    show sayori 1e at t11
     s "O-Oh... I guess I didn't think about that. I just...we were gonna do a thing and..."
+    show sayori 1u at t11
     "She trailed off not knowing if she wanted to continue."
-    #cri
-    s "{size=10}And we wanted to make it special...{/size}" 
+    show sayori 1v at t11
+    s "{size=10}And we wanted to make it special...{/size}"
+    show sayori 1u at t11 
     "The teacher sighs heavily at first but then smiles warmly at Sayori, her eyes softening." 
+    show sayori 1o at t11
     t "In the cubicles." 
+    show sayori lmno at t11
     "Sayori gasps as her face lights up, and she bounces on the balls of her feet in excitement." 
+    show sayori 3r at t11
     s "Thank you Missus! I'll be quick!" 
     t "Of course, Sayori." 
-    "Sayori skips over to the 3x3 cubicle and gets on her knees, peeking inside with a look of determined curiosity." 
+    "Sayori skips over to the 3x3 cubicle and gets on her knees, peeking inside with a look of determined curiosity."
+    hide sayori
+    #cg?? (maybe not considering how short the scene is)
     "She finds mostly everything she thought she needed—colorful papers, streamers, and even a bit of glitter. She starts to eagerly rummage through the cubicle, her hands moving quickly." 
     "With each item she finds, her excitement grows. She giggles as she sorts through the supplies, imagining all the fun decorations she can make." 
     scene bg corridor with wipeleft_scene 
-    show monika 1a at t11 
+    show monika 1h at t11
+    #this could definitely be a CG
     "Monika looks inside the classroom, seeing Sayori and the teacher having a conversation." 
     "She notices Sayori skip away from the teacher, and the teacher glances out of her classroom door's window." 
     "Monika stares back at her and something about her looks... off." 
@@ -534,22 +613,27 @@ label choice_script:
     "Soon, she starts hyperventilating. Who was that teacher? She had never seen her before..."
     scene bg AR with wipeleft_scene
     "The teacher stares at Monika through the glass. She knew {i}exactly{/i} who she was."
-    show sayori 1a at t11
+    show sayori 4r at t11
     s "I got what I needed! Thank you, missus!"
     t "You're welcome, Sayori! Now run along! I think someone is waiting for you."
-    s "Huh? Oh right, Moni! Thank you! I'm sure she's on her way!"
+    show sayori 4o at t11
+    s "Huh?"
+    show sayori 4n at t11
+    s" Oh right, Moni! Thank you! I'm sure she's on her way!"
     "The teacher would nod her away, her gaze lingering for a moment longer as Sayori exits."
     "Sayori flashes another bright smile as she walks out of the classroom, her arms filled with the supplies she's gathered."
     scene bg corridor with wipeleft_scene
-    show sayori 1a at t11
+    show sayori 4q at t11
     "She turns the corner, ready to walk back upstairs when she sees Monika, and it spooks her a bit."
-    #scared
+    show sayori 4p at t11
     s "Ah!"
     pause (2.0)
-    #expression change from surprised to calm
-    s "Oh, heyyy, Monika! Why didn't you come in?"
+    show sayori 4l at t11
+    s "Oh, heyyy, Monika! I didn't recognize you for a sec!"
+    s "Why didn't you come in?"
     show layer master at heartbeat
     show vignette
+    #zoom on sayori as her expression changes
     play music ("HeartBreath (Moni Song).mp3")
     "Monika is pressed against the wall, her posture was tense and rigid, unlike her usual composed self." 
     "Her face is pale and her eyes dart around erratically, as if she's struggling to focus on anything." 
@@ -557,28 +641,46 @@ label choice_script:
     "She brings one hand up to her chest, as if trying to steady her heartbeat. Her shoulders rise and fall rapidly with each uneven breath, and she sways slightly, almost as if she's about to collapse."
     "Monika's breathing is labored, with a faint wheezing sound accompanying each inhale. She occasionally bites her lip, trying to suppress the rising panic, but it's clear that she's overwhelmed."
     "Her wide and glassy eyes show a sense of fear and confusion."
+    show sayori 4g at t11
     s "...Moni?"
     "Sayori sets the supplies down gently, her concern growing as she approaches Monika cautiously."
+    show sayori 2h at t11
     s "M-{w=1}Monika?…"
     "Monika snaps out of her little attack, blinking rapidly as she tries to regain her composure."
     hide vignette
     show layer master
     stop music fadeout 1.0
-    show sayori 1a at t21
-    show monika 1a at t22
+    show sayori 1f at t21
+    show monika 1f at d22
     m "H-Hm?"
+    show sayori 3c at t11
     s "Are you ok? You're on the floor and you don't look too good...like at all..."
+    show monika 2l at d22
     m "Oh, um, yes! Of course, I'm fine!"
     "Monika stands up and brushes herself off."
-    m "I just… since I was behind you, I saw you getting the things and just decided to wait for you. I didn't expect you to be out so soon…"
+    show monika 2n at t22
+    m "I just… since I was behind you, I saw you getting the things and just decided to wait for you."
+    show monika 2l at t22
+    m "I didn't expect you to be out so soon…"
+    show sayori 2f at t21
     "Sayori reaches out, placing a comforting hand on Monika's shoulder."
+    show sayori 2g at t21
     s "You don't look fine. Are you sure you're okay?"
+    show monika 2m at t22
+    show sayori 1k at t21
     "Monika takes a deep breath, slowly removing Sayori's hand, her breathing slowly calming as she forces a small smile."
+    show monika 1l at t22
     m "I'm okay now, really. I just... had a bit of a panic. It's nothing."
+    show monika 1l at t22
+    show sayori 4l at t21
     s "Awww, but I feel sorry for you, Moni!"
+    show sayori 1n at t21
     "Sayori gasps as she gets a bit of an idea."
+    show sayori 3r at t21
     s "Let's talk about it while we walk, okay? Maybe I can help you calm down and feel better!"
-    "She blushes at the prospect. Spending time with Monika was always great..."
+    show sayori 3s at t21
+    "She blushes at the prospect. Spending time with Monika was always great...always..."
+    show monika 1e at t21
     "Monika shakes her head, her eyes softening as she appreciates Sayori's concern."
     m "Thanks, Sayori. But I'm ok, really."
     "Sayori's face drops slightly but regardless, she picks up the supplies again, giving Monika a reassuring smile while she leaves some of it for her to grab."
@@ -610,7 +712,21 @@ label choice_script:
     m "I-I want to get out..."
     m "LET ME OUT!"
     #fix replies tag
-    m "fix replies tag"
+    label monika_random_phrase:
+    $ monika_phrases = [
+        "This is pain?",
+        "Look at ME.",
+        "I’ve been thinking about you.",
+        "You don't deserve this.",
+        "This is MY world.",
+        "You’re the only one who understands me.",
+        "Devolved code.",
+        "https://ibb.co/Q6QYRTq{nw}"
+    ]
+
+    $ chosen_phrase = renpy.random.choice(monika_phrases)
+
+    m "[chosen_phrase]{nw}"
     show monika g1
     m "{glitch}{glitch}{glitch}"
     show monika g2
@@ -713,7 +829,9 @@ label choice_script:
     n "I don't know how I always forget that these are in my hair."
     n "But hey, at least today they're being useful{nw}"
     #Natsuki's hair falls over her face, add sprites and sfx (UPDATE 5/10/25 DONE)
-    pause (3.0)
+    show natsuki 1i2 at t11
+    pause (1.0)
+    show natsuki 1h2 at t11   
     n "Hmph, should've expected that."
     "She tucks the extra hair behind her ear, a look of annoyance on her face as she gets on her knees to pick this lock."
     n "Alright, Papa, time to use those skills you taught me..."
@@ -945,7 +1063,7 @@ label choice_script:
     show natsuki 5i at t53
     show yuri 2i at t54
     show koto 1f at t55
-    y "and quick. Like Monika said our time is limited, so let's not waste it."
+    y "And quick. Like Monika said our time is limited, so let's not waste it."
     m "I couldn't have said it better. Let's get to it, girls!"
     e "Yeah!!"
     s "Not Koto, though!"
@@ -973,7 +1091,7 @@ label choice_script:
     "Everyone gives her a funny look."
     n "Ahem...I use it for bathroom parties, ok?"
     m "...Alright, I suppose."
-    n "Natsuki puts on some high energy dance music."
+    "Natsuki puts on some high energy dance music."
     n "Now this is good shit!!"
     y "Natsuki..."
     n "Nope, don't even! I'm not letting you all turn this into a pity party! This bitch is gonna have some energy!"
@@ -1012,14 +1130,16 @@ label choice_script:
     "Natsuki was about to yell, but she looked at everyone's expressions."
     "Specifically Kotonoha's."
     m "Koto, does this sound nice to you?"
-    menu: 
+    menu:
         "This is much better!":
-            jump choice_Sayori
+            $ choice = "right"
         "I liked Natsuki's music better.":
-            jump choice_Natsuki
-    
+            $ choice = "WRONG"
 
-    label choice_Natsuki:
+if choice == "right":
+    jump shared_route1
+
+elif choice == "WRONG":
     "Koto's face kind of shifts."
     kmc "I'm not sure...I think I like Natsuki's music more..."
     kmc "Sorry Sayori."
@@ -1034,35 +1154,44 @@ label choice_script:
     pause (2.0)
     show monika 1a at t11
     m "Wrong choice. Pick again."
-    menu: 
+    menu:
         "This is much better!":
-            jump choice_Sayori
+            $ choice = "right"
         "I liked Natsuki's music better.":
-            jump choice_Natsuki2
+            $ choice = "WRONG2"
 
-    label choice_Natsuki2:
+if choice == "right":
+    jump shared_route1
+
+elif choice == "WRONG2":
     m "WRONG."
     m "P{w=0.4}I{w=0.4}C{w=0.4}K{w=0.4} A{w=0.4}G{w=0.4}A{w=0.4}I{w=0.4}N."
     
-    menu: 
+    menu:
         "This is much better!":
-            jump choice_Sayori
+            $ choice = "right"
         "I liked Natsuki's music better.":
-            jump choice_Natsuki3
+            $ choice = "WRONG3"
 
-    
-    
-    label choice_Natsuki3:
+if choice == "right":
+    jump shared_route1
+
+elif choice == "WRONG3":
     m "Hm. I see."
     m "I can play that game too, silly!"
-    m "While I can't seem to make any huge changes to your game like deleting your saves like a little flower..."
+    m "While I can't seem to make any huge changes to your game like deleting your saves..."
     m "Or disable the skip button..."
-    m "I sure as hell can piss you off!"
+    m "I sure as hell can piss you off!{nw}"
     m "See you soon.{nw}"
     return
 
-    
-    label choice_Sayori:
+
+label shared_route1:
+    show monika 1m at t51
+    show sayori 4x at t52
+    show natsuki 5y at t53
+    show yuri 4a at t54
+    show koto 1f at t55
     "Koto was smiling."
     kmc "You made a good choice, Sayori."
     kmc "Sorry, Natsuki."
@@ -1210,13 +1339,20 @@ label choice_script:
     "Yuri chuckles as she grabs Kotonoha's hand and forces her over with the rest of the girls."
     hide sayori
     hide yuri
-    hide kotonoha
     hide natsuki
+    #find a better way to make her look like she's slowly moving across the screen with the one line below
+    show koto 1j at t55
+    show koto 1j at t54
+    show koto 1j at t53
+    show koto 1j at t52
+    show koto 1j at t51
     "Koto smiles and giggles, allowing herself to be dragged into the moment."
+    #then find a way to get rid of koto that doesn't just blip her out of existance    
     "At first, she's hesitant, but she quickly joins in on the jokes, sharing personal stories she'd never thought she'd share."
     "As they laugh together, there's a warmth in her chest—like all the emotions she's been holding back are finally spilling out in this little room." 
     "It's not long before tears are streaming down her face; tears of joy mixed with something deeper, something harder to let go of."
     pause (3.0)
+    show monika 1a at t11
     "Monika repeatedly glances at the clock on the wall, a slight furrow in her brow."
     "Her foot taps rhythmically against the floor, her thoughts elsewhere—she's holding onto her usual calm but can't fully mask her impatience."
     "She keeps thinking about the code, the errors she's felt, the subtle shifts. She needs to check it, to understand what's going on."
@@ -1227,11 +1363,19 @@ label choice_script:
     "{i}RING RONG RING{/i}"
     "Monika looks up and quickly jolts upwards, stepping away from her desk."
     m "You heard the lady, you guys! Time to start cleaning up!"
+    show monika 1a at t51
+    show sayori 1a at t52
+    show natsuki 1a at t53
+    show yuri 1a at t54
+    show koto 1a at t55
     s "Wait!!"
     "Monika pauses before rolling her eyes to the side, turning to face Sayori at the same time."
     m "What is it, Sayori..?"
     s "I have stuff to say!!"
-    #have monika look mildly annoyed
+    #have monika look mildly annoyed (just 1h again? idk maybe make new sprite)
+    #also have them react to one another, like when sayori goes to hug koto
+    #move her again and when natsuki talks about all the members have them react
+    #and have her also be close to koto to punch her in the arm
     m "...What kind of stuff?"
     "Sayori stands up, one foot on her desk and the other on her chair."
     s "I wanted to send Kotonoha off with a special something!"
@@ -1256,7 +1400,7 @@ label choice_script:
     n "So listen up!"
     m "...No one was talking {nw}"
     n "WELL NOW YOU ARE SO SHUT YOUR TRAP!!"
-    #monika h1
+    show monika 1h at t51
     m "..."
     "Natsuki clears her throat dramatically."
     n "Alright..."
@@ -1267,8 +1411,9 @@ label choice_script:
     "Sayori's face falls."
     n "But! You're a good person. And an even better friend."
     n "And...{w=1}even if I don't show it, you all are like...{w=1}my only friends."
+    show natsuki 5g at t53
     pause (1.0)
-    #cross her arms here.
+    show natsuki 5h at t53
     n "I appreciate you all."
     "She then promptly goes silent."
     kmc "Well...that was..."
@@ -1284,6 +1429,7 @@ label choice_script:
     "Natsuki smirks confidently as she plops back down in her seat."
     "Everyone then looks to Yuri."
     "Yuri seems to seize up and stutter out an excuse."
+    #yuri 4c
     y "U-Uhm...m-my..erm..."
     y "I-I don't...not anymore..."
     "She shrinks in her seat."
@@ -1697,8 +1843,6 @@ label choice_script:
     scene bg MCUL with wipeleft_scene
     pause (0.1)
     scene bg MCL with wipeleft_scene
-    pause (0.1)
-    scene bg MCLR with wipeleft_scene
     #have koto show up first with a surprised face and pause for dialouge
     "...When she came back downstairs, everyone was lined up off the wall."
     "First Yuri, then her mother, then her father."
@@ -1732,6 +1876,7 @@ label choice_script:
     "I love you both."
     pause (0.3)
     scene bg RH with wipeleft_scene
+    #maybe edit a car in and shrink and redefine sprites to look like their at the doorway of the house?
     "Kotonoha sighs as she walks slowly to the black car outside."
     "She doesn't bother to turn around as they all call for her."
     km "We love you!!"
@@ -1774,12 +1919,13 @@ label choice_script:
     reg "Not at all, Miss."
     "Kotonoha sighs."
     kmc "We'll work on it."
+    #doesn't have to be black, it can be the interior of a nice car with koto against the seat, same idea as rich house
     scene black with wipeleft_scene
     reg "Can I get a Big Mac and large fries with an apple juice, please??"
     reg "..."
     reg "Yes...at this hour."
     reg "Thank you."
-    scene bg DT with wipeleft_scene
+    scene bg DTW with wipeleft_scene
     emp "There you are! Have a wonderful day"
     reg "You too!"
     "Reginald hands Kotonoha the food as they pull off."
@@ -1807,8 +1953,32 @@ label choice_script:
     "Wait to see what comes next."
     scene black with dissolve_scene_full
     #LOGO FLASH AND PROMO VIDEO
-
     pause (10.0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
     scene bg TBD with wipeleft_scene
@@ -2430,7 +2600,7 @@ if choice == "zaza":
     "The lunch lady chuckles a bit."
     ll "Of course, kid! Enjoy your lunch!"
     "Koto smiled back warmly and scooted along with her tray."
-    jump shared_route
+    jump shared_route2
 
 elif choice == "noods":
     kmc "N-Noodles, please!"
@@ -2439,7 +2609,7 @@ elif choice == "noods":
     "The lunch lady's face kind of scrunches as she hears the flimsy thanks."
     ll "Yeah..."
     "Koto notices that she saw through her faux thanks and awkwardly shuffles away."
-    jump shared_route
+    jump shared_route2
 
 elif choice == "bb":
     kmc "A bento box please?"
@@ -2448,10 +2618,10 @@ elif choice == "bb":
     ll "No problem!"
     "Koto couldn't help but notice how...tired she looked, even with her smile. Her job seemed like it took a toll on her."
     "Regardless, she smiled back and scooted along with her tray."
-    jump shared_route
+    jump shared_route2
 
 
-label shared_route:
+label shared_route2:
     "The scanner towards an empty table in the corner. I set my tray down and sat at the table, taking a moment to fish my student ID out of my wallet."
     "She grabbed it and swiped it through the ID scanner, making sure that the school knew that I had actually gotten lunch today."
     "It buzzed at her."
